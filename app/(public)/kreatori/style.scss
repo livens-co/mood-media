@@ -75,35 +75,56 @@
     flex-direction: column;
     width: 100%;
     gap: 2rem;
+    align-items: center;
 
     .creatorRow {
       width: 100%;
+      max-width: 1000px;
       display: flex;
+      padding: 0 2rem;
+      gap: 2rem;
+      align-items: center;
 
       .image {
         height: 10rem;
+        width: 10rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        // overflow: hidden;
 
-        img {
-
+        .frame {
+          height: 10rem;
+          width: 10rem;
+          object-fit: cover;
         }
       }
 
       .content {
-        flex: auto;
+        width: calc(1000px - 12rem);
+        // flex: auto;
         display: flex;
         flex-direction: column;
         // justify-content: space-around;
         padding: 2rem 0;
+        gap: 0.5rem;
 
         h1 {
           font-size: 1.5rem;
           font-weight: 700;
           color: var(--primary);
           text-transform: uppercase;
+        }
+
+        h3 {
+          text-transform: uppercase;
+        }
+
+        p {
+          // font-size: 1.2rem;
+          font-weight: 300;
+
+          line-height: 1.2;
         }
 
         a {

@@ -48,7 +48,7 @@ const CreatorsPage = () => {
           <div className="creatorRow">
             <div className="image">
               <Image
-                src="/assets/triangle.svg"
+                src="/test/sead.jpg"
                 width={250}
                 height={250}
                 alt="Frame"
@@ -58,10 +58,453 @@ const CreatorsPage = () => {
             <div className="content">
               <h1>Sead Hrustanović</h1>
               <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori/kreator">Saznaj više</Link>
+            </div>
+          </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          <div className="creatorRow">
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
 
               <Link href="/kreatori">Saznaj više</Link>
             </div>
           </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          <div className="creatorRow">
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+          </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          <div className="creatorRow">
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+          </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          <div className="creatorRow">
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+          </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          <div className="creatorRow">
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+          </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          <div className="creatorRow">
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+          </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          <div className="creatorRow">
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori/kreator">Saznaj više</Link>
+            </div>
+          </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          <div className="creatorRow">
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+          </div>
+          <div className="creatorRow">
+            
+            <div className="content">
+              <h1>Sead Hrustanović</h1>
+              <h3>+1.6M followers</h3>
+              <p>
+                Sead, Senada, Mulekelefeleketa... Ma kako god da ga
+                prepoznajete, sigurni smo da ste za njega već odavno čuli! Sead
+                Hrustanović jedan je od najurnebesnijih tiktokera na Balkanu
+                trenutno, a sa svojih je 26 godina uspio ono što ne uspijeva baš
+                bilo kome - na društvenim je mrežama okupio gotovo 1,5 milijuna
+                obožavatelja.
+              </p>
+
+              <Link href="/kreatori">Saznaj više</Link>
+            </div>
+            <div className="image">
+              <Image
+                src="/test/sead.jpg"
+                width={250}
+                height={250}
+                alt="Frame"
+                className="frame"
+              />
+            </div>
+          </div>
+          
         </div>
       </div>
 
