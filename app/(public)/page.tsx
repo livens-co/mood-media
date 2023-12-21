@@ -38,6 +38,28 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* GEN Z AKADEMIJA */}
+      <section>
+        <div className="image">
+          <Image
+            src="/test/akademija.jpeg"
+            width={600}
+            height={600}
+            alt="Gen Z Akademija"
+            className="academyImage"
+          />
+        </div>
+        <div className="text">
+          <h1>
+            Gen Z Akademija
+          </h1>
+          <h2 className="academy">Be smart. Be safe. Be cool.</h2>
+          <h3>Prijavi svoju školu za sudjelovanje na akademiji i saznaj kroz druženje s Influencerima kako sigurno surfati Internetom i gledati sadržaj na svojoj omiljenoj društvenoj mreži.</h3>
+          {/* <h3>Klikni na link i saznaj više.</h3> */}
+          <Link href="/">Prijave</Link>
+        </div>
+      </section>
+
       {/* POVEZUJEMO */}
       <section>
         <div className="text">

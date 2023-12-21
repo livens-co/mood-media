@@ -114,6 +114,17 @@
         line-height: 1.2;
       }
 
+      .academy {
+        color: var(--secondary);
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-left: 1.5rem;
+        line-height: 1.2;
+      }
+
       p {
         width: 90%;
         line-height: 1.2;
@@ -135,8 +146,16 @@
     .image {
       flex: 4;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
+      height: 100%;
+
+      .academyImage{
+        width: 80%;
+        border-radius: 5px;
+        overflow: hidden;
+        
+      }
     }
 
     .creatorCarousel {
