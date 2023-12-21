@@ -1,6 +1,8 @@
 import Link from "next/link";
 import "./style.scss";
 import Image from "next/image";
+import Contact from "@/components/Contact";
+import ArticleCard from "@/components/ArticleCard";
 
 const HomePage = () => {
   return (
@@ -86,21 +88,7 @@ const HomePage = () => {
 
       {/* NOVOSTI */}
       <div className="newsSection">
-        <div className="article">
-          <div className="border" />
-          <div className="articleImage">
-            <Image
-              src="/test/article1.png"
-              width={600}
-              height={600}
-              alt="Article image"
-            />
-          </div>
-          <div className="articleTitle">
-            Nova KinoMood avantura: &quot;Pušteni s lanca&quot; je jedna od
-            najboljih komedija koju smo gledali!
-          </div>
-        </div>
+        <ArticleCard />
         <div className="text">
           <h1>Novosti</h1>
           <h2>
@@ -108,37 +96,8 @@ const HomePage = () => {
           </h2>
           <Link href="/novosti">Novosti</Link>
         </div>
-        <div className="article">
-          <div className="border" />
-          <div className="articleImage">
-            <Image
-              src="/test/article1.png"
-              width={600}
-              height={600}
-              alt="Article image"
-            />
-          </div>
-          <div className="articleTitle">
-            Nova KinoMood avantura: &quot;Pušteni s lanca&quot; je jedna od
-            najboljih komedija koju smo gledali!
-          </div>
-        </div>
-        <div className="article">
-          <div className="border" />
-          
-          <div className="articleImage">
-            <Image
-              src="/test/article1.png"
-              width={600}
-              height={600}
-              alt="Article image"
-            />
-          </div>
-          <div className="articleTitle">
-            Nova KinoMood avantura: &quot;Pušteni s lanca&quot; je jedna od
-            najboljih komedija koju smo gledali!
-          </div>
-        </div>
+        <ArticleCard />
+        <ArticleCard />
       </div>
 
       {/* KREATORI */}
@@ -153,32 +112,18 @@ const HomePage = () => {
           <Link href="/kreatori">Pogledaj sve</Link>
         </div>
         <div className="creatorCarousel">
-          <Image src='/assets/triangle.svg' width={500} height={500} alt="Frame" className="frame"/>
+          <Image
+            src="/assets/triangle.svg"
+            width={500}
+            height={500}
+            alt="Frame"
+            className="frame"
+          />
         </div>
       </section>
 
       {/* KONTAKT */}
-      <div className="contact">
-        <div className="contactContainer">
-          <h1>Želite surađivati s nama?</h1>
-          <Link href="/kontakt">Let&apos;s talk</Link>
-          <Image
-            priority
-            src="/assets/contactLines.svg"
-            width={300}
-            height={300}
-            alt="Lines"
-          />
-
-          <Image
-            priority
-            src="/assets/contactLines.svg"
-            width={300}
-            height={300}
-            alt="Lines"
-          />
-        </div>
-      </div>
+      <Contact />
     </div>
   );
 };
