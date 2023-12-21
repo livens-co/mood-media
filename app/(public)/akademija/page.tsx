@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./style.scss";
 import StoryCarousel from "@/components/StoryCarousel";
 import ArticleCard from "@/components/ArticleCard";
+import AcademyCreators from "@/components/AcademyCreators";
 
 const AcademyPage = () => {
   return (
@@ -41,10 +42,32 @@ const AcademyPage = () => {
         </div>
 
         {/* KREATORI */}
+        <div className="creatorTestemonials">
+          <h1>Kreatori</h1>
+          <AcademyCreators/>
+        </div>
 
         {/* SPONZORI */}
+        <div className="sponsors">
+          <div className="sponsorRow">
+            <h3>Powered by</h3>
+            <a href="https://www.a1.hr/" className="logo">
+              <Image src='/assets/academy/a1Logo.png' alt="A1" width={200}  height={200} className="powered"/>
+            </a>
+          </div>
+          <div className="sponsorRow">
+            <h3>Supported by</h3>
+            <a href="https://csi.hr/" className="logo">
+              <Image src='/assets/academy/csiLogo.png' alt="Centar za sigurniji internet" width={150}  height={150} className="supported"/>
+            </a>
+          </div>
+        </div>
 
         {/* END */}
+
+        <div className="banner">
+          <Image src="/assets/academy/academyBanner.jpeg" alt="Gen Z Akademija" width={700} height={394} />
+        </div>
       </div>
     </>
   );
