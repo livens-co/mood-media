@@ -3,10 +3,10 @@ import "./style.scss";
 import Link from "next/link";
 
 const navLinks = [
-    {
-        name: "Gen Z Akademija",
-        path: "/akademija",
-    },
+    // {
+    //     name: "Gen Z Akademija",
+    //     path: "/akademija",
+    // },
     {
         name: "O nama",
         path: "/o-nama",
@@ -15,10 +15,7 @@ const navLinks = [
         name: "Usluge",
         path: "/usluge",
     },
-    {
-        name: "Kampanje",
-        path: "/kampanje",
-    },
+    
     {
         name: "Kreatori",
         path: "/kreatori",
@@ -36,9 +33,12 @@ const Navbar = () => {
       <div className="navbar">
         <nav>
           <Link href='/' className="logo">
-            <Image src='/assets/mmedia.png' width={100} height={100} alt="Mood Media"/>
+            <Image priority src='/assets/mmedia.png' width={100} height={100} alt="Mood Media"/>
           </Link>
           <div className="links">
+          <Link href='/akademija' className="akademijaLink">
+            <Image priority src='/assets/akademijaLink.png' width={100} height={13} alt="Gen Z Akademija"/>
+          </Link>
             {navLinks.map(l => (
                 <Link href={l.path} key={l.path} className="navLink">
                     {l.name}

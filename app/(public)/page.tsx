@@ -50,11 +50,13 @@ const HomePage = () => {
           />
         </div>
         <div className="text">
-          <h1>
-            Gen Z Akademija
-          </h1>
+          <h1>Gen Z Akademija</h1>
           <h2 className="academy">Be smart. Be safe. Be cool.</h2>
-          <p>Prijavi svoju školu za sudjelovanje na akademiji i saznaj kroz druženje s Influencerima kako sigurno surfati Internetom i gledati sadržaj na svojoj omiljenoj društvenoj mreži.</p>
+          <p>
+            Prijavi svoju školu za sudjelovanje na akademiji i saznaj kroz
+            druženje s Influencerima kako sigurno surfati Internetom i gledati
+            sadržaj na svojoj omiljenoj društvenoj mreži.
+          </p>
           {/* <h3>Klikni na link i saznaj više.</h3> */}
           <Link href="/akademija">Saznaj više</Link>
         </div>
@@ -94,23 +96,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* KAMPANJE */}
-      <section>
-        <div className="text">
-          <h1>Kampanje</h1>
-          <h2>Pogledajte neke od naših kampanja</h2>
-          <p>
-            Uvijek vas povezujemo s video kreatorom koji savršeno odgovara vašem
-            brendu, proizvodu, kampanji i publici kojoj se želite obratiti.
-          </p>
-          <Link href="/kampanje">Kampanje</Link>
-        </div>
-        <div className="image"></div>
-      </section>
-
       {/* NOVOSTI */}
       <div className="newsSection">
-        <ArticleCard />
         <div className="text">
           <h1>Novosti</h1>
           <h2>
@@ -118,6 +105,7 @@ const HomePage = () => {
           </h2>
           <Link href="/novosti">Novosti</Link>
         </div>
+        <ArticleCard />
         <ArticleCard />
         <ArticleCard />
       </div>
