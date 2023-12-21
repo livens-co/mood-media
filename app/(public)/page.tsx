@@ -56,7 +56,7 @@ const HomePage = () => {
           <h2 className="academy">Be smart. Be safe. Be cool.</h2>
           <p>Prijavi svoju školu za sudjelovanje na akademiji i saznaj kroz druženje s Influencerima kako sigurno surfati Internetom i gledati sadržaj na svojoj omiljenoj društvenoj mreži.</p>
           {/* <h3>Klikni na link i saznaj više.</h3> */}
-          <Link href="/">Prijave</Link>
+          <Link href="/akademija">Saznaj više</Link>
         </div>
       </section>
 
