@@ -24,7 +24,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* BRANDS INFINITE TAPE */}
-      <div className="clients">
+      {/* <div className="clients">
         <h3>Klijenti</h3>
         <div className="clientsTape">
           <div className="animatedTape">
@@ -36,7 +36,7 @@ const HomePage = () => {
             brand
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* GEN Z AKADEMIJA */}
       <section>
