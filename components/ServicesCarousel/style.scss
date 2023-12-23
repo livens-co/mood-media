@@ -1,0 +1,89 @@
+.servicesCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+
+  h3 {
+    font-size: 1rem;
+    color: var(--secondaryColor);
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    button {
+      padding: 0.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.1em solid var(--secondary);
+
+      svg {
+        font-size: 1rem;
+        color: var(--secondary);
+      }
+    }
+  }
+
+  .servicesCarouselInner {
+    width: 100%;
+    max-width: 1200px;
+    // max-width: 40rem;
+    // min-height: 13rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    // padding: 1rem;
+    gap: 1rem;
+
+    .servicesContainer {
+      width: 100%;
+      // max-width: 36rem;
+      position: relative;
+      display: flex;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+
+      .servicesContainerInner {
+        display: flex;
+        gap: 2rem;
+
+        .serviceCard {
+          width: 17rem;
+          // height: 20rem;
+          background-color: var(--secondary);
+          border-radius: 0.5rem;
+          padding: 3rem 1.5rem;
+          color: var(--white);
+
+          h2 {
+            font-weight: 600;
+            font-size: 1.35rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+            font-weight: 300;
+          }
+
+          &:nth-child(2n) {
+            background-color: #e8e8e8;
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}
