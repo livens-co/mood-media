@@ -7,7 +7,7 @@ import getArticlesByCreator from "@/sanity/actions/get-articles-by-creator";
 import { Article, Creator } from "@/types";
 
 const ContactPage = async () => {
-  const filteredArticles: Article[] = await getArticlesByCreator("4");
+  // const filteredArticles: Article[] = await getArticlesByCreator(4);
   // console.log(filteredArticles);
 
 
