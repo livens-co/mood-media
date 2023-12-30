@@ -4,8 +4,14 @@ import { FaTiktok, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import Contact from "@/components/Contact";
 import ArticleCard from "@/components/ArticleCard";
 import FeaturedCarousel from "@/components/FeaturedCarousel";
+import { Article } from "@/types";
+import getArticlesByCreator from "@/sanity/actions/get-articles-by-creator";
 
-const CreatorPage = () => {
+export const revalidate = 1;
+
+const KreatorPage = async () => {
+  const articles: Article[] = await getArticlesByCreator("2");
+
   return (
     <div className="creatorPage">
       <div className="header">
@@ -87,13 +93,14 @@ const CreatorPage = () => {
       </div>
       <div className="featuredContent">
         <h1>Izdvojeno</h1>
-        <FeaturedCarousel />
+        {/* <FeaturedCarousel /> */}
       </div>
       <div className="featuredContent">
         <h1>Novosti</h1>
         <div className="articles">
-          <ArticleCard />
-          <ArticleCard />
+          {articles
+            .map((article) => <ArticleCard data={article} key={article.slug} />)
+            .slice(0, 2)}
         </div>
       </div>
 
@@ -103,4 +110,4 @@ const CreatorPage = () => {
   );
 };
 
-export default CreatorPage;
+export default KreatorPage;

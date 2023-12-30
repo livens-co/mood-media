@@ -3,8 +3,12 @@ import "./style.scss";
 import Image from "next/image";
 import Contact from "@/components/Contact";
 import ArticleCard from "@/components/ArticleCard";
+import getArticles from "@/sanity/actions/get-articles";
+import { Article } from "@/types";
 
-const HomePage = () => {
+const HomePage = async() => {
+  const articles: Article[] = await getArticles();
+
   return (
     <div className="homePage">
       {/* HERO SECTION */}
@@ -23,6 +27,7 @@ const HomePage = () => {
           />
         </div>
       </div>
+      {/* ABOUT SECTION */}
       {/* BRANDS INFINITE TAPE */}
       {/* <div className="clients">
         <h3>Klijenti</h3>
@@ -105,9 +110,10 @@ const HomePage = () => {
           </h2>
           <Link href="/novosti">Novosti</Link>
         </div>
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+        {articles.map(article=>(
+          <ArticleCard data={article} key={article.slug} />
+        )).slice(0, 3)}
+        
       </div>
 
       {/* KREATORI */}

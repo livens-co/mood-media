@@ -31,9 +31,10 @@
 
     .getToKnowContainer {
       width: 100%;
-      width: 50rem;
-      height: 21.25rem;
-      // aspect-ratio: 21/9;
+      max-width: 800px;
+      // max-width: 50rem;
+      // height: 21.25rem;
+      aspect-ratio: 16/9;
       background-color: var(--secondary);
       border-radius: 1rem;
       display: flex;

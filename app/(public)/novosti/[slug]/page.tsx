@@ -2,73 +2,69 @@ import Image from "next/image";
 import "./style.scss";
 import Link from "next/link";
 import ArticleCard from "@/components/ArticleCard";
+import getArticle from "@/sanity/actions/get-article";
+import { Article } from "@/types";
+import { PortableText } from "@portabletext/react";
+import { RichTextComponents } from "@/components/RichTextComponent/RichTextComponents";
+import getArticles from "@/sanity/actions/get-articles";
 
-const ArticlePage = () => {
+export const revalidate = 1;
+
+interface ArticlePageProps {
+  params: { 
+    slug: string;
+  };
+}
+
+const ArticlePage: React.FC<ArticlePageProps> = async ({
+  params: { slug },
+}) => {
+  const articles: Article[] = await getArticles();
+  const article: Article | null = await getArticle(slug);
+
+  if (!article) {
+    return <div>Članak nije pronađen</div>
+  }
+
+  
+
   return (
     <div className="articlePage">
       <div className="header">
-        <div className="title">
-          Marco na spektakularnom lansiranju dm TikToka: &quot;Iz Praga smo
-          dodali svijetu malo boje&quot;
-        </div>
-        <div className="category">Blog</div>
+        <div className="title">{article?.title}</div>
+        <div className="category">{article?.categories?.[0]?.name}</div>
         <div className="details">
           <div className="avatar"></div>
           <div className="author">
-            <h2>Mood Media</h2>
-            <h3>13. studenog 2023.</h3>
+            <h2>{article?.authors?.[0]?.name}</h2>
+            <h3>{article?.date}</h3>
           </div>
         </div>
         <div className="featuredImage">
           <Image
             priority
-            src="/test/article.png"
+            src={article?.thumbnail}
             width={800}
             height={300}
-            alt="Title"
+            alt={article?.title}
           />
         </div>
       </div>
       <article>
-        <p>
-          U Pragu se upravo održao internacionalni TikTok event povodom
-          lansiranja dm TikToka, a ondje je, s brojnim drugim influencerima iz
-          regije i ostalih zemalja Europe, bio i naš Marco Cuccurin. Na ovom je
-          posebnom eventu sudjelovalo ukupno 10 europskih država, među kojima
-          su: Hrvatska, Srbija, Bosna i Hercegovina, Bugarska, Rumunjska,
-          Slovačka, Češka, Slovenija, Mađarska, Austrija.
-        </p>
-        <p>
-          Likovni umjetnici su se spojili s influencerima i stvarali zajedničku
-          kreativnu priču. Marco je bio spojen s akademskom slikaricom Dorom
-          Šitum, a ideja njihova rada bila je prikazati utjecaj društvenih mreža
-          na cjelokupno društvo, ali i ljepotu TikTok platforme gdje se možeš
-          kreativno izraziti baš onako kako ti želiš.
-        </p>
-        <p>
-          Dora i Marco pokušali su spojiti art s društvenim mrežama te makeupom
-          na licu, ali i slikom u Dorinoj izvedbi prikazati kako se obraniti od
-          bullyinga, dodati svijetu malo boje i sa stavom se postaviti prema
-          negativnim osobama i situacijama s kojima se mnogi svakodnevno
-          susrećemo, a pogotovo oni koji su stalno prisutni i svoj život čine
-          vidljivim online.
-        </p>
-        <p>
-          Jako mi se svidjela ideja i tema samog eventa, koji je bio povezan s
-          bojama. I mislim da bismo se, ne samo u makeupu ili umjetnosti,
-          trebali držati one Dodaj svijetu malo boje... U svakodnevnom životu.
-          I iskreno, ja baš uživam u tome da kroz život nosim ružičaste naočale,
-          neću nikada dopustit da postanu crne, ispričao nam je Marco te dodao
-          još pokoji dojam s putovanja u Prag.
-        </p>
+        <PortableText value={article?.body} components={RichTextComponents} />
       </article>
       <div className="articleFooter">
-        <Link href='/novosti' className="articlesBtn">Više članaka</Link>
+        <Link href="/novosti" className="articlesBtn">
+          Više članaka
+        </Link>
         <div className="featuredArticles">
           <h1>Možda će vas zanimati</h1>
           <div className="articles">
-            <ArticleCard/>
-            <ArticleCard/>
+            {articles
+              .map((article) => (
+                <ArticleCard data={article} key={article.slug} />
+              ))
+              .slice(0, 2)}
           </div>
         </div>
       </div>

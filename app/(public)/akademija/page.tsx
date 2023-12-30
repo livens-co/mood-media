@@ -3,8 +3,18 @@ import "./style.scss";
 import StoryCarousel from "@/components/StoryCarousel";
 import ArticleCard from "@/components/ArticleCard";
 import AcademyCreators from "@/components/AcademyCreators";
+import { Article } from "@/types";
+import getArticlesByCategory from "@/sanity/actions/get-articles-by-category";
 
-const AcademyPage = () => {
+export const revalidate = 1;
+
+const AcademyPage = async () => {
+  const articles: Article[] = await getArticlesByCategory("akademija");
+
+  if (!articles) {
+    return <div>Trenutno nema članaka</div>;
+  }
+
   return (
     <>
       <Image
@@ -35,16 +45,16 @@ const AcademyPage = () => {
         <div className="news">
           <h1>Novosti</h1>
           <div className="articles">
+            {/* <ArticleCard />
             <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
+            <ArticleCard /> */}
           </div>
         </div>
 
         {/* KREATORI */}
         <div className="creatorTestemonials">
           <h1>Kreatori</h1>
-          <AcademyCreators/>
+          <AcademyCreators />
         </div>
 
         {/* SPONZORI */}
@@ -52,13 +62,25 @@ const AcademyPage = () => {
           <div className="sponsorRow">
             <h3>Powered by</h3>
             <a href="https://www.a1.hr/" className="logo">
-              <Image src='/assets/academy/a1Logo.png' alt="A1" width={200}  height={200} className="powered"/>
+              <Image
+                src="/assets/academy/a1Logo.png"
+                alt="A1"
+                width={200}
+                height={200}
+                className="powered"
+              />
             </a>
           </div>
           <div className="sponsorRow">
             <h3>Supported by</h3>
             <a href="https://csi.hr/" className="logo">
-              <Image src='/assets/academy/csiLogo.png' alt="Centar za sigurniji internet" width={150}  height={150} className="supported"/>
+              <Image
+                src="/assets/academy/csiLogo.png"
+                alt="Centar za sigurniji internet"
+                width={150}
+                height={150}
+                className="supported"
+              />
             </a>
           </div>
         </div>
@@ -66,7 +88,12 @@ const AcademyPage = () => {
         {/* END */}
 
         <div className="banner">
-          <Image src="/assets/academy/academyBanner.jpeg" alt="Gen Z Akademija" width={700} height={394} />
+          <Image
+            src="/assets/academy/academyBanner.jpeg"
+            alt="Gen Z Akademija"
+            width={700}
+            height={394}
+          />
         </div>
       </div>
     </>

@@ -1,9 +1,29 @@
 import ArticleCard from "@/components/ArticleCard";
 import "./style.scss";
 
-import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { Article } from "@/types";
+import getArticles from "@/sanity/actions/get-articles";
+import PaginationControls from "@/components/PaginationControls";
 
-const NewsPage = () => {
+export const revalidate = 1;
+
+const NewsPage = async ({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) => {
+  const articles: Article[] = await getArticles();
+
+  const page = searchParams["page"] ?? "1";
+  const per_page = searchParams["per_page"] ?? "14";
+
+  const start = (Number(page) - 1) * Number(per_page);
+  const end = start + Number(per_page);
+
+  const entries = articles.slice(start, end);
+
+  console.log(articles.length)
+
   return (
     <div className="newsPage">
       <div className="newsGrid">
@@ -11,27 +31,17 @@ const NewsPage = () => {
           <h1>Novosti</h1>
           <h2>Zanimljivosti iz svijeta naših kreatora</h2>
         </div>
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+        {entries.map((article) => (
+          <ArticleCard data={article} key={article.slug} />
+        ))}
       </div>
 
       <div className="pagination">
-        <button>
-          <FaArrowLeftLong />
-        </button>
-        <div className="page">1</div>
-        <div className="page">2</div>
-        <div className="page">3</div>
-        <div className="page">4</div>
-        <button>
-          <FaArrowRightLong />
-        </button>
+        <PaginationControls
+          hasNextPage={end < articles.length}
+          hasPrevPage={start > 0}
+          artcileNum={articles.length}
+        />
       </div>
     </div>
   );

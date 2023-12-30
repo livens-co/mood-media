@@ -2,8 +2,15 @@ import ContactAnimation from "@/components/ContactAnimation";
 import "./style.scss";
 
 import { IoMail, IoPerson } from "react-icons/io5";
+import getArticles from "@/sanity/actions/get-articles";
+import getArticlesByCreator from "@/sanity/actions/get-articles-by-creator";
+import { Article, Creator } from "@/types";
 
-const ContactPage = () => {
+const ContactPage = async () => {
+  const filteredArticles: Article[] = await getArticlesByCreator("4");
+  // console.log(filteredArticles);
+
+
   return (
     <div className="contactPage">
       <div className="contactPageContainer">

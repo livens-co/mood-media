@@ -1,23 +1,21 @@
 import Image from "next/image";
 import "./style.scss";
+import Link from "next/link";
+import { Article } from "@/types";
 
-const ArticleCard = () => {
+interface ArticleCardProps {
+  data: Article;
+}
+
+const ArticleCard: React.FC<ArticleCardProps> = ({ data }) => {
   return (
-    <div className="article">
+    <Link href={`/novosti/${data.slug}`} className="article">
       <div className="border" />
       <div className="articleImage">
-        <Image
-          src="/test/article1.png"
-          width={600}
-          height={600}
-          alt="Article image"
-        />
+        <Image priority src={data.thumbnail} width={600} height={600} alt={data.title} />
       </div>
-      <div className="articleTitle">
-        Nova KinoMood avantura: &quot;Pušteni s lanca&quot; je jedna od
-        najboljih komedija koju smo gledali!
-      </div>
-    </div>
+      <div className="articleTitle">{data.title}</div>
+    </Link>
   );
 };
 
