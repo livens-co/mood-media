@@ -10,7 +10,7 @@ import getArticlesByCreator from "@/sanity/actions/get-articles-by-creator";
 export const revalidate = 1;
 
 const KreatorPage = async () => {
-  const articles: Article[] = await getArticlesByCreator("2");
+  // const articles: Article[] = await getArticlesByCreator(2);
 
   return (
     <div className="creatorPage">
@@ -97,11 +97,11 @@ const KreatorPage = async () => {
       </div>
       <div className="featuredContent">
         <h1>Novosti</h1>
-        <div className="articles">
+        {/* <div className="articles">
           {articles
             .map((article) => <ArticleCard data={article} key={article.slug} />)
             .slice(0, 2)}
-        </div>
+        </div> */}
       </div>
 
       {/* KONTAKT */}
