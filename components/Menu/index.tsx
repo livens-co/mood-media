@@ -18,10 +18,10 @@ const Menu: React.FC<MenuProps> = ({ openMenu, navLinks, closeMenu }) => {
           onClick={closeMenu}
           className="menuLink"
         >
-          <h3>0{i+1}</h3> <p>{l.name}</p>
+          <h3>0{i + 1}</h3> <p>{l.name}</p>
         </Link>
       ))}
-      <Link href="/akademija" className="menuLink">
+      <Link href="/akademija" className="menuLink" onClick={closeMenu}>
         <h3>07</h3>
         <Image
           priority
