@@ -35,7 +35,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const closeMenu = () => {
     setOpenMenu(!openMenu);
