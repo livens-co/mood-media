@@ -88,16 +88,17 @@
       align-items: center;
 
       .image {
-        height: 10rem;
-        width: 10rem;
+        height: 17rem;
+        width: 17rem;
+        aspect-ratio: 1/1;
         display: flex;
         align-items: center;
         justify-content: center;
         // overflow: hidden;
 
         .frame {
-          height: 10rem;
-          width: 10rem;
+          height: 17rem;
+          width: 17rem;
           object-fit: cover;
         }
       }
@@ -155,6 +156,10 @@
             transform-origin: bottom left;
           }
         }
+      }
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
       }
     }
   }
