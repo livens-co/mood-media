@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="hr">
       <body className={font.className}>
         <Navbar />
-        {children}
+        <div className="mainLayout">{children}</div>
         <Footer />
       </body>
     </html>

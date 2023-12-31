@@ -129,7 +129,7 @@ const HomePage = async() => {
         </div>
         <div className="creatorCarousel">
           <Image
-            src="/assets/triangle.svg"
+            src="https://cdn.sanity.io/images/qn8g0u6e/production/7f021c5ae4887467e7f280a65340346d7cbac3a8-1026x1026.png"
             width={500}
             height={500}
             alt="Frame"
