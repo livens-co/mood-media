@@ -28,7 +28,7 @@ const StoryCarousel = () => {
           <Image  src='/assets/academy/Magdalena_storys.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/marco_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/marco_Storys.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
           <Image  src='/assets/academy/Mia_storys.jpeg' alt="Story" width={320} height={569} />
