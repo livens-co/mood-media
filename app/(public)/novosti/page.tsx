@@ -22,13 +22,13 @@ const NewsPage = async ({
 
   const entries = articles.slice(start, end);
 
-  console.log(articles.length)
+  // console.log(articles.length)
 
   return (
     <div className="newsPage">
       <div className="newsGrid">
         <div className="title">
-          <h1>Novosti</h1>
+          {/* <h1>Novosti</h1> */}
           <h2>Zanimljivosti iz svijeta naših kreatora</h2>
         </div>
         {entries.map((article) => (

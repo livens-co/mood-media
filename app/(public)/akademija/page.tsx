@@ -53,7 +53,7 @@ const AcademyPage = async () => {
 
         {/* KREATORI */}
         <div className="creatorTestemonials">
-          <h1>Kreatori</h1>
+          <h1>Moderatori Gen Z Akademije</h1>
           <AcademyCreators />
         </div>
 

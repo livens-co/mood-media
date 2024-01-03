@@ -59,7 +59,7 @@ const AcademyCreators = () => {
                 </p>
               </div>
             </div>
-            <div className="creatorCard">
+            {/* <div className="creatorCard">
               <div className="image">
                 <Image
                   src="/assets/academy/Leon_Kosanovic.jpeg"
@@ -76,8 +76,8 @@ const AcademyCreators = () => {
                   ex accusantium!
                 </p>
               </div>
-            </div>
-            <div className="creatorCard">
+            </div> */}
+            {/* <div className="creatorCard">
               <div className="image">
                 <Image
                   src="/assets/academy/Rafaela_eba.jpeg"
@@ -94,18 +94,18 @@ const AcademyCreators = () => {
                   ex accusantium!
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="navigation">
+      {/* <div className="navigation">
         <button onClick={() => handleScroll(false)}>
           <FaArrowLeftLong />
         </button>
         <button onClick={() => handleScroll(true)}>
           <FaArrowRightLong />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

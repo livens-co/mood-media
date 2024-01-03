@@ -13,7 +13,7 @@ const HomePage = async() => {
     <div className="homePage">
       {/* HERO SECTION */}
       <div className="heroSection">
-        <div className="content">
+        {/* <div className="content">
           <h1>Inspiriramo, povezujemo, promoviramo</h1>
           <p>Vaše snove pretvaramo u stvarnost.</p>
           <Link href="/o-nama">Saznaj više</Link>
@@ -25,7 +25,7 @@ const HomePage = async() => {
             height={600}
             alt="Kreatori"
           />
-        </div>
+        </div> */}
       </div>
       {/* ABOUT SECTION */}
       {/* BRANDS INFINITE TAPE */}
@@ -74,10 +74,10 @@ const HomePage = async() => {
           <h2>Kreator koji najbolje odgovara vašim potrebama</h2>
           <p>
             Stručnim pristupom i modelom poslovanja nastojimo vezu između
-            klijenta i kreatora pretvoriti u vezu klijenta i ambasadora te je
+            klijenta i Kreatora pretvoriti u vezu klijenta i ambasadora te je
             time činimo osobnijom, prirodnijom i iskrenijom!
           </p>
-          <Link href="/usluge">Usluge</Link>
+          <Link href="/usluge">Saznaj više</Link>
         </div>
         <div className="image">
           <Image
@@ -94,10 +94,10 @@ const HomePage = async() => {
         <div className="image"></div>
         <div className="text">
           <h1>
-            Mood Media <br />& Kino Film
+            #KinoMood
           </h1>
           <h2>Gledanje premijere filma i druženju s influencerima!</h2>
-          <Link href="/">Prijave</Link>
+          <Link href="/">SVE VIJESTI IZ SVIJETA FILMA</Link>
         </div>
       </section>
 
@@ -106,7 +106,7 @@ const HomePage = async() => {
         <div className="text">
           <h1>Novosti</h1>
           <h2>
-            Novosti iz svijeta <br /> naših kreatora
+            Novosti iz svijeta <br /> naših Kreatora
           </h2>
           <Link href="/novosti">Novosti</Link>
         </div>
@@ -122,7 +122,7 @@ const HomePage = async() => {
           <h1>Kreatori</h1>
           <h2>Kreator koji savršeno odgovara vašoj publici</h2>
           <p>
-            Uvijek vas povezujemo s video kreatorom koji savršeno odgovara vašem
+            Uvijek vas povezujemo s video Kreatorom koji savršeno odgovara vašem
             brendu, proizvodu, kampanji i publici kojoj se želite obratiti.
           </p>
           <Link href="/kreatori">Pogledaj sve</Link>
