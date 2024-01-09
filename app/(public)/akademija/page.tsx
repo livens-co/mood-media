@@ -5,6 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import AcademyCreators from "@/components/AcademyCreators";
 import { Article } from "@/types";
 import getArticlesByCategory from "@/sanity/actions/get-articles-by-category";
+import banner from '../../../public/assets/GenZBanner.jpeg'
 
 export const revalidate = 1;
 
@@ -18,7 +19,7 @@ const AcademyPage = async () => {
   return (
     <>
       <Image
-        src="/assets/akademijaBanner.png"
+        src={banner}
         alt="Gen Z Akademija"
         width={1200}
         height={400}
