@@ -136,3 +136,19 @@
     }
   }
 }
+
+@media screen and (max-width: 700px){
+.aboutUsPage{
+  gap: 4rem;
+
+  .aboutUs{
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      text-align: center;
+      padding: 0;
+    }
+  }
+}
+}

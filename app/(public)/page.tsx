@@ -28,20 +28,7 @@ const HomePage = async() => {
         </div> */}
       </div>
       {/* ABOUT SECTION */}
-      {/* BRANDS INFINITE TAPE */}
-      {/* <div className="clients">
-        <h3>Klijenti</h3>
-        <div className="clientsTape">
-          <div className="animatedTape">
-            brand brand brand brand brand brand brand brand brand brand brand
-            brand
-          </div>
-          <div aria-hidden="true" className="animatedTape">
-            brand brand brand brand brand brand brand brand brand brand brand
-            brand
-          </div>
-        </div>
-      </div> */}
+      
 
       {/* GEN Z AKADEMIJA */}
       <section>
@@ -62,7 +49,7 @@ const HomePage = async() => {
             druženje s Influencerima kako sigurno surfati Internetom i gledati
             sadržaj na svojoj omiljenoj društvenoj mreži.
           </p>
-          {/* <h3>Klikni na link i saznaj više.</h3> */}
+          
           <Link href="/akademija">Saznaj više</Link>
         </div>
       </section>
@@ -81,7 +68,7 @@ const HomePage = async() => {
         </div>
         <div className="image">
           <Image
-            src="/test/povezujemoImg.webp"
+            src="/assets/povezujemoImg.png"
             width={600}
             height={600}
             alt="Kreatori"
@@ -90,14 +77,14 @@ const HomePage = async() => {
       </section>
 
       {/* KINO FILM */}
-      <section>
-        <div className="image"></div>
+      <section className="movieSection">
+        <div className="movieBanners">carousel</div>
         <div className="text">
           <h1>
             #KinoMood
           </h1>
           <h2>Gledanje premijere filma i druženju s influencerima!</h2>
-          <Link href="/">SVE VIJESTI IZ SVIJETA FILMA</Link>
+          <Link href="//https://www.kinofilm.hr/">SVE VIJESTI IZ SVIJETA FILMA</Link>
         </div>
       </section>
 
@@ -117,7 +104,7 @@ const HomePage = async() => {
       </div>
 
       {/* KREATORI */}
-      <section>
+      <section className="creatorsSection">
         <div className="text">
           <h1>Kreatori</h1>
           <h2>Kreator koji savršeno odgovara vašoj publici</h2>

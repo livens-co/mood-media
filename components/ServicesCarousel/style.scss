@@ -130,3 +130,14 @@
     color: var(--secondary);
   }
 }
+
+@media screen and (max-width: 500px) {
+  .swiper {
+    width: 100%;
+    overflow: hidden !important;
+  }
+
+  .swiper-slide{
+    width: 80% !important;
+  }
+}

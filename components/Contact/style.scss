@@ -9,7 +9,26 @@
     width: 100%;
     max-width: 50rem;
     height: 15rem;
-    background-color: var(--secondary);
+    // background-color: var(--secondary);
+    background: rgb(221, 148, 216);
+  background: -moz-linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgb(151, 159, 230) 81%
+  );
+  background: -webkit-linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgba(151, 159, 230, 1) 81%
+  );
+  background: linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgba(151, 159, 230, 1) 81%
+  );
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
