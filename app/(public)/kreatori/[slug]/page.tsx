@@ -35,33 +35,40 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
         <div className="text">
           <h1>{creator?.name}</h1>
           <ul className="socials">
-            <li>
-              <FaTiktok />
-              <a href={`${creator?.linkTT}`} target="_blank">
-                {creator?.followersTT} followers
-              </a>
-            </li>
-            <li>
-              <FaInstagram />
-              <a href={`${creator?.linkIG}`} target="_blank">
-                {creator?.followersIG} followers
-              </a>
-            </li>
-            <li>
-              <FaYoutube />
-              {/* <a
-                href={`${creator?.linkYT}`}
-                target="_blank"
-              >
-                {creator?.followersYT} subscribers
-              </a> */}
-            </li>
-            <li>
-              <FaFacebookF />
-              {/* <a href={`${creator?.linkFB}`} target="_blank">
-              {creator?.followersFB} followers
-              </a> */}
-            </li>
+            {creator?.linkTT === null ? null : (
+              <li>
+                <FaTiktok />
+                <a href={`${creator?.linkTT}`} target="_blank">
+                  {creator?.followersTT} followers
+                </a>
+              </li>
+            )}
+            {creator?.linkIG === null ? null : (
+              <li>
+                <FaInstagram />
+                <a href={`${creator?.linkIG}`} target="_blank">
+                  {creator?.followersIG} followers
+                </a>
+              </li>
+            )}
+
+            {creator?.linkYT === null ? null : (
+              <li>
+                <FaYoutube />
+                <a href={`${creator?.linkYT}`} target="_blank">
+                  {creator?.followersYT} subscribers
+                </a>
+              </li>
+            )}
+
+            {creator.linkFB === null ? null : (
+              <li>
+                <FaFacebookF />
+                <a href={`${creator?.linkFB}`} target="_blank">
+                  {creator?.followersFB} followers
+                </a>
+              </li>
+            )}
           </ul>
         </div>
         <div className="profileImage">
