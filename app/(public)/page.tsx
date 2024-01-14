@@ -6,7 +6,7 @@ import ArticleCard from "@/components/ArticleCard";
 import getArticles from "@/sanity/actions/get-articles";
 import { Article } from "@/types";
 
-const HomePage = async() => {
+const HomePage = async () => {
   const articles: Article[] = await getArticles();
 
   return (
@@ -28,7 +28,6 @@ const HomePage = async() => {
         </div> */}
       </div>
       {/* ABOUT SECTION */}
-      
 
       {/* GEN Z AKADEMIJA */}
       <section>
@@ -49,7 +48,7 @@ const HomePage = async() => {
             druženje s Influencerima kako sigurno surfati Internetom i gledati
             sadržaj na svojoj omiljenoj društvenoj mreži.
           </p>
-          
+
           <Link href="/akademija">Saznaj više</Link>
         </div>
       </section>
@@ -78,13 +77,20 @@ const HomePage = async() => {
 
       {/* KINO FILM */}
       <section className="movieSection">
-        <div className="movieBanners">carousel</div>
+        <div className="movieBanners">
+          <Image
+            src="/assets/migration.jpg"
+            alt="Migration"
+            height={400}
+            width={600}
+          />
+        </div>
         <div className="text">
-          <h1>
-            #KinoMood
-          </h1>
+          <h1>#KinoMood</h1>
           <h2>Gledanje premijere filma i druženju s influencerima!</h2>
-          <Link href="//https://www.kinofilm.hr/">SVE VIJESTI IZ SVIJETA FILMA</Link>
+          <Link href="//https://www.kinofilm.hr/">
+            SVE VIJESTI IZ SVIJETA FILMA
+          </Link>
         </div>
       </section>
 
@@ -97,10 +103,9 @@ const HomePage = async() => {
           </h2>
           <Link href="/novosti">Novosti</Link>
         </div>
-        {articles.map(article=>(
-          <ArticleCard data={article} key={article.slug} />
-        )).slice(0, 3)}
-        
+        {articles
+          .map((article) => <ArticleCard data={article} key={article.slug} />)
+          .slice(0, 3)}
       </div>
 
       {/* KREATORI */}
@@ -116,17 +121,19 @@ const HomePage = async() => {
         </div>
         <div className="creatorCarousel">
           <Image
-            src="https://cdn.sanity.io/images/qn8g0u6e/production/7f021c5ae4887467e7f280a65340346d7cbac3a8-1026x1026.png"
+            src="https://cdn.sanity.io/images/qn8g0u6e/production/c618956b8a91131f23af6659a601d97ddb45a016-1200x1200.png"
             width={500}
             height={500}
-            alt="Frame"
+            alt="Kreatori"
             className="frame"
           />
         </div>
       </section>
 
       {/* KONTAKT */}
-      <Contact />
+      <section>
+        <Contact />
+      </section>
     </div>
   );
 };

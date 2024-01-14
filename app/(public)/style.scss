@@ -166,8 +166,14 @@
 
     .movieBanners {
       min-height: 15rem;
-      width: 80%;
-      background-color: aliceblue;
+      // padding: 0 1rem;
+
+      img {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: var(--radius);
+      }
     }
 
     .creatorCarousel {
@@ -287,10 +293,9 @@
         align-self: flex-start;
       }
 
-      .movieBanners{
+      .movieBanners {
         width: 100%;
       }
-      
     }
 
     .newsSection {
@@ -334,10 +339,19 @@
       flex-direction: column !important;
     }
 
-    .newsSection{
-      .text{
+    .newsSection {
+      .text {
         align-self: flex-start;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .homePage {
+    padding-bottom: 2rem;
+    section {
+      padding: 2rem 1rem;
     }
   }
 }

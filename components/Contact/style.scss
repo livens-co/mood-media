@@ -73,3 +73,22 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .contact{
+    padding: 0;
+
+    .contactContainer{
+      max-width: unset;
+
+      h1 {
+        width: 90%;
+        font-size: 1.5rem;
+      }
+
+      img {
+        transform: scale(0.8) !important;
+      }
+    }
+  }
+}
