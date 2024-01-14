@@ -40,7 +40,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         <FaArrowLeftLong />
       </button>
 
-      {Array.from({ length: totalPages }, (_, index) => (
+      {/* {Array.from({ length: totalPages }, (_, index) => (
         <button
           key={index + 1}
           onClick={() => goToPage(index + 1)}
@@ -48,7 +48,8 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         >
           {index + 1}
         </button>
-      ))}
+      ))} */}
+       {`${page} / ${totalPages}`}
 
       <button
         disabled={!hasNextPage}

@@ -35,8 +35,8 @@
     );
 
     .title {
-      width: 70%;
-      max-width: 700px;
+      width: 90%;
+      max-width: 50rem;
       font-weight: 700;
       font-size: 1.75rem;
       text-transform: uppercase;
@@ -70,7 +70,7 @@
       .author {
         display: flex;
         flex-direction: column;
-        gap: 0.25rem;
+        // gap: 0.25rem;
         color: var(--white);
 
         h2 {
@@ -92,6 +92,9 @@
         height: 100%;
         object-fit: cover;
         border-radius: 0.5rem;
+        box-shadow: 6px 6px 23px -1px rgba(102, 102, 102, 0.7);
+        -webkit-box-shadow: 6px 6px 23px -1px rgba(102, 102, 102, 0.7);
+        -moz-box-shadow: 6px 6px 23px -1px rgba(102, 102, 102, 0.7);
       }
     }
   }
@@ -105,9 +108,31 @@
     margin-top: 18rem;
     padding: 4rem 0;
 
-    p{
+    p {
       font-weight: 300;
       line-height: 1.6;
+    }
+
+    img {
+      padding: 1rem 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-shadow: 1px 1px 2px rgba(28, 17, 66, 0.4);
+      margin: 0.75rem 0;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-shadow: 1px 1px 2px rgba(28, 17, 66, 0.4);
+      margin: 0.75rem 0;
+      padding-left: 1rem;
+      border-left: 2px solid var(--secondary);
     }
   }
 
@@ -150,6 +175,89 @@
         gap: 3rem;
         flex-wrap: wrap;
         justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .articlePage {
+    .header {
+      .featuredImage {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 25/14;
+      }
+    }
+
+    article {
+      margin-top: 16rem;
+      padding: 4rem 0;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .articlePage {
+    .header {
+      height: 32rem;
+
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+
+    article {
+      margin-top: 14rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .articlePage {
+    .header {
+      height: 30rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .articlePage {
+    .header {
+      height: 26rem;
+
+      .title {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+      .featuredImage {
+        position: relative;
+        bottom: 1rem;
+        left: unset;
+        transform: unset;
+      }
+
+      .details {
+        .avatar {
+          height: 3rem;
+          width: 3rem;
+        }
+
+        .author {
+          h2 {
+            font-weight: 500;
+            // font-size: 1.25rem;
+          }
+        }
+      }
+    }
+
+    article {
+      margin-top: 8rem;
+
+      img {
+        padding: 0;
       }
     }
   }

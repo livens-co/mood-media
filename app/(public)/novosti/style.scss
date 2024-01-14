@@ -10,7 +10,7 @@
   .newsGrid {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 4rem 2rem;
     justify-items: center;
     align-content: center;
@@ -40,7 +40,6 @@
     }
   }
 
-
   .pagination {
     display: flex;
     gap: 1rem;
@@ -69,12 +68,49 @@
       align-items: center;
       justify-content: center;
       border: 0.1em solid var(--secondary);
-      
     }
 
     .activePageBtn {
       background-color: var(--secondary);
       color: var(--white);
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .newsPage {
+    .newsGrid {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .newsPage {
+    .newsGrid {
+      grid-template-columns: 1fr;
+
+      .title {
+        text-align: center;
+        
+        margin-bottom: 1rem;
+
+        h2{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .newsPage {
+    padding: 2rem 1rem;
+
+    .title{
+      padding: 0;
     }
   }
 }
