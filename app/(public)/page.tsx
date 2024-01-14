@@ -44,9 +44,25 @@ const HomePage = async () => {
           <h1>Gen Z Akademija</h1>
           <h2 className="academy">Be smart. Be safe. Be cool.</h2>
           <p>
-            Prijavi svoju školu za sudjelovanje na akademiji i saznaj kroz
-            druženje s Influencerima kako sigurno surfati Internetom i gledati
-            sadržaj na svojoj omiljenoj društvenoj mreži.
+            Uvijek se trudimo pratiti, ali i stvarati trendove, pa smo tako
+            pokrenuli prvu Gen Z Akademiju na ovim prostorima u suradnji s
+            partnerima projekta, A1 Hrvatska te Centrom za sigurniji internet.
+            Mood Media kreatori u sklopu ovog on-going projekta posjećivat će
+            nekolicinu škola u Hrvatskoj te na zabavan, ali i edukativan način
+            educirati generaciju Z na koji način odgovorni influenceri
+            &quot;influensaju&quot;. Cilj nam je ovim projektom djeci i mladima
+            približiti posao video kreatora, ali i odgovoriti na neka važna
+            pitanja iz online svijeta. Što uopće znači riječ
+            &quot;influencer&quot;, kako prepoznati i prijaviti neprimjeren
+            sadržaj online, na koji način influenceri promoviraju razne brendove
+            te kako pomažu stvoriti mišljenje o određenom brendu, ali i koliko
+            pažljivo svojim primjerom utječu na svoje pratitelje? Na sva ova i
+            mnoga druga važna pitanja odgovarat će ne samo video kreatori, već i
+            stručnjaci iz svijeta digitalnih medija. Cilj nam je ovim projektom
+            &quot;dotaknuti&quot; se, osim navedenih, i raznih drugih tema iz
+            svijeta digitalnih medija, marketinga, promocije te još mnogo toga,
+            a o svim ćemo vas temama kojim ćemo se baviti u sklopu ovog projekta
+            redovito izvještavati na našem Mood Media webu!
           </p>
 
           <Link href="/akademija">Saznaj više</Link>
@@ -88,6 +104,26 @@ const HomePage = async () => {
         <div className="text">
           <h1>#KinoMood</h1>
           <h2>Gledanje premijere filma i druženju s influencerima!</h2>
+          <p>
+            Jedna itekako uspješna sezona #KinoMood projekta već je iza nas. U
+            suradnji s Kino Filmom pokrenuli smo projekt u kojem nam je cilj bio
+            naše pratitelje odvesti u kino, ali ne kako bi samo pogledali
+            najnovije naslove, već se usput i podružili s našim kreatorima. Tako
+            smo u protekloj sezoni bili na premijerama nekih od najvećih
+            filmskih hitova, kao što su Oppenheimer, Renfield, Brzi i žestoki
+            10, Egzorcist... A u svim smo tim naslovima uživali s više od 1600
+            naših vjernih pratitelja. Godinu #KinoMooda završili smo, pak, na
+            najljepši mogući način, posebnim odlaskom u kino koje nam je svima
+            napunilo srca i pokazalo nam koliko je malo potrebno da nekome
+            izmamimo osmijeh na lice. Na premijeru posljednjeg ovogodišnjeg
+            filmskog hita &quot;Patke selice&quot;, pozvali smo najposebnije
+            goste. U kinu smo se tada družili s više od 200 klinaca i klinceza
+            iz domova za nezbrinutu djecu, udruga koje brinu o djeci iz obitelji
+            slabijeg imovinskog stanja i sigurnih kuća. S istim žarom ovaj
+            projekt nastavljamo i u ovoj godini i veselimo se sa svima vama
+            pogledati još mnogo nezaboravnih filmskih naslova te vas što više
+            upoznati, razvedriti i dopustiti da vi razvedrite i razveselite nas!
+          </p>
           <Link href="//https://www.kinofilm.hr/">
             SVE VIJESTI IZ SVIJETA FILMA
           </Link>

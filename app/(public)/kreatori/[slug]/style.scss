@@ -12,9 +12,10 @@
     display: flex;
     padding: 4rem 0;
     height: fit-content;
+    justify-content: space-between;
 
     .text {
-      flex: 4;
+      // flex: 4;
       display: flex;
       flex-direction: column;
       gap: 3rem;
@@ -22,6 +23,7 @@
 
       h1 {
         font-size: 2.5rem;
+        line-height: 1.2;
         font-weight: 500;
         color: var(--primary);
         text-transform: uppercase;
@@ -73,17 +75,19 @@
       }
     }
 
-    .profileImage{
-      flex: 3;
+    .profileImage {
+      // flex: unset;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-      
+      width: 20rem;
+      height: 20rem;
+      margin-right: 4rem;
 
       img {
-        height: 15rem;
-        width: 15rem;
+        height: 100%;
+        width: 100%;
         object-fit: contain;
       }
     }
@@ -177,6 +181,46 @@
 
       gap: 4rem;
       padding: 0 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .creatorPage {
+    .header {
+      .profileImage {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .creatorPage {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+
+      .profileImage {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .creatorPage {
+    gap: 2rem;
+    padding: 0 1rem;
+
+    .header {
+      padding: 2rem 0;
+
+      .text {
+        gap: 2rem;
+        align-self: flex-start;
+        margin-left: 1rem;
+      }
     }
   }
 }
