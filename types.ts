@@ -44,3 +44,9 @@ export interface Article {
   categories: Category[];
   creators: Creator[];
 }
+
+export interface Movie {
+  title: string;
+  banner: string;
+  link: string;
+}

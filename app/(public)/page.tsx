@@ -4,11 +4,13 @@ import Image from "next/image";
 import Contact from "@/components/Contact";
 import ArticleCard from "@/components/ArticleCard";
 import getArticles from "@/sanity/actions/get-articles";
-import { Article } from "@/types";
+import { Article, Movie } from "@/types";
 import MoreButton from "@/components/MoreButton";
+import getMovies from "@/sanity/actions/get-movies";
 
 const HomePage = async () => {
   const articles: Article[] = await getArticles();
+  const movies: Movie[] = await getMovies();
 
   return (
     <div className="homePage">
@@ -95,12 +97,18 @@ const HomePage = async () => {
       {/* KINO FILM */}
       <section className="movieSection">
         <div className="movieBanners">
-          <Image
-            src="/assets/migration.jpg"
-            alt="Migration"
-            height={400}
-            width={600}
-          />
+          {movies
+            .map((movie) => (
+              <Link href={movie.link} key={movie.link} target="_blank">
+                <Image
+                  src={movie.banner}
+                  alt={movie.title}
+                  height={400}
+                  width={600}
+                />
+              </Link>
+            ))
+            .slice(0, 1)}
         </div>
         <div className="text">
           <h1>#KinoMood</h1>
