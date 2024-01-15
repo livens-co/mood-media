@@ -1,13 +1,17 @@
 import * as React from 'react';
 
 interface ContactTemplateProps {
-  firstName: string;
+  name: string;
+  email: string;
+  message: string;
 }
 
 export const ContactTemplate: React.FC<Readonly<ContactTemplateProps>> = ({
-  firstName,
+  name,
+  email,
+  message,
 }) => (
   <div>
-    <h1>Welcome, {firstName}!</h1>
+    <p>Welcome, {name}, {email}, {message}.</p>
   </div>
 );
