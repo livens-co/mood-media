@@ -136,13 +136,23 @@
       }
 
       a {
-        background-color: var(--secondary);
-        color: var(--white);
-        padding: 0.5rem 1.75rem;
-        width: fit-content;
-        border-radius: var(--radius);
-        font-size: 0.9rem;
         margin-left: 1.5rem;
+        font-size: 0.9rem;
+        width: fit-content;
+        position: relative;
+        color: var(--white);
+        text-decoration: none;
+        background-color: var(--secondary);
+        padding: 0.5rem 1.75rem;
+        border-radius: var(--radius);
+        border: 1px solid var(--secondary);
+        transition: all 300ms ease;
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--secondary);
+        }
+
       }
     }
 
@@ -252,13 +262,23 @@
       }
 
       a {
-        background-color: var(--secondary);
-        color: var(--white);
-        padding: 0.5rem 1.75rem;
-        width: fit-content;
-        border-radius: var(--radius);
-        font-size: 0.9rem;
         margin-left: 1.5rem;
+        font-size: 0.9rem;
+        width: fit-content;
+        position: relative;
+        color: var(--white);
+        text-decoration: none;
+        background-color: var(--secondary);
+        padding: 0.5rem 1.75rem;
+        border-radius: var(--radius);
+        border: 1px solid var(--secondary);
+        transition: all 300ms ease;
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--secondary);
+        }
+
       }
     }
   }
