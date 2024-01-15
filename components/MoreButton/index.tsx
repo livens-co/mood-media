@@ -14,7 +14,7 @@ const MoreButton = () => {
 
   return (
     <>
-      <button onClick={() => setOpen(!open)}>Više...</button>
+      <button onClick={() => setOpen(!open)} style={{marginLeft: '1.5rem', textDecoration: 'underline', fontWeight: '300'}}>Više...</button>
       {open && <MoreModal modalOpen={open} handleClose={closeModal} />}
     </>
   );
