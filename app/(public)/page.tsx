@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import ArticleCard from "@/components/ArticleCard";
 import getArticles from "@/sanity/actions/get-articles";
 import { Article } from "@/types";
+import MoreButton from "@/components/MoreButton";
 
 const HomePage = async () => {
   const articles: Article[] = await getArticles();
@@ -108,7 +109,9 @@ const HomePage = async () => {
             Jedna itekako uspješna sezona #KinoMood projekta već je iza nas. U
             suradnji s Kino Filmom pokrenuli smo projekt u kojem nam je cilj bio
             naše pratitelje odvesti u kino, ali ne kako bi samo pogledali
-            najnovije naslove, već se usput i podružili s našim kreatorima. Tako
+            najnovije naslove, već se usput i podružili s našim kreatorima.
+          </p>
+          {/* <p>Tako
             smo u protekloj sezoni bili na premijerama nekih od najvećih
             filmskih hitova, kao što su Oppenheimer, Renfield, Brzi i žestoki
             10, Egzorcist... A u svim smo tim naslovima uživali s više od 1600
@@ -122,8 +125,8 @@ const HomePage = async () => {
             slabijeg imovinskog stanja i sigurnih kuća. S istim žarom ovaj
             projekt nastavljamo i u ovoj godini i veselimo se sa svima vama
             pogledati još mnogo nezaboravnih filmskih naslova te vas što više
-            upoznati, razvedriti i dopustiti da vi razvedrite i razveselite nas!
-          </p>
+            upoznati, razvedriti i dopustiti da vi razvedrite i razveselite nas!</p> */}
+          <MoreButton />
           <Link href="//https://www.kinofilm.hr/">
             SVE VIJESTI IZ SVIJETA FILMA
           </Link>

@@ -1,0 +1,52 @@
+.modalOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfdfd85;
+  height: 100vh;
+  width: 100%;
+  z-index: 10000;
+
+  .moreModal{
+    width: 50rem;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem 4rem;
+    background: rgb(221, 148, 216);
+    background: -moz-linear-gradient(
+      17deg,
+      rgba(221, 148, 216, 1) 22%,
+      rgba(163, 150, 224, 1) 62%,
+      rgb(151, 159, 230) 81%
+    );
+    background: -webkit-linear-gradient(
+      17deg,
+      rgba(221, 148, 216, 1) 22%,
+      rgba(163, 150, 224, 1) 62%,
+      rgba(151, 159, 230, 1) 81%
+    );
+    background: linear-gradient(
+      17deg,
+      rgba(221, 148, 216, 1) 22%,
+      rgba(163, 150, 224, 1) 62%,
+      rgba(151, 159, 230, 1) 81%
+    );
+    -webkit-box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
+    -moz-box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
+    box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
+
+    flex-direction: column;
+    z-index: 10001;
+    color: white;
+    border-radius: var(--radius);
+
+    button{
+      align-self: flex-end;
+      margin-bottom: 2rem;
+    }
+  }
+}
