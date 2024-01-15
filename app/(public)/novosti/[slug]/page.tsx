@@ -34,7 +34,14 @@ const ArticlePage: React.FC<ArticlePageProps> = async ({
         <div className="title">{article?.title}</div>
         <div className="category">{article?.categories?.[0]?.name}</div>
         <div className="details">
-          <div className="avatar"></div>
+          <div className="avatar">
+            <Image
+              src={article?.authors?.[0]?.avatar}
+              alt={article?.authors?.[0]?.name}
+              height={100}
+              width={100}
+            />
+          </div>
           <div className="author">
             <h2>{article?.authors?.[0]?.name}</h2>
             <h3>{article?.date}</h3>
