@@ -34,8 +34,27 @@
       max-width: 800px;
       // max-width: 50rem;
       // height: 21.25rem;
-      aspect-ratio: 16/9;
-      background-color: var(--secondary);
+      // aspect-ratio: 16/9;
+      height: 15rem;
+      background: rgb(221, 148, 216);
+      background: -moz-linear-gradient(
+        17deg,
+        rgba(221, 148, 216, 1) 22%,
+        rgba(163, 150, 224, 1) 62%,
+        rgb(151, 159, 230) 81%
+      );
+      background: -webkit-linear-gradient(
+        17deg,
+        rgba(221, 148, 216, 1) 22%,
+        rgba(163, 150, 224, 1) 62%,
+        rgba(151, 159, 230, 1) 81%
+      );
+      background: linear-gradient(
+        17deg,
+        rgba(221, 148, 216, 1) 22%,
+        rgba(163, 150, 224, 1) 62%,
+        rgba(151, 159, 230, 1) 81%
+      );
       border-radius: 1rem;
       display: flex;
       flex-direction: column;
@@ -109,7 +128,7 @@
         // flex: auto;
         display: flex;
         flex-direction: column;
-        // justify-content: space-around;
+        align-items: flex-start;
         padding: 2rem 0;
         gap: 0.5rem;
 
@@ -130,7 +149,7 @@
         p {
           // font-size: 1.2rem;
           font-weight: 300;
-
+          text-align: start;
           line-height: 1.2;
         }
 
@@ -175,6 +194,14 @@
 
       &:nth-child(2n) {
         flex-direction: row-reverse;
+
+        .content {
+          align-items: flex-end;
+
+          p {
+            text-align: end;
+          }
+        }
       }
     }
   }
@@ -182,7 +209,26 @@
 
 .joinOurTeam {
   width: 100%;
-  background-color: var(--secondary);
+  // background-color: var(--secondary);
+  background: rgb(221, 148, 216);
+  background: -moz-linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgb(151, 159, 230) 81%
+  );
+  background: -webkit-linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgba(151, 159, 230, 1) 81%
+  );
+  background: linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgba(151, 159, 230, 1) 81%
+  );
   color: var(--white);
   display: flex;
   justify-content: center;
@@ -255,8 +301,8 @@
 
       .text {
         max-width: unset;
-        
-        p{
+
+        p {
           width: 100%;
           line-height: 1.4;
         }

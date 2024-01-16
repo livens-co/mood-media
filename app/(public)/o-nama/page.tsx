@@ -31,7 +31,7 @@ const AboutUs = () => {
 
       {/* NAŠA IMENA  */}
       <div className="aboutUs">
-        <h1>Naša imena</h1>
+        <h1>Video kreatori</h1>
         <p>
           Naš tim trenutno se sastoji od brojnih vrlo uspješnih i popularnih
           imena u svijetu video kreatora. Mirta Miler (Mimiermakeup), Marco
@@ -61,7 +61,7 @@ const AboutUs = () => {
 
       {/* NAŠI KLIJENTI */}
       <div className="aboutUs">
-        <h1>Naši klijenti</h1>
+        <h1>Kampanje</h1>
         <p>
           U protekloj smo godini i sezoni realizirali više od 600 kampanja i
           skupili više od 96 milijuna pregleda na svim našim platformama i

@@ -26,15 +26,15 @@ const PaginationControls: FC<PaginationControlsProps> = ({
 
   const totalPages = Math.ceil(artcileNum / per_page);
 
-  const goToPage = (newPage: number) => {
-    router.push(`/novosti?page=${newPage}`);
-  };
+  // const goToPage = (newPage: number) => {
+  //   router.push(`/blog?page=${newPage}`);
+  // };
 
   return (
     <>
       <button
         disabled={!hasPrevPage}
-        onClick={() => router.push(`/novosti?page=${Number(page) - 1}`)}
+        onClick={() => router.push(`/blog?page=${Number(page) - 1}`)}
         className="navibationBtn"
       >
         <FaArrowLeftLong />
@@ -54,7 +54,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
       <button
         disabled={!hasNextPage}
         onClick={() => {
-          router.push(`/novosti?page=${Number(page) + 1}`);
+          router.push(`/blog?page=${Number(page) + 1}`);
         }}
         className="navibationBtn"
       >

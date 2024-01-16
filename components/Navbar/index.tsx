@@ -12,21 +12,20 @@ const navLinks = [
     path: "/",
   },
   {
-    name: "O nama",
-    path: "/o-nama",
+    name: "Kreatori",
+    path: "/kreatori",
+  },
+  {
+    name: "Blog",
+    path: "/blog",
   },
   {
     name: "Usluge",
     path: "/usluge",
   },
-
   {
-    name: "Kreatori",
-    path: "/kreatori",
-  },
-  {
-    name: "Novosti",
-    path: "/novosti",
+    name: "O nama",
+    path: "/o-nama",
   },
   {
     name: "Kontakt",
@@ -84,7 +83,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-      <Menu openMenu={openMenu} closeMenu={closeMenu} navLinks={navLinks}/>
+      <Menu openMenu={openMenu} closeMenu={closeMenu} navLinks={navLinks} />
     </>
   );
 };

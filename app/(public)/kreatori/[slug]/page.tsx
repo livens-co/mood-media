@@ -90,7 +90,7 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
         {/* NOVOSTI */}
       </div>
       <div className="featuredContent">
-        <h1>Novosti</h1>
+        <h1>Zanimljivosti iz svijeta kreatora</h1>
         <div className="articles">
           {articles
             .map((article) => <ArticleCard data={article} key={article.slug} />)

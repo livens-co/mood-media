@@ -61,7 +61,7 @@ const ArticlePage: React.FC<ArticlePageProps> = async ({
         <PortableText value={article?.body} components={RichTextComponents} />
       </article>
       <div className="articleFooter">
-        <Link href="/novosti" className="articlesBtn">
+        <Link href="/blog" className="articlesBtn">
           Više članaka
         </Link>
         <div className="featuredArticles">

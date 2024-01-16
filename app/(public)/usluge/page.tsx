@@ -1,6 +1,7 @@
 import ServicesCarousel from "@/components/ServicesCarousel";
 import "./style.scss";
 import Contact from "@/components/Contact";
+import Image from "next/image";
 
 const ServicesPage = () => {
   return (
@@ -10,11 +11,23 @@ const ServicesPage = () => {
           Naši kreatori, vaša publika, <br />
           vrhunski rezultati
         </h1>
+        <Image
+          src="/assets/contactLines.svg"
+          width={300}
+          height={300}
+          alt="Lines"
+        />
+
+        <Image
+          src="/assets/contactLines.svg"
+          width={300}
+          height={300}
+          alt="Lines"
+        />
       </div>
 
       {/* TEXT */}
       <div className="text">
-        <h1>Naše usluge</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
           totam, dolor culpa a commodi ipsam voluptatem suscipit possimus

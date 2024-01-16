@@ -9,7 +9,7 @@ interface ArticleCardProps {
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ data }) => {
   return (
-    <Link href={`/novosti/${data.slug}`} className="article">
+    <Link href={`/blog/${data.slug}`} className="article">
       <div className="border" />
       <div className="articleImage">
         <Image priority src={data.thumbnail} width={600} height={600} alt={data.title} />

@@ -16,8 +16,8 @@ const CreatorsPage = async () => {
         <div className="getToKnow">
           <div className="getToKnowContainer">
             <h1>
-              Upoznajte <br />
-              kreatore
+              Video <br />
+              kreatori
             </h1>
 
             <Image
@@ -74,7 +74,7 @@ const CreatorsPage = async () => {
         </div>
       </div>
 
-      {/* <div className="joinOurTeam">
+      <div className="joinOurTeam">
         <div className="innerContainer">
           <h1>Pridruži se našem timu</h1>
           <p>
@@ -92,7 +92,7 @@ const CreatorsPage = async () => {
           </p>
           <Link href="/">Pridruži nam se</Link>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

@@ -36,7 +36,7 @@ const HomePage = async () => {
       <section>
         <div className="image">
           <Image
-            src="/test/akademija.jpeg"
+            src="/assets/GenZBanner.jpeg"
             width={600}
             height={600}
             alt="Gen Z Akademija"
@@ -112,7 +112,7 @@ const HomePage = async () => {
         </div>
         <div className="text">
           <h1>#KinoMood</h1>
-          <h2>Gledanje premijere filma i druženju s influencerima!</h2>
+          <h2>Svi najbolji naslovi na jednom mjestu uz druženje s kreatorima</h2>
           <p>
             Jedna itekako uspješna sezona #KinoMood projekta već je iza nas. U
             suradnji s Kino Filmom pokrenuli smo projekt u kojem nam je cilj bio
@@ -144,11 +144,11 @@ const HomePage = async () => {
       {/* NOVOSTI */}
       <div className="newsSection">
         <div className="text">
-          <h1>Novosti</h1>
+          <h1>#blog</h1>
           <h2>
-            Novosti iz svijeta <br /> naših Kreatora
+            Novosti iz svijeta <br /> kreatora
           </h2>
-          <Link href="/novosti">Novosti</Link>
+          <Link href="/blog">Blog</Link>
         </div>
         {articles
           .map((article) => <ArticleCard data={article} key={article.slug} />)
