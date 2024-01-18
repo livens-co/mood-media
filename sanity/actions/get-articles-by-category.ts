@@ -25,7 +25,7 @@ export default async function getArticlesByCategory(
     return articles;
     
   } catch (error) {
-    console.error("Error fetching articles by creator:", error);
+    console.error("Error fetching articles by category:", error);
     // Handle the error or throw it if you want to propagate it
     throw error;
   }

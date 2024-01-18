@@ -13,7 +13,7 @@ const config = defineConfig({
 
   projectId,
   dataset,
-  apiVersion,
+  apiVersion, 
   useCdn: true,
 
   plugins: [deskTool(), visionTool()],

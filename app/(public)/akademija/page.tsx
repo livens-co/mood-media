@@ -5,7 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import AcademyCreators from "@/components/AcademyCreators";
 import { Article } from "@/types";
 import getArticlesByCategory from "@/sanity/actions/get-articles-by-category";
-import banner from '../../../public/assets/GenZBanner.jpeg'
+import banner from "../../../public/assets/GenZBanner.jpeg";
 
 export const revalidate = 1;
 
@@ -46,9 +46,11 @@ const AcademyPage = async () => {
         <div className="news">
           <h1>Novosti</h1>
           <div className="articles">
-            {/* <ArticleCard />
-            <ArticleCard />
-            <ArticleCard /> */}
+            {articles
+              .map((article) => (
+                <ArticleCard data={article} key={article.slug} />
+              ))
+              .slice(0, 3)}
           </div>
         </div>
 
