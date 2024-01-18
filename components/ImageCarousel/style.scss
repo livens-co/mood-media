@@ -1,0 +1,22 @@
+.mySwiper {
+  width: 550px;
+  height: 650px;
+}
+.swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  // z-index: 10;
+  padding: 1rem;
+  background-color: #efefef;
+  padding: 2rem;
+
+  img {
+    position: relative;
+    // width: auto;
+    // height: 100%;
+    object-fit: scale-down;
+  }
+}

@@ -81,9 +81,9 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      width: 20rem;
-      height: 20rem;
-      margin-right: 4rem;
+      width: 27rem;
+      height: 27rem;
+      margin-right: 2rem;
 
       img {
         height: 100%;
@@ -137,9 +137,9 @@
         rgba(163, 150, 224, 1) 62%,
         rgba(151, 159, 230, 1) 81%
       );
-      -webkit-box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
-      -moz-box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
-      box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
+      // -webkit-box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
+      // -moz-box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
+      // box-shadow: 4px 4px 22px 10px rgba(221, 148, 216, 0.6);
 
       h1 {
         font-size: 2rem;
@@ -172,6 +172,13 @@
       margin-left: 2rem;
       margin-bottom: 2rem;
       line-height: 1.2;
+    }
+
+    .featuredRow {
+      height: 600px;
+      width: 100%;
+      display: flex;
+      align-items: center;
     }
 
     .articles {

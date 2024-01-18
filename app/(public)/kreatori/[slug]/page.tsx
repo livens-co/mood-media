@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import FeaturedCarousel from "@/components/FeaturedCarousel";
 import getArticlesByCreator from "@/sanity/actions/get-articles-by-creator";
 import ArticleCard from "@/components/ArticleCard";
+import ImageCarousel from "@/components/ImageCarousel";
 
 export const revalidate = 1;
 
@@ -26,8 +27,6 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
   if (!creator) {
     return <div>Kreator nije pronađen</div>;
   }
-
-  // console.log(creator);
 
   return (
     <div className="creatorPage">
@@ -83,10 +82,12 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
       </div>
       <div className="featuredContent">
         <h1>Izdvojeno</h1>
-        <FeaturedCarousel data={creator} />
+        <div className="featuredRow">
+          <FeaturedCarousel data={creator} />
 
-        {/* SLIKE */}
-
+          {/* SLIKE */}
+          <ImageCarousel data={creator} />
+        </div>
         {/* NOVOSTI */}
       </div>
       <div className="featuredContent">

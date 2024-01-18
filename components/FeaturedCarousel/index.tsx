@@ -27,12 +27,12 @@ const FeaturedCarousel: React.FC<FeaturedCarouselProps> = ({ data }) => {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper"
+        
       >
         {data.videos.map((v: string) => (
           <SwiperSlide key={v}>
-            <div className="overlay" />
-            <TikTokEmbed url={v} width={300} />
+            {/* <div className="overlay" /> */}
+            <TikTokEmbed url={v} width={325} />
           </SwiperSlide>
         ))}
 

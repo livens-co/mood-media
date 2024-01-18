@@ -33,12 +33,15 @@ const AcademyPage = async () => {
           <div className="text">
         <h1>O Projektu</h1>
             <p>
-              U Mood Media, radimo na individualnom te se trudimo naglasiti tu
-              jedinstvenost. Imamo mrežu kreatora s internacionalnom publikom,
-              protežući se kroz različite niše - od ljepote i sporta do igara i
-              gastronomije - uvijek ćemo vas u trenutku &quot;spojiti&quot; s
-              video kreatorom koji savršeno odgovara baš vašem brendu,
-              proizvodu, kampanji i publici kojoj se želite obratiti.
+            Uvijek se trudimo pratiti, ali i stvarati trendove, pa smo tako
+            pokrenuli prvu Gen Z Akademiju na ovim prostorima u suradnji s
+            partnerima projekta, A1 Hrvatska te Centrom za sigurniji internet.
+            Mood Media kreatori u sklopu ovog on-going projekta posjećivat će
+            nekolicinu škola u Hrvatskoj te na zabavan, ali i edukativan način
+            educirati generaciju Z na koji način odgovorni influenceri
+            &apos;influensaju&apos;. Cilj nam je ovim projektom djeci i mladima
+            približiti posao video kreatora, ali i odgovoriti na neka važna
+            pitanja iz online svijeta.
             </p>
           </div>
           <div className="carousel">

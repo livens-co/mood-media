@@ -8,7 +8,7 @@ const AboutUs = () => {
     <div className="aboutUsPage">
       {/* HERO IMAGE */}
       <div className="heroImage">
-      <div className="overlay" />
+        <div className="overlay" />
         <Image src={oNama} height={329} width={1246} alt="Kreatori" />
       </div>
 
@@ -68,7 +68,7 @@ const AboutUs = () => {
           skupili više od 96 milijuna pregleda na svim našim platformama i
           platformama naših video kreatora. S mnogo novih lica u našem teamu, s
           mnogo ključnih projekata iza nas i važnih nagrada koje smo osvojili
-          &quot;zaključili&quot; smo 2023. godinu, a u 2024. ušli s još
+          &apos;zaključili&apos; smo 2023. godinu, a u 2024. ušli s još
           snažnijim idejama, još motiviraniji i još kreativniji nego dosad.
           <br />
           Osim mreže naših kreatora, važni su nam i klijenti bez kojih sve ove
