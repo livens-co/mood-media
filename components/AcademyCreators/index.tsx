@@ -7,21 +7,21 @@ import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
 
 const AcademyCreators = () => {
-  const boxRef = useRef<HTMLDivElement>(null);
-  const scrollDistanceFraction = 0.5;
+  // const boxRef = useRef<HTMLDivElement>(null);
+  // const scrollDistanceFraction = 0.5;
 
-  const handleScroll = (forward: boolean) => {
-    if (boxRef.current) {
-      const box = boxRef.current;
-      const width = box.clientWidth * scrollDistanceFraction;
-      box.scrollLeft += forward ? width : -width;
-    }
-  };
+  // const handleScroll = (forward: boolean) => {
+  //   if (boxRef.current) {
+  //     const box = boxRef.current;
+  //     const width = box.clientWidth * scrollDistanceFraction;
+  //     box.scrollLeft += forward ? width : -width;
+  //   }
+  // };
 
   return (
     <div className="academyCreators">
       <div className="academyCreatorsInner">
-        <div className="creatorsContainer" ref={boxRef}>
+        <div className="creatorsContainer" >
           <div className="creatorsContainerInner">
             <div className="creatorCard">
               <div className="image">

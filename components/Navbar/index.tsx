@@ -5,6 +5,7 @@ import "./style.scss";
 import Link from "next/link";
 import { useState } from "react";
 import Menu from "../Menu";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   {
@@ -34,6 +35,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const pathName = usePathname();
   const [openMenu, setOpenMenu] = useState(false);
 
   const closeMenu = () => {
@@ -65,7 +67,10 @@ const Navbar = () => {
             </Link>
             {navLinks
               .map((l) => (
-                <Link href={l.path} key={l.path} className="navLink">
+                <Link href={l.path} key={l.path} 
+                // className="navLink" 
+                className={`navLink ${pathName === l.path ? 'active' : ''}`}
+                >
                   {l.name}
                 </Link>
               ))

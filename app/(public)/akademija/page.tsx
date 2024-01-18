@@ -18,16 +18,20 @@ const AcademyPage = async () => {
 
   return (
     <>
-      <Image
-        src={banner}
-        alt="Gen Z Akademija"
-        width={1200}
-        height={400}
-        className="academyBanner"
-      />
+      <div className="academyBanner">
+        <div className="overlay" />
+        <Image
+          src={banner}
+          alt="Gen Z Akademija"
+          width={1200}
+          height={400}
+          // className="academyBanner"
+        />
+      </div>
       <div className="academyPage">
         <section>
           <div className="text">
+        <h1>O Projektu</h1>
             <p>
               U Mood Media, radimo na individualnom te se trudimo naglasiti tu
               jedinstvenost. Imamo mrežu kreatora s internacionalnom publikom,

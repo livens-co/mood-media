@@ -8,6 +8,7 @@ const AboutUs = () => {
     <div className="aboutUsPage">
       {/* HERO IMAGE */}
       <div className="heroImage">
+      <div className="overlay" />
         <Image src={oNama} height={329} width={1246} alt="Kreatori" />
       </div>
 

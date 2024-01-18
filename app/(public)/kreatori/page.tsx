@@ -90,7 +90,7 @@ const CreatorsPage = async () => {
             da nemaš distrakcije za vrijeme kada si u potpunosti predan/a
             kreativi i realizaciji sadržaja.
           </p>
-          <Link href="/">Pridruži nam se</Link>
+          <Link href="/prijave">Pridruži nam se</Link>
         </div>
       </div>
     </>

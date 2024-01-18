@@ -61,6 +61,17 @@
         }
       }
 
+      .active {
+        position: relative;
+        color: var(--black);
+        text-decoration: none;
+        width: fit-content;
+      
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+
       .line {
         width: 0.12em;
         height: 1.25rem;
@@ -90,6 +101,8 @@
     .menuButton {
       display: none;
     }
+
+    
   }
 }
 
