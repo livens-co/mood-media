@@ -57,6 +57,7 @@
 
       .creatorsContainerInner {
         display: flex;
+        // flex-direction: column;
         gap: 5rem;
 
         .creatorCard {
@@ -99,4 +100,18 @@
       }
     }
   }
+}
+
+
+@media screen and (max-width: 700px) {
+.academyCreators {
+.academyCreatorsInner {
+  .creatorsContainer {
+    .creatorsContainerInner {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}
+}
 }

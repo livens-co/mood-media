@@ -6,8 +6,12 @@ import AcademyCreators from "@/components/AcademyCreators";
 import { Article } from "@/types";
 import getArticlesByCategory from "@/sanity/actions/get-articles-by-category";
 import banner from "../../../public/assets/GenZBanner.jpeg";
+import ViewMore from "@/components/ViewMore";
 
 export const revalidate = 1;
+
+const genZAcademy =
+  "Što uopće znači riječ 'influencer', kako prepoznati i prijaviti neprimjeren sadržaj online, na koji način influenceri promoviraju razne brendove te kako pomažu stvoriti mišljenje o određenom brendu, ali i koliko pažljivo svojim primjerom utječu na svoje pratitelje? Na sva ova i mnoga druga važna pitanja odgovarat će ne samo video kreatori, već i stručnjaci iz svijeta digitalnih medija. Cilj nam je ovim projektom 'dotaknuti' se, osim navedenih, i raznih drugih tema iz svijeta digitalnih medija, marketinga, promocije te još mnogo toga, a o svim ćemo vas temama kojim ćemo se baviti u sklopu ovog projekta redovito izvještavati na našem Mood Media webu!";
 
 const AcademyPage = async () => {
   const articles: Article[] = await getArticlesByCategory("akademija");
@@ -31,18 +35,20 @@ const AcademyPage = async () => {
       <div className="academyPage">
         <section>
           <div className="text">
-        <h1>O Projektu</h1>
+            <h1>O Projektu</h1>
             <p>
-            Uvijek se trudimo pratiti, ali i stvarati trendove, pa smo tako
-            pokrenuli prvu Gen Z Akademiju na ovim prostorima u suradnji s
-            partnerima projekta, A1 Hrvatska te Centrom za sigurniji internet.
-            Mood Media kreatori u sklopu ovog on-going projekta posjećivat će
-            nekolicinu škola u Hrvatskoj te na zabavan, ali i edukativan način
-            educirati generaciju Z na koji način odgovorni influenceri
-            &apos;influensaju&apos;. Cilj nam je ovim projektom djeci i mladima
-            približiti posao video kreatora, ali i odgovoriti na neka važna
-            pitanja iz online svijeta.
+              Uvijek se trudimo pratiti, ali i stvarati trendove, pa smo tako
+              pokrenuli prvu Gen Z Akademiju na ovim prostorima u suradnji s
+              partnerima projekta, A1 Hrvatska te Centrom za sigurniji internet.
+              Mood Media kreatori u sklopu ovog on-going projekta posjećivat će
+              nekolicinu škola u Hrvatskoj te na zabavan, ali i edukativan način
+              educirati generaciju Z na koji način odgovorni influenceri
+              &apos;influensaju&apos;. Cilj nam je ovim projektom djeci i
+              mladima približiti posao video kreatora, ali i odgovoriti na neka
+              važna pitanja iz online svijeta.
             </p>
+            <br />
+            <ViewMore content={genZAcademy} />
           </div>
           <div className="carousel">
             <StoryCarousel />
@@ -101,8 +107,8 @@ const AcademyPage = async () => {
           <Image
             src="/assets/academy/academyBanner.jpeg"
             alt="Gen Z Akademija"
-            width={700}
-            height={394}
+            width={500}
+            height={300}
           />
         </div>
       </div>
