@@ -35,6 +35,10 @@ const HomePage = async () => {
             alt="Kreatori"
           />
         </div> */}
+        <video  controls={false} preload="auto" autoPlay={true} loop={true}>
+          <source src="/assets/moodMediaVideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       {/* ABOUT SECTION */}
 

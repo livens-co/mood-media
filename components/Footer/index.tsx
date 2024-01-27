@@ -17,7 +17,7 @@ const Footer = () => {
           </Link>
           <Link href="/akademija" className="image">
             <Image
-              src="/assets/akademijaLink.png"
+              src="/assets/genZAkademijaLogo.png"
               alt="Gen Z Akademija"
               width={250}
               height={150}

@@ -105,7 +105,7 @@ const AcademyPage = async () => {
 
         <div className="banner">
           <Image
-            src="/assets/academy/academyBanner.jpeg"
+            src="/assets/academy/banner.jpg"
             alt="Gen Z Akademija"
             width={500}
             height={300}
