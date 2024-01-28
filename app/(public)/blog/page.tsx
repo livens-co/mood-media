@@ -28,8 +28,8 @@ const NewsPage = async ({
     <div className="newsPage">
       <div className="newsGrid">
         <div className="title">
-          {/* <h1>Novosti</h1> */}
-          <h2>Zanimljivosti iz svijeta Kreatora</h2>
+          <h2>Zanimljivosti iz</h2>
+          <h2>svijeta Kreatora</h2>
         </div>
         {entries.map((article) => (
           <ArticleCard data={article} key={article.slug} />

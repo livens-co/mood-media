@@ -7,23 +7,21 @@ const ServicesPage = () => {
   return (
     <div className="servicesPage">
       <div className="header">
-        <h1>
-          Naši kreatori, vaša publika, <br />
-          vrhunski rezultati
-        </h1>
-        <Image
+        <h1>Naši kreatori, vaša publika,</h1>
+        <h1>vrhunski rezultati</h1>
+        {/* <Image
           src="/assets/contactLines.svg"
           width={300}
           height={300}
           alt="Lines"
-        />
+        /> */}
 
-        <Image
+        {/* <Image
           src="/assets/contactLines.svg"
           width={300}
           height={300}
           alt="Lines"
-        />
+        /> */}
       </div>
 
       {/* TEXT */}
