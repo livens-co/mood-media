@@ -64,9 +64,12 @@ const HomePage = async () => {
           />
         </div>
         <div className="text">
-          <h1>Gen Z Akademija</h1>
+          <div className="title">
 
-          <h2 className="academy">Be smart. Be safe. Be cool.</h2>
+          <h2>Gen Z Akademija</h2>
+
+          <h2 >Be smart. Be safe. Be cool.</h2>
+          </div>
 
           <p>
             Uvijek se trudimo pratiti, ali i stvarati trendove, pa smo tako
@@ -150,7 +153,7 @@ const HomePage = async () => {
       {/* NOVOSTI */}
       <div className="newsSection">
         <div className="text">
-          <h1>#Blog</h1>
+          <h1><div className="dot"/>Blog</h1>
           <div className="title">
             <h2>Novosti iz </h2>
             <h2>svijeta kreatora</h2>
