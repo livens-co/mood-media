@@ -34,11 +34,11 @@ const AcademyCreators = () => {
               </div>
               <div className="text">
                 <h2>Marko Cuccurin</h2>
-                <p>
+                {/* <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
                   deleniti minima soluta. Alias, nostrum id repellat error quis
                   ex accusantium!
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="creatorCard">
@@ -52,11 +52,11 @@ const AcademyCreators = () => {
               </div>
               <div className="text">
                 <h2>Nika Pavičić</h2>
-                <p>
+                {/* <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
                   deleniti minima soluta. Alias, nostrum id repellat error quis
                   ex accusantium!
-                </p>
+                </p> */}
               </div>
             </div>
             {/* <div className="creatorCard">

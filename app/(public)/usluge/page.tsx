@@ -7,8 +7,8 @@ const ServicesPage = () => {
   return (
     <div className="servicesPage">
       <div className="header">
-        <h1>Naši kreatori, vaša publika,</h1>
-        <h1>vrhunski rezultati</h1>
+        <h1>Top kreatori + vaše želje</h1>
+        <h1>+ naša vizija = vrhunska priča!</h1>
         {/* <Image
           src="/assets/contactLines.svg"
           width={300}
@@ -27,15 +27,17 @@ const ServicesPage = () => {
       {/* TEXT */}
       <div className="text">
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
-          totam, dolor culpa a commodi ipsam voluptatem suscipit possimus
-          molestiae praesentium eius fuga sapiente molestias excepturi adipisci
-          quia accusamus officiis perferendis cumque quod, ratione distinctio
-          eveniet beatae. Sapiente quae, aut laboriosam nulla nemo eos quas nisi
-          saepe quo tempore minima. Tempora nam dignissimos perspiciatis sint
-          reiciendis nostrum autem minus labore quae libero necessitatibus optio
-          laboriosam totam expedita iusto cum voluptate numquam aut molestias
-          consectetur error sed, rerum fugiat! Perferendis, molestiae dolore.
+          Svaki brend ima svoju viziju kad je izgradnja prepoznatljivosti i
+          posebnosti u pitanju. Osim što se trudimo provoditi našu viziju u
+          obliku vrhunskih proizvoda koje produciramo, isto tako slušamo želje i
+          potrebe klijenata s kojima surađujemo te zajedno s njima gradimo
+          vrhunske priče koje postaju bliske publici i koje, kad god je to
+          moguće, ostavljaju trag. Svaku vašu želju ćemo tako sa svim top
+          kreatorima iz naše mreže provesti u stvarnost i ispričat ćemo priču o
+          vašem proizvodu na zabavan, drugačiji, ali uvijek iskren i
+          vjerodostojan način! Veselimo se svemu što dolazi, a ako se i vi
+          pronalazite u ovoj našoj viziji i mislite da bismo se odlično uklopili
+          u vašu, javite nam se!
         </p>
       </div>
 
