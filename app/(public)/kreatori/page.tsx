@@ -15,26 +15,24 @@ const CreatorsPage = async () => {
         {/* UPOZNAJTE KREATORE */}
         <div className="getToKnow">
           <div className="getToKnowContainer">
-            <h1>
-              Video <br />
-              kreatori
-            </h1>
+            <h1>Video</h1>
+            <h1>Kreatori</h1>
 
-            <Image
+            {/* <Image
               priority
               src="/assets/contactLines.svg"
               width={300}
               height={300}
               alt="Lines"
-            />
+            /> */}
 
-            <Image
+            {/* <Image
               priority
               src="/assets/contactLines.svg"
               width={300}
               height={300}
               alt="Lines"
-            />
+            /> */}
           </div>
 
           <div className="text">
