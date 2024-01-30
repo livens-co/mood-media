@@ -43,9 +43,9 @@ const AcademyPage = async () => {
               Mood Media kreatori u sklopu ovog on-going projekta posjećivat će
               nekolicinu škola u Hrvatskoj te na zabavan, ali i edukativan način
               educirati generaciju Z na koji način odgovorni influenceri
-              &apos;influensaju&apos;. Cilj nam je ovim projektom djeci i
-              mladima približiti posao video kreatora, ali i odgovoriti na neka
-              važna pitanja iz online svijeta.
+              &apos;influensaju&apos;. Cilj nam je ovim projektom djeci i mladima
+              približiti posao video kreatora, ali i odgovoriti na neka važna
+              pitanja iz online svijeta.
             </p>
             <br />
             <ViewMore content={genZAcademy} />

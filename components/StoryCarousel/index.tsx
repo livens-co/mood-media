@@ -22,34 +22,34 @@ const StoryCarousel = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image priority src='/assets/academy/Leon_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image priority src='/assets/academy/story/andrea-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/Magdalena_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/josip-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/marco_Storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/marco_story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/Mia_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/mirsad-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/Mirsad_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/monika-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/Nika_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/nika-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/Raf_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/rafaela-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/Sead_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/sead-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/Tibor_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/tibor-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/Vedran_storys.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/vedran-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         
       </Swiper>

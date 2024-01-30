@@ -26,7 +26,7 @@ const AcademyCreators = () => {
             <div className="creatorCard">
               <div className="image">
                 <Image
-                  src="/assets/academy/Marco_Cuccurin.jpeg"
+                  src="/assets/academy/marco-mod.jpeg"
                   alt="Marko Cuccurin"
                   width={240}
                   height={360}
@@ -44,7 +44,7 @@ const AcademyCreators = () => {
             <div className="creatorCard">
               <div className="image">
                 <Image
-                  src="/assets/academy/Nika_Pavicic.jpeg"
+                  src="/assets/academy/nika-mod.jpeg"
                   alt="Nika Pavičić"
                   width={240}
                   height={360}
