@@ -32,7 +32,8 @@ const AboutUs = () => {
 
       {/* NAŠA IMENA  */}
       <div className="aboutUs">
-        <h1>Video kreatori</h1>
+        <h1></h1>
+
         <p>
           Naš tim trenutno se sastoji od brojnih vrlo uspješnih i popularnih
           imena u svijetu video kreatora. Mirta Miler (Mimiermakeup), Marco
@@ -44,25 +45,11 @@ const AboutUs = () => {
           sami za sebe.
         </p>
       </div>
-      {/* <div className="ourCreators">
-        <div className="creatorCarousel">creators</div>
-        <div className="text">
-          <h1>Naša imena</h1>
-          <p>
-            Naš tim trenutno se sastoji od brojnih vrlo uspješnih i popularnih
-            imena u svijetu video kreatora. Mirta Miler (Mimiermakeup), Marco
-            Cuccurin, Nika Pavičić (xniks2x), Mirsad Kadić, Rafaela Seba
-            (RafTheChild), Pave Elez, Sead Hrustanović, Andrea Pacadi, Magdalena
-            Folnožić, Leon Kosanović Picek, Filip Miloš, Mateo Elez, Josip
-            Bačić, Vedran Kantar, Tibor Čubrilo i Mia Negovetić sva su ta naša
-            imena!
-          </p>
-        </div>
-      </div> */}
+     
 
       {/* NAŠI KLIJENTI */}
       <div className="aboutUs">
-        <h1>Kampanje</h1>
+        <h1></h1>
         <p>
           U protekloj smo godini i sezoni realizirali više od 600 kampanja i
           skupili više od 96 milijuna pregleda na svim našim platformama i
