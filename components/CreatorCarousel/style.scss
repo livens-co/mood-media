@@ -1,0 +1,14 @@
+.creatorCarousel {
+  height: fit-content;
+  width: fit-content;
+
+  .carouselImage {
+    height: 18rem;
+    width: 18rem;
+    transition: all 300ms ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}

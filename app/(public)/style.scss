@@ -15,6 +15,10 @@
     align-items: center;
     // background-color: aliceblue;
 
+    video{
+      border-radius: 0.5rem;
+    }
+
     .content {
       display: flex;
       flex-direction: column;
@@ -220,18 +224,18 @@
       }
     }
 
-    .creatorCarousel {
+    .creatorCarouselContainer {
       flex: 4;
       display: flex;
       align-items: center;
       justify-content: center;
       height: fit-content;
 
-      .frame {
-        height: 18rem;
-        width: 18rem;
-        // transform: rotate(-76deg);
-      }
+      // .frame {
+      //   height: 18rem;
+      //   width: 18rem;
+      //   // transform: rotate(-76deg);
+      // }
 
       // .creatorBorder {
       //   position: relative;

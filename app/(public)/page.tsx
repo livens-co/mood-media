@@ -4,10 +4,12 @@ import Image from "next/image";
 import Contact from "@/components/Contact";
 import ArticleCard from "@/components/ArticleCard";
 import getArticles from "@/sanity/actions/get-articles";
-import { Article, Movie } from "@/types";
+import { Article, Creator, Movie } from "@/types";
 import getMovies from "@/sanity/actions/get-movies";
 import ViewMore from "@/components/ViewMore";
 import { GoDot } from "react-icons/go";
+import getCreators from "@/sanity/actions/get-creators";
+import CreatorCarousel from "@/components/CreatorCarousel";
 
 const moreKinoMood =
 "Jedna itekako uspješna sezona #KinoMood projekta već je iza nas. U suradnji s Kino Filmom pokrenuli smo projekt u kojem nam je cilj bio naše pratitelje odvesti u kino, ali ne kako bi samo pogledali najnovije naslove, već se usput i podružili s našim kreatorima. Tako smo u protekloj sezoni bili na premijerama nekih od najvećih filmskih hitova, kao što su Oppenheimer, Renfield, Brzi i žestoki 10, Egzorcist... A u svim smo tim naslovima uživali s više od 1600 naših vjernih pratitelja. Godinu #KinoMooda završili smo, pak, na najljepši mogući način, posebnim odlaskom u kino koje nam je svima napunilo srca i pokazalo nam koliko je malo potrebno da nekome izmamimo osmijeh na lice. Na premijeru posljednjeg ovogodišnjeg filmskog hita 'Patke selice', pozvali smo najposebnije goste. U kinu smo se tada družili s više od 200 klinaca i klinceza iz domova za nezbrinutu djecu, udruga koje brinu o djeci iz obitelji slabijeg imovinskog stanja i sigurnih kuća. S istim žarom ovaj projekt nastavljamo i u ovoj godini i veselimo se sa svima vama pogledati još mnogo nezaboravnih filmskih naslova te vas što više upoznati, razvedriti i dopustiti da vi razvedrite i razveselite nas!"
@@ -18,6 +20,7 @@ const genZAcademy =
 const HomePage = async () => {
   const articles: Article[] = await getArticles();
   const movies: Movie[] = await getMovies();
+  const creators: Creator[] = await getCreators();
 
   return (
     <div className="homePage">
@@ -182,14 +185,15 @@ const HomePage = async () => {
           </p>
           <Link href="/kreatori">Pogledaj sve</Link>
         </div>
-        <div className="creatorCarousel">
-          <Image
+        <div className="creatorCarouselContainer">
+          {/* <Image
             src="https://cdn.sanity.io/images/qn8g0u6e/production/c618956b8a91131f23af6659a601d97ddb45a016-1200x1200.png"
             width={500}
             height={500}
             alt="Kreatori"
             className="frame"
-          />
+          /> */}
+          <CreatorCarousel creators={creators} />
         </div>
       </section>
 

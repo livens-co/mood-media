@@ -5,7 +5,26 @@
 
 .swiper-slide {
   width: 33rem;
-  background-color: var(--secondary);
+  // background-color: var(--secondary);
+     background: rgb(221, 148, 216);
+    background: -moz-linear-gradient(
+      17deg,
+      rgba(221, 148, 216, 1) 22%,
+      rgba(163, 150, 224, 1) 62%,
+      rgb(151, 159, 230) 81%
+    );
+    background: -webkit-linear-gradient(
+      17deg,
+      rgba(221, 148, 216, 1) 22%,
+      rgba(163, 150, 224, 1) 62%,
+      rgba(151, 159, 230, 1) 81%
+    );
+    background: linear-gradient(
+      17deg,
+      rgba(221, 148, 216, 1) 22%,
+      rgba(163, 150, 224, 1) 62%,
+      rgba(151, 159, 230, 1) 81%
+    );
   border-radius: 0.5rem;
   padding: 3rem 1.5rem;
   color: var(--white);
@@ -27,7 +46,8 @@
   }
 
   &:nth-child(2n) {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0 !important;
+    background: none;
     color: var(--secondary);
   }
 }
