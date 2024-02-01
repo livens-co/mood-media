@@ -23,6 +23,13 @@
   gap: 2rem;
   margin-top: 0.5rem;
 
+  .swipeArrow {
+    font-size: 1.25rem;
+    color: var(--secondary); // Set the color of the arrow
+    // cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
   .navButton {
     height: 2rem;
     width: 2rem;
@@ -70,38 +77,81 @@
   // border-radius: 0.5rem;
 }
 
-.custom-slide {
-  background-color: white !important; // Set the background color for the slides
-  transition: background-color 0.3s ease; // Add a transition for a smooth effect
+// .custom-slide {
+//   background-color: white !important; // Set the background color for the slides
+//   transition: background-color 0.3s ease; // Add a transition for a smooth effect
+// }
+
+// .custom-slide.swiper-slide-prev,
+// .custom-slide.swiper-slide-next {
+//   background-color: white !important; // Set the background color for the previous and next slides
+// }
+
+// .swiper-cards {
+//   background-color: white !important;
+// }
+
+// .swipeArrow {
+//   // position: absolute;
+//   // top: 50%;
+//   // right:1rem;
+//   // transform: translateY(-50%);
+//   font-size: 1.5rem;
+//   color: var(--secondary); // Set the color of the arrow
+
+//   // Animation for moving right and back
+//   @keyframes moveRightBack {
+//     0%, 100% {
+//       transform: translateX(0);
+//     }
+//     50% {
+//       transform: translateX(10px); // Adjust the distance the arrow moves right
+//     }
+//   }
+
+//   // Apply the animation
+//   animation: moveRightBack 2s infinite;
+// }
+// .creatorNavigation {
+//   position: fixed;
+//   top: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   width: 100%;
+//   padding: 0 20px;
+//   z-index: 999;
+// }
+
+.swipeArrowLeft {
+  animation: arrowMoveLeft 3s infinite;
 }
 
-.custom-slide.swiper-slide-prev,
-.custom-slide.swiper-slide-next {
-  background-color: white !important; // Set the background color for the previous and next slides
+.swipeArrowRight {
+  animation: arrowMoveRight 3s infinite;
 }
 
-.swiper-cards{
-  background-color: white !important;
-}
 
-.swipeArrow {
-  // position: absolute;
-  // top: 50%;
-  // right:1rem;
-  // transform: translateY(-50%);
-  font-size: 1.5rem;
-  color: var(--secondary); // Set the color of the arrow
-
-  // Animation for moving right and back
-  @keyframes moveRightBack {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(10px); // Adjust the distance the arrow moves right
-    }
+@keyframes arrowMoveLeft {
+  0% {
+    transform: translateX(0);
   }
+  50% {
+    transform: translateX(-7px); // Adjust the distance the arrow moves left
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
-  // Apply the animation
-  animation: moveRightBack 2s infinite;
+@keyframes arrowMoveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(7px); // Adjust the distance the arrow moves right
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

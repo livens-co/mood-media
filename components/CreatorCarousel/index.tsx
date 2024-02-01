@@ -4,7 +4,12 @@ import Link from "next/link";
 import "./style.scss";
 import Image from "next/image";
 
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaAnglesLeft,
+  FaAnglesRight,
+} from "react-icons/fa6";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -99,8 +104,13 @@ const CreatorCarousel: React.FC<HouseCarouselProps> = ({ creators }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swipeArrow">
-        <FaArrowRight />
+      <div className="creatorNavigation">
+        <div className="swipeArrow swipeArrowLeft">
+          <FaAnglesLeft />
+        </div>
+        <div className="swipeArrow swipeArrowRight">
+          <FaAnglesRight />
+        </div>
       </div>
       {/* {displayedCreators.map((c) => (
         <Link
