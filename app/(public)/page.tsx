@@ -7,12 +7,11 @@ import getArticles from "@/sanity/actions/get-articles";
 import { Article, Creator, Movie } from "@/types";
 import getMovies from "@/sanity/actions/get-movies";
 import ViewMore from "@/components/ViewMore";
-import { GoDot } from "react-icons/go";
 import getCreators from "@/sanity/actions/get-creators";
 import CreatorCarousel from "@/components/CreatorCarousel";
 
 const moreKinoMood =
-"Jedna itekako uspješna sezona #KinoMood projekta već je iza nas. U suradnji s Kino Filmom pokrenuli smo projekt u kojem nam je cilj bio naše pratitelje odvesti u kino, ali ne kako bi samo pogledali najnovije naslove, već se usput i podružili s našim kreatorima. Tako smo u protekloj sezoni bili na premijerama nekih od najvećih filmskih hitova, kao što su Oppenheimer, Renfield, Brzi i žestoki 10, Egzorcist... A u svim smo tim naslovima uživali s više od 1600 naših vjernih pratitelja. Godinu #KinoMooda završili smo, pak, na najljepši mogući način, posebnim odlaskom u kino koje nam je svima napunilo srca i pokazalo nam koliko je malo potrebno da nekome izmamimo osmijeh na lice. Na premijeru posljednjeg ovogodišnjeg filmskog hita 'Patke selice', pozvali smo najposebnije goste. U kinu smo se tada družili s više od 200 klinaca i klinceza iz domova za nezbrinutu djecu, udruga koje brinu o djeci iz obitelji slabijeg imovinskog stanja i sigurnih kuća. S istim žarom ovaj projekt nastavljamo i u ovoj godini i veselimo se sa svima vama pogledati još mnogo nezaboravnih filmskih naslova te vas što više upoznati, razvedriti i dopustiti da vi razvedrite i razveselite nas!"
+  "Jedna itekako uspješna sezona #KinoMood projekta već je iza nas. U suradnji s Kino Filmom pokrenuli smo projekt u kojem nam je cilj bio naše pratitelje odvesti u kino, ali ne kako bi samo pogledali najnovije naslove, već se usput i podružili s našim kreatorima. Tako smo u protekloj sezoni bili na premijerama nekih od najvećih filmskih hitova, kao što su Oppenheimer, Renfield, Brzi i žestoki 10, Egzorcist... A u svim smo tim naslovima uživali s više od 1600 naših vjernih pratitelja. Godinu #KinoMooda završili smo, pak, na najljepši mogući način, posebnim odlaskom u kino koje nam je svima napunilo srca i pokazalo nam koliko je malo potrebno da nekome izmamimo osmijeh na lice. Na premijeru posljednjeg ovogodišnjeg filmskog hita 'Patke selice', pozvali smo najposebnije goste. U kinu smo se tada družili s više od 200 klinaca i klinceza iz domova za nezbrinutu djecu, udruga koje brinu o djeci iz obitelji slabijeg imovinskog stanja i sigurnih kuća. S istim žarom ovaj projekt nastavljamo i u ovoj godini i veselimo se sa svima vama pogledati još mnogo nezaboravnih filmskih naslova te vas što više upoznati, razvedriti i dopustiti da vi razvedrite i razveselite nas!";
 
 const genZAcademy =
   "Što uopće znači riječ 'influencer', kako prepoznati i prijaviti neprimjeren sadržaj online, na koji način influenceri promoviraju razne brendove te kako pomažu stvoriti mišljenje o određenom brendu, ali i koliko pažljivo svojim primjerom utječu na svoje pratitelje? Na sva ova i mnoga druga važna pitanja odgovarat će ne samo video kreatori, već i stručnjaci iz svijeta digitalnih medija. Cilj nam je ovim projektom 'dotaknuti' se, osim navedenih, i raznih drugih tema iz svijeta digitalnih medija, marketinga, promocije te još mnogo toga, a o svim ćemo vas temama kojim ćemo se baviti u sklopu ovog projekta redovito izvještavati na našem Mood Media webu!";
@@ -26,20 +25,6 @@ const HomePage = async () => {
     <div className="homePage">
       {/* HERO SECTION */}
       <div className="heroSection">
-        {/* <div className="content">
-          <h1>Inspiriramo, povezujemo, promoviramo</h1>
-          <p>Vaše snove pretvaramo u stvarnost.</p>
-          <Link href="/o-nama">Saznaj više</Link>
-        </div>
-        <div className="images">
-          <Image
-            src="/test/heroImg.png"
-            width={600}
-            height={600}
-            alt="Kreatori"
-          />
-        </div> */}
-
         {/* ADD FALLBACK IMG */}
         <video
           controls={false}
@@ -68,10 +53,9 @@ const HomePage = async () => {
         </div>
         <div className="text">
           <div className="title">
+            <h2>Gen Z Akademija</h2>
 
-          <h2>Gen Z Akademija</h2>
-
-          <h2 >Be smart. Be safe. Be cool.</h2>
+            <h2>Be smart. Be safe. Be cool.</h2>
           </div>
 
           <p>
@@ -156,7 +140,10 @@ const HomePage = async () => {
       {/* NOVOSTI */}
       <div className="newsSection">
         <div className="text">
-          <h1><div className="dot"/>Blog</h1>
+          <h1>
+            <div className="dot" />
+            Blog
+          </h1>
           <div className="title">
             <h2>Novosti iz </h2>
             <h2>svijeta kreatora</h2>
@@ -186,13 +173,6 @@ const HomePage = async () => {
           <Link href="/kreatori">Pogledaj sve</Link>
         </div>
         <div className="creatorCarouselContainer">
-          {/* <Image
-            src="https://cdn.sanity.io/images/qn8g0u6e/production/c618956b8a91131f23af6659a601d97ddb45a016-1200x1200.png"
-            width={500}
-            height={500}
-            alt="Kreatori"
-            className="frame"
-          /> */}
           <CreatorCarousel creators={creators} />
         </div>
       </section>
