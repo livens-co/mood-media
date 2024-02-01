@@ -35,7 +35,9 @@ const AcademyPage = async () => {
       <div className="academyPage">
         <section>
           <div className="text">
-            <h1>O Projektu</h1>
+            <div className="title">
+              <h1>O Projektu</h1>
+            </div>
             <p>
               Uvijek se trudimo pratiti, ali i stvarati trendove, pa smo tako
               pokrenuli prvu Gen Z Akademiju na ovim prostorima u suradnji s
@@ -43,9 +45,9 @@ const AcademyPage = async () => {
               Mood Media kreatori u sklopu ovog on-going projekta posjećivat će
               nekolicinu škola u Hrvatskoj te na zabavan, ali i edukativan način
               educirati generaciju Z na koji način odgovorni influenceri
-              &apos;influensaju&apos;. Cilj nam je ovim projektom djeci i mladima
-              približiti posao video kreatora, ali i odgovoriti na neka važna
-              pitanja iz online svijeta.
+              &apos;influensaju&apos;. Cilj nam je ovim projektom djeci i
+              mladima približiti posao video kreatora, ali i odgovoriti na neka
+              važna pitanja iz online svijeta.
             </p>
             <br />
             <ViewMore content={genZAcademy} />
@@ -69,7 +71,10 @@ const AcademyPage = async () => {
 
         {/* KREATORI */}
         <div className="creatorTestemonials">
-          <h1>Moderatori Gen Z Akademije</h1>
+          <div className="title">
+            <h1>Moderatori</h1>
+            <h1>Gen Z Akademije</h1>
+          </div>
           <AcademyCreators />
         </div>
 

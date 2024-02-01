@@ -1,6 +1,5 @@
 import Link from "next/link";
 import "./style.scss";
-import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -11,21 +10,10 @@ const Contact = () => {
           <h1>s nama?</h1>
         </div>
         <Link href="/kontakt">Let&apos;s talk</Link>
-        {/* <Image
-            priority
-            src="/assets/contactLines.svg"
-            width={300}
-            height={300}
-            alt="Lines"
-          /> */}
-
-        {/* <Image
-            priority
-            src="/assets/contactLines.svg"
-            width={300}
-            height={300}
-            alt="Lines"
-          /> */}
+        <div className="borderLeft" />
+        <div className="borderTop" />
+        <div className="borderRight" />
+        <div className="borderBottom" />
       </div>
     </div>
   );

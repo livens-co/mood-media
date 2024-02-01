@@ -77,11 +77,14 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
       <div className="biographyContainer">
         <div className="biography">
           <h1>Biografija</h1>
+
           <PortableText value={creator?.bio} />
         </div>
       </div>
       <div className="featuredContent">
-        <h1>Izdvojeno</h1>
+        <div className="title">
+          <h1>Izdvojeno</h1>
+        </div>
         <div className="featuredRow">
           <FeaturedCarousel data={creator} />
 
@@ -91,7 +94,10 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
         {/* NOVOSTI */}
       </div>
       <div className="featuredContent">
-        <h1>Zanimljivosti iz svijeta kreatora</h1>
+        <div className="title">
+          <h1>Zanimljivosti iz</h1>
+          <h1>svijeta kreatora</h1>
+        </div>
         <div className="articles">
           {articles
             .map((article) => <ArticleCard data={article} key={article.slug} />)
