@@ -1,6 +1,9 @@
 .creatorCarousel {
   height: fit-content;
   width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .carouselImage {
     height: 18rem;
@@ -43,4 +46,62 @@
       }
     }
   }
+}
+
+.swiper {
+  height: 18rem;
+  width: 18rem;
+  // transform: scale(0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border-radius: 1rem;
+  // z-index: 10;
+  // padding: 1rem;
+  background-color: #fff !important;
+  // border: 1px solid var(--secondary);
+  // border-radius: 0.5rem;
+}
+
+.custom-slide {
+  background-color: white !important; // Set the background color for the slides
+  transition: background-color 0.3s ease; // Add a transition for a smooth effect
+}
+
+.custom-slide.swiper-slide-prev,
+.custom-slide.swiper-slide-next {
+  background-color: white !important; // Set the background color for the previous and next slides
+}
+
+.swiper-cards{
+  background-color: white !important;
+}
+
+.swipeArrow {
+  // position: absolute;
+  // top: 50%;
+  // right:1rem;
+  // transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--secondary); // Set the color of the arrow
+
+  // Animation for moving right and back
+  @keyframes moveRightBack {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); // Adjust the distance the arrow moves right
+    }
+  }
+
+  // Apply the animation
+  animation: moveRightBack 2s infinite;
 }

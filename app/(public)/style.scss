@@ -226,10 +226,11 @@
 
     .creatorCarouselContainer {
       flex: 4;
+      width: fit-content;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: fit-content;
+      
       flex-direction: column;
 
       // .frame {
