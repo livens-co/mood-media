@@ -132,7 +132,7 @@ const HomePage = async () => {
             najnovije naslove, već se usput i podružili s našim kreatorima.
           </p>
           <ViewMore content={moreKinoMood} />
-          <Link href="//https://www.kinofilm.hr/">
+          <Link href="https://www.kinofilm.hr/" target="_blank">
             SVE VIJESTI IZ SVIJETA FILMA
           </Link>
         </div>

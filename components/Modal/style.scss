@@ -1,61 +1,57 @@
-// .modalOverlay{
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background-color: #fdfdfd85;
-//   height: 100vh;
-//   width: 100%;
-//   z-index: 10000;
+.modal {
+  width: 50rem;
+  max-width: 95%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 4rem;
+  background: rgb(221, 148, 216);
+  background: -moz-linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgb(151, 159, 230) 81%
+  );
+  background: -webkit-linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgba(151, 159, 230, 1) 81%
+  );
+  background: linear-gradient(
+    17deg,
+    rgba(221, 148, 216, 1) 22%,
+    rgba(163, 150, 224, 1) 62%,
+    rgba(151, 159, 230, 1) 81%
+  );
+  -webkit-box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
+  -moz-box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
+  box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
+  flex-direction: column;
+  z-index: 10001;
+  color: white;
+  border-radius: var(--radius);
 
-  .modal{
-    width: 50rem;
-    max-width: 95%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    padding: 2rem 2rem 4rem;
-    background: rgb(221, 148, 216);
-    background: -moz-linear-gradient(
-      17deg,
-      rgba(221, 148, 216, 1) 22%,
-      rgba(163, 150, 224, 1) 62%,
-      rgb(151, 159, 230) 81%
-    );
-    background: -webkit-linear-gradient(
-      17deg,
-      rgba(221, 148, 216, 1) 22%,
-      rgba(163, 150, 224, 1) 62%,
-      rgba(151, 159, 230, 1) 81%
-    );
-    background: linear-gradient(
-      17deg,
-      rgba(221, 148, 216, 1) 22%,
-      rgba(163, 150, 224, 1) 62%,
-      rgba(151, 159, 230, 1) 81%
-    );
-    -webkit-box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
-    -moz-box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
-    box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
+  button {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+  }
 
-    flex-direction: column;
-    z-index: 10001;
-    color: white;
-    border-radius: var(--radius);
+  p {
+    font-weight: 300 !important;
+    line-height: 1.4 !important;
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+}
 
-    button{
-      align-self: flex-end;
-      margin-bottom: 2rem;
-      
-    }
+@media screen and (max-width: 600px) {
+  .modal {
+    padding: 1rem 1rem 2rem;
 
-    p{
-      font-weight: 300 !important;
-      line-height: 1.4 !important;
-      font-size: 1rem !important;
-      text-align: center !important;
+    p {
+      font-size: 0.9rem;
+      line-height: 1.3;
     }
   }
-// }
+}
