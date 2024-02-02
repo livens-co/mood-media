@@ -37,11 +37,11 @@ const CreatorsPage = async () => {
 
           <div className="text">
             <p>
-              U Mood Media, radimo na individualnom te se trudimo naglasiti tu
-              jedinstvenost. Imamo mrežu kreatora s internacionalnom publikom,
+              U Mood Media, radimo na individualnom pristupu te se trudimo naglasiti tu
+              jedinstvenost. Imamo mrežu Kreatora s internacionalnom publikom,
               protežući se kroz različite niše - od ljepote i sporta do igara i
               gastronomije - uvijek ćemo vas u trenutku &quot;spojiti&quot; s
-              video kreatorom koji savršeno odgovara baš vašem brendu,
+              video Kreatorom koji savršeno odgovara baš vašem brendu,
               proizvodu, kampanji i publici kojoj se želite obratiti.
             </p>
           </div>

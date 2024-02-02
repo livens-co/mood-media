@@ -14,7 +14,10 @@ const AboutUs = () => {
 
       {/* TKO SMO MI? */}
       <div className="aboutUs">
-        <h1>Tko smo mi?</h1>
+        <div className="title">
+          <h1>Tko</h1>
+          <h1>smo mi?</h1>
+        </div>
         <p>
           Mood Media team relativno je mlada mreža video kreatora, poznatih lica
           koja već godinama gledaju i s kojima na društvenim mrežama odrastaju
@@ -32,7 +35,10 @@ const AboutUs = () => {
 
       {/* NAŠA IMENA  */}
       <div className="aboutUs">
-        <h1></h1>
+        <div className="title">
+          <h1>Video</h1>
+          <h1>Kreatori</h1>
+        </div>
 
         <p>
           Naš tim trenutno se sastoji od brojnih vrlo uspješnih i popularnih
@@ -45,11 +51,13 @@ const AboutUs = () => {
           sami za sebe.
         </p>
       </div>
-     
 
       {/* NAŠI KLIJENTI */}
       <div className="aboutUs">
-        <h1></h1>
+        <div className="title">
+          <h1>Realizirane</h1>
+          <h1>kampanje i klijenti</h1>
+        </div>
         <p>
           U protekloj smo godini i sezoni realizirali više od 600 kampanja i
           skupili više od 96 milijuna pregleda na svim našim platformama i
@@ -84,6 +92,10 @@ const AboutUs = () => {
           pratitelja na društvenim mrežama, s kojima zajedno stvaramo priču još
           veću i još glasniju od ideje s kojom smo u sve ovo krenuli.
         </p>
+        <div className="borderLeft" />
+        <div className="borderTop" />
+        <div className="borderRight" />
+        <div className="borderBottom" />
       </div>
       <div className="clients">
         <h1>Individualnost</h1>
@@ -97,6 +109,10 @@ const AboutUs = () => {
           društvo. No, uvijek pritom potičući individualnost naših kreatora, bez
           zatvaranja u kutije i okvire te bez predrasuda i negative.
         </p>
+        <div className="borderLeft" />
+        <div className="borderTop" />
+        <div className="borderRight" />
+        <div className="borderBottom" />
       </div>
       <div className="clients">
         <h1>Pouzdanost</h1>
@@ -111,6 +127,10 @@ const AboutUs = () => {
           regionalne video scene, a maksimalnu profesionalnost i pouzdanost u
           poslovnim suradnjama garantiramo i dalje!
         </p>
+        <div className="borderLeft" />
+        <div className="borderTop" />
+        <div className="borderRight" />
+        <div className="borderBottom" />
       </div>
     </div>
   );
