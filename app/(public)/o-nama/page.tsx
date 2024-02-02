@@ -19,14 +19,14 @@ const AboutUs = () => {
           <h1>smo mi?</h1>
         </div>
         <p>
-          Mood Media team relativno je mlada mreža video kreatora, poznatih lica
+          Mood Media team relativno je mlada mreža video Kreatora, poznatih lica
           koja već godinama gledaju i s kojima na društvenim mrežama odrastaju
           generacije novih klinaca. Kad bi nas netko pitao kako bismo mi sami
           sebe opisali, ne pada nam na pamet ništa bolje od ozbiljno zabavni,
           ali i ozbiljni. Ozbiljni smo uvijek kad je u pitanju posao, jer svaku
           kampanju radimo stručno, temeljito, od ideje i koncepta do snimanja i
           postprodukcije. Uvijek slušamo želje i potrebe klijenta, ali i potrebe
-          video kreatora koji stvaraju sadržaj unutar našeg tima. A zašto smo
+          video Kreatora koji stvaraju sadržaj unutar našeg tima. A zašto smo
           ozbiljno zabavni? Pa, kad radimo, cilj nam je uvijek svaki zadatak
           odraditi maksimalno opušteno, za maksimalno vrhunske rezultate na
           kraju!
@@ -42,7 +42,7 @@ const AboutUs = () => {
 
         <p>
           Naš tim trenutno se sastoji od brojnih vrlo uspješnih i popularnih
-          imena u svijetu video kreatora. Mirta Miler (Mimiermakeup), Marco
+          imena u svijetu video Kreatora. Mirta Miler (Mimiermakeup), Marco
           Cuccurin, Nika Pavičić (xniks2x), Mirsad Kadić, Rafaela Seba
           (RafTheChild), Pave Elez, Sead Hrustanović, Andrea Pacadi, Magdalena
           Folnožić, Leon Kosanović Picek, Filip Miloš, Mateo Elez, Josip Bačić,
@@ -61,12 +61,12 @@ const AboutUs = () => {
         <p>
           U protekloj smo godini i sezoni realizirali više od 600 kampanja i
           skupili više od 96 milijuna pregleda na svim našim platformama i
-          platformama naših video kreatora. S mnogo novih lica u našem teamu, s
+          platformama naših video Kreatora. S mnogo novih lica u našem teamu, s
           mnogo ključnih projekata iza nas i važnih nagrada koje smo osvojili
           &apos;zaključili&apos; smo 2023. godinu, a u 2024. ušli s još
           snažnijim idejama, još motiviraniji i još kreativniji nego dosad.
           <br />
-          Osim mreže naših kreatora, važni su nam i klijenti bez kojih sve ove
+          Osim mreže naših Kreatora, važni su nam i klijenti bez kojih sve ove
           gore spomenute kampanje također ne bi bile moguće! Profesionalni
           odnosi i individualni pristup koje gradimo s klijentima uvijek su nam
           u fokusu te se trudimo na svaki upit odgovoriti maksimalno
@@ -85,10 +85,10 @@ const AboutUs = () => {
         <h1>Iskustvo</h1>
         <p>
           Krenuli smo u ovu ozbiljno zabavnu avanturu prije pet godina, s dva
-          video kreatora i velikim snovima kojima smo željeli promijeniti i
+          video Kreatora i velikim snovima kojima smo željeli promijeniti i
           poboljšati tržište društvenih mreža u regiji te ostaviti trag
           zanimljivim, edukativnim i progresivnim projektima. Danas naša mreža
-          broji ukupno 17 uspješnih video kreatora s više od 4,5 milijuna
+          broji ukupno 17 uspješnih video Kreatora s više od 4,5 milijuna
           pratitelja na društvenim mrežama, s kojima zajedno stvaramo priču još
           veću i još glasniju od ideje s kojom smo u sve ovo krenuli.
         </p>
@@ -100,13 +100,13 @@ const AboutUs = () => {
       <div className="clients">
         <h1>Individualnost</h1>
         <p>
-          Individualan pristup i slušanje želja naših video kreatora te puštanje
+          Individualan pristup i slušanje želja naših video Kreatora te puštanje
           njihovoj autentičnosti i kreativnosti da dođu do izražaja uvijek su
           nam prioritet. Kako bismo zadovoljili potrebe sve brže rastućeg
           tržišta i sve različitije želje publike na društvenim mrežama, svakim
           našim projektom, suradnjom, videom, fotografijom ili akcijom trudimo
           se pomicati granice i stvarati trendove koji pozitivno utječu na
-          društvo. No, uvijek pritom potičući individualnost naših kreatora, bez
+          društvo. No, uvijek pritom potičući individualnost naših Kreatora, bez
           zatvaranja u kutije i okvire te bez predrasuda i negative.
         </p>
         <div className="borderLeft" />
@@ -117,7 +117,7 @@ const AboutUs = () => {
       <div className="clients">
         <h1>Pouzdanost</h1>
         <p>
-          Cijeli Mood Media team, od video kreatora do produkcijske ekipe, svaki
+          Cijeli Mood Media team, od video Kreatora do produkcijske ekipe, svaki
           zadatak uvijek odrađuje maksimalno profesionalno, kako bi zadovoljni
           bili i mi sami, ali i klijenti s kojima surađujemo na raznim
           projektima te u kampanjama. Vodimo se time da svaki naš video i sami

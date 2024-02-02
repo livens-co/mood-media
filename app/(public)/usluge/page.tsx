@@ -7,7 +7,7 @@ const ServicesPage = () => {
   return (
     <div className="servicesPage">
       <div className="header">
-        <h1>Top kreatori + vaše želje</h1>
+        <h1>Top Kreatori + vaše želje</h1>
         <h1>+ naša vizija = vrhunska priča!</h1>
         {/* <Image
           src="/assets/contactLines.svg"
@@ -33,7 +33,7 @@ const ServicesPage = () => {
           potrebe klijenata s kojima surađujemo te zajedno s njima gradimo
           vrhunske priče koje postaju bliske publici i koje, kad god je to
           moguće, ostavljaju trag. Svaku vašu želju ćemo tako sa svim top
-          kreatorima iz naše mreže provesti u stvarnost i ispričat ćemo priču o
+          Kreatorima iz naše mreže provesti u stvarnost i ispričat ćemo priču o
           vašem proizvodu na zabavan, drugačiji, ali uvijek iskren i
           vjerodostojan način! Veselimo se svemu što dolazi, a ako se i vi
           pronalazite u ovoj našoj viziji i mislite da bismo se odlično uklopili

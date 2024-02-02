@@ -6,7 +6,12 @@
   .menuOverlay {
     height: 100vh;
     width: 100vw;
-    background-color: #f7f7f7;
+    // background-color: #f7f7f7;
+    background: linear-gradient(37deg, #600cf5, #ba64bf);
+    background-size: 400% 400%;
+    -webkit-animation: BgAnimation 6s ease infinite;
+    -moz-animation: BgAnimation 6s ease infinite;
+    animation: BgAnimation 6s ease infinite;
     position: fixed;
     right: 0;
     top: 0;
@@ -21,10 +26,10 @@
     padding: 6rem 2rem 2rem 4rem;
 
     .menuLink {
-      // color: var(--white);
+      color: var(--white);
       font-size: 1.5rem;
-      text-transform: uppercase;
-      font-weight: 400;
+      // text-transform: uppercase;
+      font-weight: 300;
       display: flex;
       align-items: flex-end;
       width: fit-content;
@@ -34,9 +39,10 @@
       text-decoration: none;
 
       h3 {
-        font-weight: 500;
+        font-weight: 400;
         width: 10rem;
-        color: #666;
+        // color: #666;
+        color: var(--white);
       }
 
       img {
@@ -53,7 +59,7 @@
         height: 1px;
         bottom: -2px;
         left: 0;
-        background-color: var(--secondary);
+        background-color: var(--white);
         transform-origin: bottom right;
         transition: transform 300ms ease-out;
       }
@@ -92,5 +98,40 @@
         width: 5rem;
       }
     }
+  }
+}
+
+
+@-webkit-keyframes BgAnimation {
+  0% {
+    background-position: 0% 58%;
+  }
+  50% {
+    background-position: 100% 43%;
+  }
+  100% {
+    background-position: 0% 58%;
+  }
+}
+@-moz-keyframes BgAnimation {
+  0% {
+    background-position: 0% 58%;
+  }
+  50% {
+    background-position: 100% 43%;
+  }
+  100% {
+    background-position: 0% 58%;
+  }
+}
+@keyframes BgAnimation {
+  0% {
+    background-position: 0% 58%;
+  }
+  50% {
+    background-position: 100% 43%;
+  }
+  100% {
+    background-position: 0% 58%;
   }
 }
