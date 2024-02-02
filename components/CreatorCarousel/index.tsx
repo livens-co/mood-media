@@ -40,10 +40,10 @@ const CreatorCarousel: React.FC<HouseCarouselProps> = ({ creators }) => {
           },
         }}
         modules={[EffectCreative]}
-        className="mySwiper"
+        className="creatorSwiper"
       >
         {creators.map((c) => (
-          <SwiperSlide key={c.slug} className="custom-slide">
+          <SwiperSlide key={c.slug} className="creatorSwiperSlide">
             <Link href={`/kreatori/${c.slug}`} className="creatorCarousel">
               <Image
                 src={c.avatar}

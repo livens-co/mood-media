@@ -1,14 +1,12 @@
-.swiper {
+.storySwiper {
   width: 250px;
   height: 444px;
 }
 
-.swiper-slide {
+.storySwiperSlide {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 1rem;
-  // z-index: 10;
-  // padding: 1rem;
 }

@@ -19,39 +19,89 @@ const StoryCarousel = () => {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper"
+        className="storySwiper"
       >
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/nika-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/nika-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/josip-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/josip-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src='/assets/academy/story/andrea-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            priority
+            src="/assets/academy/story/andrea-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/marco_story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/marco_story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/monika-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/monika-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/mirsad-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/mirsad-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/rafaela-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/rafaela-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/sead-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/sead-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/tibor-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/tibor-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image  src='/assets/academy/story/vedran-story.jpeg' alt="Story" width={320} height={569} />
+        <SwiperSlide className="storySwiperSlide">
+          <Image
+            src="/assets/academy/story/vedran-story.jpeg"
+            alt="Story"
+            width={320}
+            height={569}
+          />
         </SwiperSlide>
-        
       </Swiper>
     </>
   );

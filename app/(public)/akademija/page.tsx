@@ -2,7 +2,6 @@ import Image from "next/image";
 import "./style.scss";
 import StoryCarousel from "@/components/StoryCarousel";
 import ArticleCard from "@/components/ArticleCard";
-import AcademyCreators from "@/components/AcademyCreators";
 import { Article } from "@/types";
 import getArticlesByCategory from "@/sanity/actions/get-articles-by-category";
 import banner from "../../../public/assets/GenZBanner.jpeg";
@@ -75,7 +74,30 @@ const AcademyPage = async () => {
             <h1>Moderatori</h1>
             <h1>Gen Z Akademije</h1>
           </div>
-          <AcademyCreators />
+          <div className="academyCreators">
+            <div className="creatorCard">
+              <div className="image">
+                <Image
+                  src="/assets/academy/marco-mod.jpeg"
+                  alt="Marko Cuccurin"
+                  width={240}
+                  height={360}
+                />
+              </div>
+              <h2>Marko Cuccurin</h2>
+            </div>
+            <div className="creatorCard">
+              <div className="image">
+                <Image
+                  src="/assets/academy/nika-mod.jpeg"
+                  alt="Nika Pavičić"
+                  width={240}
+                  height={360}
+                />
+              </div>
+              <h2>Nika Pavičić</h2>
+            </div>
+          </div>
         </div>
 
         {/* SPONZORI */}

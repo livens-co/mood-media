@@ -22,9 +22,9 @@ const ServicesCarousel = () => {
       effect={"cards"}
       grabCursor={true}
       modules={[EffectCards]}
-      className="mySwiper"
+      className="servicesSwiper"
     >
-      <SwiperSlide>
+      <SwiperSlide className="servicesSwiperSlide">
         <h2>Povezivanje</h2>
         <p>
           Uvijek ćemo vas u trenutku spojiti s video Kreatorom koji savršeno
@@ -32,14 +32,14 @@ const ServicesCarousel = () => {
           želite obratiti.
         </p>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="servicesSwiperSlide">
         <h2>Profesionalnost</h2>
         <p>
           Na profesionalan ćemo vam način pomoći da zajedno, u najkraćem mogućem
           roku, odgovorimo na potrebe sve brže rastućeg tržišta.
         </p>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="servicesSwiperSlide">
         <h2>Statistika</h2>
         <p>
           Dat ćemo vam da uvijek imate uvid u sve potrebne, relevantne i up to
@@ -47,7 +47,7 @@ const ServicesCarousel = () => {
           za vrijeme i nakon kampanje.
         </p>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="servicesSwiperSlide">
         <h2>Kreativnost</h2>
         <p>
           U dogovorenom ćemo roku izraditi kreativan koncept za promociju vašeg
@@ -56,7 +56,7 @@ const ServicesCarousel = () => {
           Kreatora koji će taj sadržaj kreativno osmisliti te producirati.
         </p>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="servicesSwiperSlide">
         <h2>Isticanje</h2>
         <p>
           Dajemo vam mogućnost da svoj logo istaknete na stranici našeg video
@@ -65,7 +65,7 @@ const ServicesCarousel = () => {
           želite da publika u tom trenutku dođe.
         </p>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="servicesSwiperSlide">
         <h2>Osobni pristup</h2>
         <p>
           Opuštenim, ali uvijek stručnim pristupom i modelom poslovanja
