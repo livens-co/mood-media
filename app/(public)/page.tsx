@@ -44,7 +44,7 @@ const HomePage = async () => {
       <section>
         <div className="image">
           <Image
-            src="/assets/GenZBanner.jpeg"
+            src="/assets/academy/academyBanner.jpeg"
             width={600}
             height={600}
             alt="Gen Z Akademija"

@@ -110,7 +110,7 @@ const AcademyPage = async () => {
 
         <div className="banner">
           <Image
-            src="/assets/academy/banner.jpg"
+            src="/assets/academy/academyBanner.jpeg"
             alt="Gen Z Akademija"
             width={500}
             height={300}
