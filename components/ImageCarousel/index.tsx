@@ -28,10 +28,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper"
+        className="imageSwiper"
       >
         {data.images.map((i: string) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={i} className="imageSwiperSlide">
             <Image
             src={i}
             alt="Instagram images"
