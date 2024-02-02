@@ -34,7 +34,8 @@ const HomePage = async () => {
           muted
           playsInline
         >
-          <source src="/assets/moodMediaVideo.mp4" type="video/mp4" />
+          <source src="/assets/moodMediaVideo.mp4" type="video/mp4" media="(min-width: 500px)"/>
+          <source src="/assets/moodMediaVideoMobile.mp4" type="video/mp4" media="(max-width: 499px)"/>
           Your browser does not support the video tag.
         </video>
       </div>

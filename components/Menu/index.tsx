@@ -26,7 +26,7 @@ const Menu: React.FC<MenuProps> = ({ openMenu, navLinks, closeMenu }) => {
        
         <Image
           priority
-          src="/assets/genZLogoWhite.png"
+          src="/assets/GenZLogoWhite.png"
           width={150}
           height={50}
           alt="Gen Z Akademija"

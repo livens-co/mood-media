@@ -22,22 +22,22 @@ const StoryCarousel = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image priority src='/assets/academy/story/andrea-story.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/nika-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
           <Image  src='/assets/academy/story/josip-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/story/marco_story.jpeg' alt="Story" width={320} height={569} />
+          <Image priority src='/assets/academy/story/andrea-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/story/mirsad-story.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/marco_story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
           <Image  src='/assets/academy/story/monika-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image  src='/assets/academy/story/nika-story.jpeg' alt="Story" width={320} height={569} />
+          <Image  src='/assets/academy/story/mirsad-story.jpeg' alt="Story" width={320} height={569} />
         </SwiperSlide>
         <SwiperSlide>
           <Image  src='/assets/academy/story/rafaela-story.jpeg' alt="Story" width={320} height={569} />
