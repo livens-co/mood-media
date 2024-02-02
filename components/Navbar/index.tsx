@@ -36,7 +36,7 @@ const navLinks = [
 
 const Navbar = () => {
   const pathName = usePathname();
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const closeMenu = () => {
     setOpenMenu(!openMenu);
