@@ -38,7 +38,7 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
               <li>
                 <FaTiktok />
                 <a href={`${creator?.linkTT}`} target="_blank">
-                  {creator?.followersTT} followers
+                  {creator?.followersTT}+ followers
                 </a>
               </li>
             )}
@@ -46,7 +46,7 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
               <li>
                 <FaInstagram />
                 <a href={`${creator?.linkIG}`} target="_blank">
-                  {creator?.followersIG} followers
+                  {creator?.followersIG}+ followers
                 </a>
               </li>
             )}
@@ -55,7 +55,7 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
               <li>
                 <FaYoutube />
                 <a href={`${creator?.linkYT}`} target="_blank">
-                  {creator?.followersYT} subscribers
+                  {creator?.followersYT}+ subscribers
                 </a>
               </li>
             )}
@@ -64,7 +64,7 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
               <li>
                 <FaFacebookF />
                 <a href={`${creator?.linkFB}`} target="_blank">
-                  {creator?.followersFB} followers
+                  {creator?.followersFB}+ followers
                 </a>
               </li>
             )}

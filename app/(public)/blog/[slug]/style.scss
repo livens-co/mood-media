@@ -61,8 +61,8 @@
       align-items: center;
 
       .avatar {
-        height: 4rem;
-        width: 4rem;
+        height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         overflow: hidden;
         display: flex;
@@ -83,7 +83,7 @@
         color: var(--white);
 
         h2 {
-          font-weight: 600;
+          font-weight: 500;
         }
       }
     }

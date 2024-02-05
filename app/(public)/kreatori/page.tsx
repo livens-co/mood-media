@@ -62,7 +62,7 @@ const CreatorsPage = async () => {
               </div>
               <div className="content">
                 <h1>{c?.name}</h1>
-                <h3>{c.totalFollowers} followers</h3>
+                <h3>{c.totalFollowers}+ followers</h3>
                 <p>{c.shortBio}</p>
 
                 <Link href={`/kreatori/${c?.slug}`}>Saznaj više</Link>

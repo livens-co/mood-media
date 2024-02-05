@@ -98,3 +98,36 @@
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+  .contactPage {
+    .contactPageContainer {
+      width: 95%;
+      height: fit-content;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactPage {
+    padding: 2rem;
+    min-height: unset;
+    
+    .contactPageContainer {
+      width: 100%;
+      flex-direction: column;
+
+      .animation {
+        flex: unset;
+        width: 15rem;
+        height: 15rem;
+        align-self: center;
+        
+      }
+
+      .form {
+        flex: unset;
+      }
+    }
+  }
+}
