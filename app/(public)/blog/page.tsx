@@ -22,7 +22,6 @@ const NewsPage = async ({
 
   const entries = articles.slice(start, end);
 
-  // console.log(articles.length)
 
   return (
     <div className="newsPage">
