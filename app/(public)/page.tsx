@@ -49,7 +49,7 @@ const HomePage = async () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      {/* ABOUT SECTION */}
+  
 
       {/* GEN Z AKADEMIJA */}
       <section>

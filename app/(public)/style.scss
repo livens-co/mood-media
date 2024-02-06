@@ -314,8 +314,6 @@
   }
 }
 
-
-
 @media screen and (max-width: 800px) {
   .homePage {
     section {
@@ -398,11 +396,53 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 450px) {
   .homePage {
     padding-bottom: 2rem;
+
     section {
       padding: 2rem 1rem;
+
+      .text {
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+        // flex: unset;
+
+        p {
+          margin-top: 1rem;
+          width: 95%;
+        }
+
+        .title {
+          h2 {
+            font-size: 1.5rem;
+
+            &:last-child {
+              font-size: 1.75rem;
+            }
+          }
+        }
+      }
+    }
+
+    .newsSection {
+    
+      .text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+        .title {
+          h2 {
+            font-size: 1.5rem;
+
+            &:last-child {
+              font-size: 1.75rem;
+            }
+          }
+        }
+      }
     }
   }
 }

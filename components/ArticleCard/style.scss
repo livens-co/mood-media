@@ -1,4 +1,4 @@
-.article {
+.article { 
   height: 19rem;
   width: 20rem;
   position: relative;
@@ -49,6 +49,29 @@
       img{
         transform: scale(1.05);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .article{
+    height: 16rem;
+    width: 17rem;
+
+    .border{
+      height: 15rem;
+      width: 16rem;
+    }
+
+    .articleImage{
+      width: 17rem;
+      height: 12rem;
+    }
+
+    .articleTitle{
+      padding: 0 1.25rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 400;
     }
   }
 }

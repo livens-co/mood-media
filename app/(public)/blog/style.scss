@@ -38,6 +38,7 @@
     //     line-height: 1.2;
     //   }
     // }
+
     .title {
       display: flex;
       flex-direction: column;
@@ -46,7 +47,7 @@
       padding: 0 2rem;
 
       h2 {
-        font-size: 2rem;
+        font-size: 2.25rem;
         font-weight: 300;
         // margin-left: 1.5rem;
         // width: 90%;
@@ -55,7 +56,7 @@
 
         &:last-child {
           color: var(--secondary);
-          font-size: 2.25rem;
+          font-size: 2.5rem;
           font-weight: 500;
           font-family: "Open Sans", sans-serif;
         }

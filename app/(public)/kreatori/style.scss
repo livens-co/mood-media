@@ -21,11 +21,49 @@
       text-align: center;
       display: flex;
       justify-content: center;
+      position: relative;
+      padding: 2rem;
 
       p {
         width: 90%;
         line-height: 1.6;
         font-weight: 300;
+      }
+
+      .borderLeft {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 1px;
+        background-color: var(--secondary);
+      }
+  
+      .borderTop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 30%;
+        background-color: var(--secondary);
+      }
+  
+      .borderRight {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 1px;
+        background-color: var(--secondary);
+      }
+  
+      .borderBottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        width: 30%;
+        background-color: var(--secondary);
       }
     }
 
@@ -312,6 +350,7 @@
 
     .getToKnow {
       padding: 0 1rem;
+      margin-bottom: 2rem;
 
       .text {
         max-width: unset;
@@ -324,6 +363,7 @@
     }
 
     .creatorsList {
+      gap: 3.5rem;
       .creatorRow {
         padding: 0 1rem 2rem;
       }

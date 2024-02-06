@@ -54,29 +54,29 @@
 
     a {
       width: fit-content;
-        position: relative;
-        color: var(--black);
-        text-decoration: none;
-        // font-size: 1.25rem;
-        text-transform: uppercase;
+      position: relative;
+      color: var(--black);
+      text-decoration: none;
+      // font-size: 1.25rem;
+      text-transform: uppercase;
 
-        &::after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          transform: scaleX(0);
-          height: 0.075em;
-          bottom: -2px;
-          left: 0;
-          background-color: var(--secondary);
-          transform-origin: bottom right;
-          transition: transform 300ms ease-out;
-        }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 0.075em;
+        bottom: -2px;
+        left: 0;
+        background-color: var(--secondary);
+        transform-origin: bottom right;
+        transition: transform 300ms ease-out;
+      }
 
-        &:hover::after {
-          transform: scaleX(1);
-          transform-origin: bottom left;
-        }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     }
 
     .borderLeft {
@@ -88,7 +88,7 @@
       background-color: var(--secondary);
     }
 
-    .borderTop{
+    .borderTop {
       position: absolute;
       top: 0;
       left: 0;
@@ -97,7 +97,7 @@
       background-color: var(--secondary);
     }
 
-    .borderRight{
+    .borderRight {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -106,7 +106,7 @@
       background-color: var(--secondary);
     }
 
-    .borderBottom{
+    .borderBottom {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -123,14 +123,17 @@
 
     .contactContainer {
       max-width: unset;
+      min-height: 14rem;
 
-      h1 {
-        width: 90%;
-        font-size: 1.5rem;
-      }
+      .title {
+        h1 {
+          font-size: 2rem;
+         
 
-      img {
-        transform: scale(0.8) !important;
+          &:last-child {
+            font-size: 2.25rem;
+          }
+        }
       }
     }
   }
