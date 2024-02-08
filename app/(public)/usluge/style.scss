@@ -39,26 +39,36 @@
     overflow: hidden;
     padding: 2rem 0;
 
-    h1 {
-      text-align: center;
-      // color: var(--white);
-      // text-transform: uppercase;
-      // font-size: 1.75rem;
-      // font-weight: 600;
-      // line-height: 0.8;
+    .title {
+      display: flex;
+      flex-direction: column;
 
-      font-size: 2.5rem;
-      font-weight: 300;
-      // margin-left: 1.5rem;
-      // width: 90%;
-      line-height: 0.7;
-      // text-align: center;
+      h1 {
+        text-align: center;
+        // color: var(--white);
+        // text-transform: uppercase;
+        // font-size: 1.75rem;
+        // font-weight: 600;
+        // line-height: 0.8;
 
-      &:last-child {
-        color: var(--secondary);
-        font-size: 2.75rem;
-        font-weight: 500;
-        font-family: "Open Sans", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        // margin-left: 1.5rem;
+        // width: 90%;
+        line-height: 0.8;
+        // text-align: center;
+
+        &:first-child{
+          font-size: 2.75rem;
+          font-weight: 400;
+
+        }
+
+        &:last-child {
+          color: var(--secondary);
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
+        }
       }
     }
 

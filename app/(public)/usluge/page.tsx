@@ -1,27 +1,17 @@
 import ServicesCarousel from "@/components/ServicesCarousel";
 import "./style.scss";
 import Contact from "@/components/Contact";
-import Image from "next/image";
 
 const ServicesPage = () => {
   return (
     <div className="servicesPage">
       <div className="header">
-        <h1>Top Kreatori + vaše želje</h1>
-        <h1>+ naša vizija = vrhunska priča!</h1>
-        {/* <Image
-          src="/assets/contactLines.svg"
-          width={300}
-          height={300}
-          alt="Lines"
-        /> */}
-
-        {/* <Image
-          src="/assets/contactLines.svg"
-          width={300}
-          height={300}
-          alt="Lines"
-        /> */}
+        <div className="title">
+          <h1>Top Kreatori</h1>
+          <h1>+ Vaše želje</h1>
+          <h1>+ naša vizija</h1>
+          <h1>= vrhunska priča!</h1>
+        </div>
       </div>
 
       {/* TEXT */}

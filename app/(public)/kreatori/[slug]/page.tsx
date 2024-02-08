@@ -28,11 +28,16 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
     return <div>Kreator nije pronađen</div>;
   }
 
+  const [firstName, lastName] = creator?.name.split(" ");
+
   return (
     <div className="creatorPage">
       <div className="header">
         <div className="text">
-          <h1>{creator?.name}</h1>
+          <div className="creatorName">
+            <h1>{firstName}</h1>
+            <h1>{lastName}</h1>
+          </div>
           <ul className="socials">
             {creator?.linkTT === null ? null : (
               <li>
