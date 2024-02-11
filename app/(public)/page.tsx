@@ -52,7 +52,7 @@ const HomePage = async () => {
   
 
       {/* GEN Z AKADEMIJA */}
-      <section>
+      {/* <section>
         <div className="image">
           <Image
             src="/assets/academy/academyBanner.jpeg"
@@ -83,7 +83,7 @@ const HomePage = async () => {
           <ViewMore content={genZAcademy} />
           <Link href="/akademija">Saznaj više</Link>
         </div>
-      </section>
+      </section> */}
 
       {/* POVEZUJEMO */}
       <section>

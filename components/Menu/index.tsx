@@ -22,7 +22,7 @@ const Menu: React.FC<MenuProps> = ({ openMenu, navLinks, closeMenu }) => {
           <p>{l.name}</p>
         </Link>
       ))}
-      <Link href="/akademija" className="menuLink" onClick={closeMenu}>
+      {/* <Link href="/akademija" className="menuLink" onClick={closeMenu}>
        
         <Image
           priority
@@ -31,7 +31,7 @@ const Menu: React.FC<MenuProps> = ({ openMenu, navLinks, closeMenu }) => {
           height={50}
           alt="Gen Z Akademija"
         />
-      </Link>
+      </Link> */}
     </div>
   );
 };
