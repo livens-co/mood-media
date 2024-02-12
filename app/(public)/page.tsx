@@ -48,7 +48,7 @@ const HomePage = async () => {
           <img
             src="/assets/moodMediaFallback.jpeg"
             alt="MoodMedia Fallback"
-            style="width:100%;height:auto;"
+            style={{ width: "100%", height: "auto" }}
           />
           Your browser does not support the video tag.
         </video>
