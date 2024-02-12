@@ -27,7 +27,6 @@ const HomePage = async () => {
     <div className="homePage">
       {/* HERO SECTION */}
       <div className="heroSection">
-        {/* ADD FALLBACK IMG */}
         <video
           controls={false}
           preload="auto"
@@ -46,10 +45,14 @@ const HomePage = async () => {
             type="video/mp4"
             media="(min-width: 500px)"
           />
+          <img
+            src="/assets/moodMediaFallback.jpeg"
+            alt="MoodMedia Fallback"
+            style="width:100%;height:auto;"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
-  
 
       {/* GEN Z AKADEMIJA */}
       {/* <section>
