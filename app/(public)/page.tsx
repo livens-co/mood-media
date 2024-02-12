@@ -23,17 +23,30 @@ const HomePage = async () => {
   const movies: Movie[] = await getMovies();
   const creators: Creator[] = await getCreators();
 
+  const handleVideoError = () => {
+    const videoElement = document.getElementById("heroVideo");
+    const imageElement = document.getElementById("fallbackImage");
+
+    if (videoElement && imageElement) {
+      // Check if both elements are not null
+      videoElement.style.display = "none"; // Hide the video element
+      imageElement.style.display = "block"; // Show the fallback image
+    }
+  };
+
   return (
     <div className="homePage">
       {/* HERO SECTION */}
       <div className="heroSection">
         <video
+          id="heroVideo"
           controls={false}
           preload="auto"
           autoPlay
           loop={true}
           muted
           playsInline
+          onError={handleVideoError}
         >
           <source
             src="/assets/moodMediaVideoMobile.mp4"
@@ -46,9 +59,10 @@ const HomePage = async () => {
             media="(min-width: 500px)"
           />
           <img
+            id="fallbackImage"
             src="/assets/moodMediaFallback.jpeg"
             alt="MoodMedia Fallback"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "auto", display: "none" }}
           />
           Your browser does not support the video tag.
         </video>
