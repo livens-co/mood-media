@@ -12,6 +12,10 @@ export const ContactTemplate: React.FC<Readonly<ContactTemplateProps>> = ({
   message,
 }) => (
   <div>
-    <p>Welcome, {name}, {email}, {message}.</p>
+    <p>Zaprimili smo Vaš upit te ćemo na njega odgovoriti u što kraćem roku!</p>
+    <br />
+    <p>Ime: {name}</p>
+    <p>Email: {email}</p>
+    <p>Poruka: {message}</p>
   </div>
 );

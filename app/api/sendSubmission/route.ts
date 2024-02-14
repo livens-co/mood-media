@@ -36,7 +36,7 @@ export async function POST(req: Request) {
     const data = await resend.emails.send({
       from: "Mood Media <noreply@moodmedia.hr>",
       to: email,
-      bcc: "dominik@mintandlime.eu",
+      bcc: "info@moodmedia.hr",
       subject: "Prijava zaprimljena",
       react: reactElement,
     });

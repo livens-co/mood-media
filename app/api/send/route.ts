@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     const data = await resend.emails.send({
       from: 'Mood Media <noreply@moodmedia.hr>',
       to: email,
-      bcc: 'dominik@mintandlime.eu',
+      bcc: 'dario@moodmedia.hr',
       subject: 'Upit zaprimljen',
       react: reactElement,
     });
