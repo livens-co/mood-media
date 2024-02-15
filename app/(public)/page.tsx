@@ -9,6 +9,7 @@ import getMovies from "@/sanity/actions/get-movies";
 import ViewMore from "@/components/ViewMore";
 import getCreators from "@/sanity/actions/get-creators";
 import CreatorCarousel from "@/components/CreatorCarousel";
+import MoviesCarousel from "@/components/MoviesCarousel";
 
 export const revalidate = 1;
 
@@ -119,7 +120,7 @@ const HomePage = async () => {
       {/* KINO FILM */}
       <section className="movieSection">
         <div className="movieBanners">
-          {movies
+          {/* {movies
             .map((movie) => (
               <Link href={movie.link} key={movie.link} target="_blank">
                 <Image
@@ -130,7 +131,8 @@ const HomePage = async () => {
                 />
               </Link>
             ))
-            .slice(0, 1)}
+            .slice(0, 1)}  */}
+            <MoviesCarousel data={movies} />
         </div>
         <div className="text">
           <h1>#KinoMood</h1>
