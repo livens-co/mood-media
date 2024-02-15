@@ -11,7 +11,7 @@ import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper/modules";
 
-import { TikTokEmbed, InstagramEmbed } from "react-social-media-embed";
+import { TikTokEmbed, InstagramEmbed, YouTubeEmbed } from "react-social-media-embed";
 
 interface FeaturedCarouselProps {
   data: {
@@ -34,6 +34,8 @@ const FeaturedCarousel: React.FC<FeaturedCarouselProps> = ({ data }) => {
               <TikTokEmbed url={v} width={325} />
             ) : v.includes("instagram.com") ? (
               <InstagramEmbed url={v} width={328} />
+            ) : v.includes("youtube.com") ? (
+              <YouTubeEmbed url={v} width={325} />
             ) : (
               <p>Unsupported link type</p>
             )}

@@ -20,7 +20,6 @@ const MoviesCarousel: React.FC<MoviesCarouselProps> = ({ data }) => {
   return (
     <>
       <Swiper
-        // cssMode={true}
         navigation={true}
         pagination={{
           clickable: true,

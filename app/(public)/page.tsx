@@ -120,18 +120,6 @@ const HomePage = async () => {
       {/* KINO FILM */}
       <section className="movieSection">
         <div className="movieBanners">
-          {/* {movies
-            .map((movie) => (
-              <Link href={movie.link} key={movie.link} target="_blank">
-                <Image
-                  src={movie.banner}
-                  alt={movie.title}
-                  height={400}
-                  width={600}
-                />
-              </Link>
-            ))
-            .slice(0, 1)}  */}
             <MoviesCarousel data={movies} />
         </div>
         <div className="text">
