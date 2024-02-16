@@ -80,6 +80,10 @@ const nextConfig = {
         source: "/magdalena",
         destination: "/kreatori/magdalena-folnozic",
       },
+      {
+        source: "/tara",
+        destination: "/kreatori/tara-thaller",
+      },
     ];
   },
 };
