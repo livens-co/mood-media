@@ -42,13 +42,13 @@ const AboutUs = () => {
 
         <p>
           Naš tim trenutno se sastoji od brojnih vrlo uspješnih i popularnih
-          imena u svijetu video Kreatora. Mirta Miler (Mimiermakeup), Marco
-          Cuccurin, Nika Pavičić (xniks2x), Mirsad Kadić, Rafaela Seba
-          (RafTheChild), Pave Elez, Sead Hrustanović, Andrea Pacadi, Magdalena
-          Folnožić, Leon Kosanović Picek, Filip Miloš, Mateo Elez, Josip Bačić,
-          Vedran Kantar (Vjeverić), Tibor Čubrilo i Mia Negovetić čine naš vrlo
-          uspješan team! A brojke i rezultati koje ostvarujemo ponekad govore
-          sami za sebe.
+          imena u svijetu video Kreatora. Marco Cuccurin, Nika Pavičić
+          (xniks2x), Mirsad Kadić, Rafaela Seba (RafTheChild), Monika Žilavi
+          (Mrs.Mončina), Pave Elez, Sead Hrustanović, Andrea Pacadi, Josip
+          Prepelić, Magdalena Folnožić, Leon Kosanović Picek, Mateo Elez, Zoe
+          Bakalov, Tara Thaller, Josip Bačić, Vedran Kantar (Vjeverić), Tibor
+          Čubrilo i Mia Negovetić čine naš vrlo uspješan team! A brojke i
+          rezultati koje ostvarujemo ponekad govore sami za sebe.
         </p>
       </div>
 
