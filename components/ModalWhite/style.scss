@@ -6,32 +6,11 @@
   align-items: center;
   padding: 2rem 2rem 4rem;
   background-color: #fff !important;
-  // background: rgb(221, 148, 216);
-  // background: -moz-linear-gradient(
-  //   17deg,
-  //   rgba(221, 148, 216, 1) 22%,
-  //   rgba(163, 150, 224, 1) 62%,
-  //   rgb(151, 159, 230) 81%
-  // );
-  // background: -webkit-linear-gradient(
-  //   17deg,
-  //   rgba(221, 148, 216, 1) 22%,
-  //   rgba(163, 150, 224, 1) 62%,
-  //   rgba(151, 159, 230, 1) 81%
-  // );
-  // background: linear-gradient(
-  //   17deg,
-  //   rgba(221, 148, 216, 1) 22%,
-  //   rgba(163, 150, 224, 1) 62%,
-  //   rgba(151, 159, 230, 1) 81%
-  // );
-  // -webkit-box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
-  // -moz-box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
-  // box-shadow: 2px 2px 11px 5px rgba(221, 148, 216, 0.4);
   flex-direction: column;
   z-index: 10001;
   color: var(--primary);
   border-radius: var(--radius);
+  overflow-y: auto;
 
   button {
     align-self: flex-end;
@@ -49,6 +28,7 @@
 @media screen and (max-width: 600px) {
   .modal {
     padding: 1rem 1rem 2rem;
+    max-height: 80vh !important;
 
     p {
       font-size: 0.9rem;
