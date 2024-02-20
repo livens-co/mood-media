@@ -84,7 +84,7 @@ const HomePage = async () => {
             približiti posao video Kreatora, ali i odgovoriti na neka važna
             pitanja iz online svijeta.
           </p>
-          <ViewMore content={genZAcademy} />
+          <ViewMore content={genZAcademy} modalType="default" />
           <Link href="/akademija">Saznaj više</Link>
         </div>
       </section> */}
@@ -134,7 +134,7 @@ const HomePage = async () => {
             naše pratitelje odvesti u kino, ali ne kako bi samo pogledali
             najnovije naslove, već se usput i podružili s našim Kreatorima.
           </p>
-          <ViewMore content={moreKinoMood} />
+          <ViewMore content={moreKinoMood} modalType="default" />
           <Link href="https://www.kinofilm.hr/" target="_blank">
             SVE VIJESTI IZ SVIJETA FILMA
           </Link>
