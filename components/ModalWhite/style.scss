@@ -2,6 +2,7 @@
   width: 50rem;
   max-width: 95%;
   height: fit-content;
+  max-height: 80vh;
   display: flex;
   align-items: center;
   padding: 2rem 2rem 4rem;
@@ -10,7 +11,13 @@
   z-index: 10001;
   color: var(--primary);
   border-radius: var(--radius);
-  overflow-y: auto;
+  overflow: hidden;
+
+  .modalContent {
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    max-height: calc(100% - 3rem);
+  }
 
   button {
     align-self: flex-end;
@@ -28,7 +35,10 @@
 @media screen and (max-width: 600px) {
   .modal {
     padding: 1rem 1rem 2rem;
-    max-height: 80vh !important;
+
+    .modalContent {
+      max-height: calc(100% - 4rem);
+    }
 
     p {
       font-size: 0.9rem;

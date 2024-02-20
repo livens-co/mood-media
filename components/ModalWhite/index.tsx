@@ -30,7 +30,11 @@ const dropIn = {
   },
 };
 
-const ModalWhite: React.FC<ModalWhiteProps> = ({ handleClose, modalOpen, text }) => {
+const ModalWhite: React.FC<ModalWhiteProps> = ({
+  handleClose,
+  modalOpen,
+  text,
+}) => {
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
@@ -43,7 +47,9 @@ const ModalWhite: React.FC<ModalWhiteProps> = ({ handleClose, modalOpen, text })
       >
         <button onClick={handleClose}>Zatvori</button>
         {/* <p>{text}</p> */}
-        <div dangerouslySetInnerHTML={{ __html: text }}></div>
+        <div className="modalContent">
+          <div dangerouslySetInnerHTML={{ __html: text }}></div>
+        </div>
       </motion.div>
     </Backdrop>
   );
