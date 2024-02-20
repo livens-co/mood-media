@@ -103,6 +103,7 @@
       width: auto;
       display: flex;
       align-items: center;
+      padding-top: 0.5rem;
 
       p {
         margin-top: 2rem;
@@ -253,6 +254,10 @@
     // max-width: 30rem;
     gap: 4rem;
     padding: 2rem;
+
+    h3 {
+      font-weight: 600;
+    }
 
     .sponsorColumn {
       width: 100%;
