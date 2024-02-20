@@ -13,11 +13,6 @@ const font = Poppins({
   subsets: ["latin-ext"],
 });
 
-// const montserrat = Montserrat({
-//   weight: ["400", "500", "600"],
-//   subsets: ["latin-ext"],
-// })
-
 export const metadata: Metadata = {
   title: "Mood Media",
   description: "Mood Media",
@@ -30,16 +25,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="hr">
-      <body
-       className={font.className}
-       >
+      <body className={font.className}>
         <ToasterProvider />
-        <CookiesConsent/>
-        <GoogleAnalytics/>
+        <CookiesConsent />
+        <GoogleAnalytics />
         <Navbar />
-        <div className="mainLayout">
-          {children}
-          </div>
+        <div className="mainLayout">{children}</div>
         <Footer />
         <Analytics />
       </body>

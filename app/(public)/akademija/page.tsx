@@ -56,6 +56,108 @@ const AcademyPage = async () => {
           </div>
         </section>
 
+        {/* SPONZORI */}
+        <div className="sponsors">
+          <div className="sponsorColumn">
+            {/* <h3>Powered by</h3> */}
+            <a href="https://www.a1.hr/boljionline" className="logo">
+              <Image
+                src="/assets/academy/a1Logo.png"
+                alt="A1"
+                width={200}
+                height={200}
+                className="powered"
+              />
+            </a>
+            <div className="text">
+              <p>
+                Kao jedna od vodećih tehnoloških kompanija u Hrvatskoj,
+                edukacija o online svijetu je naša misija. Želimo da djeca i
+                odrasli uživaju u internetu na siguran i odgovoran način, te da
+                pritom steknu sve potrebne digitalne vještine. Zajedno s Centrom
+                za sigurniji Internet već duže vrijeme radimo na edukaciji
+                mladih o online sigurnosti. Rezultat naše suradnje je platforma
+                <strong> #BoljiOnline</strong>, koja promovira pametnu upotrebu
+                interneta i mobitela među djecom i mladima. Do sada smo
+                pokrenuli mnoštvo projekata, kao što su{" "}
+                <strong>netHELP aplikacija</strong> za prijavu online
+                zlostavljanja, <strong>Abeceda interneta</strong> edukativni
+                materijali,
+                <strong> #GejmajOdgovorno</strong> kampanja o odgovornom igranju
+                videoigara,
+                <strong> Playscape svijet</strong> izgrađen u Minecraftu za
+                učenje o digitalnim vještinama, te mnoge radionice za djecu i
+                roditelje.
+              </p>
+              <p>
+                <strong>
+                  Priključite nam se i vi u stvaranju boljeg online svijeta!
+                </strong>
+              </p>
+            </div>
+          </div>
+          <div className="sponsorColumn">
+            {/* <h3>Supported by</h3> */}
+            <a href="https://csi.hr/" className="logo">
+              <Image
+                src="/assets/academy/csiLogo.png"
+                alt="Centar za sigurniji internet"
+                width={150}
+                height={150}
+                className="supported"
+              />
+            </a>
+            <div className="text">
+              <p>
+                Znate li da imate svoj kutak na internetu gdje se možete
+                osjećati sigurno i zaštićeno? To je Centar za sigurniji
+                internet, osnovan 2015. godine od strane Centra za nestalu i
+                zlostavljanu djecu. Danas djeluje uz podršku dugogodišnjeg
+                partnera A1 Hrvatska. <br />
+                Možda se pitate što točno Centar za sigurniji internet -{" "}
+                <a href="https://csi.hr/">csi.hr</a> nudi vama, digitalno
+                osviještenoj generaciji? Pa, evo nekoliko stvari koje bi vas
+                mogle zanimati:
+              </p>
+              <ul>
+                <li>
+                  <strong>
+                    Besplatna i anonimna telefonska linija (0800 606 606):{" "}
+                  </strong>
+                  Da, dobro ste pročitali! Imate pristup telefonskoj liniji koja
+                  je dostupna svakog radnog dana od 08:00 do 16:00 sati. Bez
+                  obzira na to kakva pitanja ili probleme imate vezane uz
+                  internet, možete nazvati i dobiti podršku stručnjaka koji su
+                  tu samo za vas.
+                </li>
+                <li>
+                  <strong>Hotline obrazac: </strong>Ako naiđete na neprimjerene
+                  ili problematične sadržaje na internetu, imate mogućnost
+                  anonimne prijave putem Hotline obrasca. Vaša prijava pomaže u
+                  uklanjanju neprimjerenih sadržaja i očuvanju sigurnog online
+                  okruženja za sve.
+                </li>
+                <li>
+                  <strong>Centar za podršku i informiranje: </strong>Ovdje je
+                  ekipa koja se brine o vašoj sigurnosti na internetu. Njihova
+                  je uloga senzibilizirati i informirati javnost o potencijalnim
+                  opasnostima koje vrebaju online, ali i pružiti vam alate i
+                  savjete kako se zaštititi i sigurno surfati virtualnim
+                  svijetom.
+                </li>
+                <li>
+                  Dakle, dragi naši Z-ovci, imate sve potrebne resurse i podršku
+                  u Centru za sigurniji internet. Ne oklijevajte iskoristiti ih
+                  kad god osjetite da vam trebaju. Jer vaša sigurnost na
+                  internetu je naša zajednička briga, a mi smo ovdje da vam
+                  pomognemo da ostanete zaštićeni i sigurni dok istražujete
+                  online svijet.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         {/* NOVOSTI */}
         <div className="news">
           <h1>Novosti</h1>
@@ -99,36 +201,6 @@ const AcademyPage = async () => {
             </div>
           </div>
         </div>
-
-        {/* SPONZORI */}
-        <div className="sponsors">
-          <div className="sponsorRow">
-            <h3>Powered by</h3>
-            <a href="https://www.a1.hr/" className="logo">
-              <Image
-                src="/assets/academy/a1Logo.png"
-                alt="A1"
-                width={200}
-                height={200}
-                className="powered"
-              />
-            </a>
-          </div>
-          <div className="sponsorRow">
-            <h3>Supported by</h3>
-            <a href="https://csi.hr/" className="logo">
-              <Image
-                src="/assets/academy/csiLogo.png"
-                alt="Centar za sigurniji internet"
-                width={150}
-                height={150}
-                className="supported"
-              />
-            </a>
-          </div>
-        </div>
-
-        {/* END */}
 
         <div className="banner">
           <Image
