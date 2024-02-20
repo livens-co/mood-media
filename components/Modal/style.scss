@@ -31,6 +31,13 @@
   z-index: 10001;
   color: white;
   border-radius: var(--radius);
+  overflow: hidden;
+
+  .modalContent {
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    max-height: calc(100% - 3rem);
+  }
 
   button {
     align-self: flex-end;
@@ -47,7 +54,7 @@
 
 @media screen and (max-width: 600px) {
   .modal {
-    padding: 1rem 1rem 2rem;
+    padding: 1rem 1rem;
 
     p {
       font-size: 0.9rem;

@@ -42,7 +42,10 @@ const Modal: React.FC<ModalProps> = ({ handleClose, modalOpen, text }) => {
         exit="exit"
       >
         <button onClick={handleClose}>Zatvori</button>
+        <div className="modalContent">
+
         <p>{text}</p>
+        </div>
       </motion.div>
     </Backdrop>
   );
