@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem 4rem;
   gap: 4rem;
   
 
@@ -220,14 +220,14 @@
       gap: 5rem;
 
       .creatorCard {
-        width: 15rem;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         height: fit-content;
 
         .image {
           width: 15rem;
-          height: 22.5rem;
+          height: fit-content;
           margin-bottom: 2rem;
 
           img {
@@ -254,6 +254,7 @@
     // max-width: 30rem;
     gap: 4rem;
     padding: 2rem;
+    margin-top: 2rem;
 
     h3 {
       font-weight: 600;
@@ -266,13 +267,14 @@
       // justify-content: center;
       flex-direction: column;
       flex: 1;
-      gap: 2rem;
+      gap: 1rem;
 
       .text {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
+        margin-top: 1rem;
 
         ul {
           display: flex;
@@ -284,7 +286,7 @@
       }
 
       .logo {
-        min-height: 10rem;
+        min-height: 8rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -306,6 +308,7 @@
     width: 36rem;
     max-width: 95%;
     height: auto;
+    margin-top: 3rem;
 
     img {
       width: 100%;
