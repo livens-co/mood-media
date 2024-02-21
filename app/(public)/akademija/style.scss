@@ -104,6 +104,7 @@
       display: flex;
       align-items: center;
       padding-top: 0.5rem;
+      position: relative;
 
       p {
         margin-top: 2rem;
@@ -111,11 +112,49 @@
         font-size: 1rem;
         line-height: 1.4;
         font-weight: 300;
+        position: relative;
+        padding: 1.5rem;
       }
 
       &:first-child {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .borderLeft {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 1px;
+        background-color: var(--secondary);
+      }
+  
+      .borderTop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 30%;
+        background-color: var(--secondary);
+      }
+  
+      .borderRight {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 1px;
+        background-color: var(--secondary);
+      }
+  
+      .borderBottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        width: 30%;
+        background-color: var(--secondary);
       }
     }
 
@@ -275,6 +314,8 @@
         width: 100%;
         align-items: flex-start;
         margin-top: 1rem;
+        position: relative;
+        padding: 1.5rem;
 
         ul {
           display: flex;
@@ -283,10 +324,46 @@
           gap: 0.5rem;
           margin-top: 0.5rem;
         }
+
+        .borderLeft {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 50%;
+          width: 1px;
+          background-color: var(--secondary);
+        }
+    
+        .borderTop {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 1px;
+          width: 30%;
+          background-color: var(--secondary);
+        }
+    
+        .borderRight {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 50%;
+          width: 1px;
+          background-color: var(--secondary);
+        }
+    
+        .borderBottom {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 1px;
+          width: 30%;
+          background-color: var(--secondary);
+        }
       }
 
       .logo {
-        min-height: 8rem;
+        min-height: 10rem;
         display: flex;
         align-items: center;
         justify-content: center;

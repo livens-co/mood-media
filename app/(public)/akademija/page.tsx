@@ -86,9 +86,14 @@ const AcademyPage = async () => {
               &apos;influensaju&apos;. Cilj nam je ovim projektom djeci i
               mladima približiti posao video Kreatora, ali i odgovoriti na neka
               važna pitanja iz online svijeta.
+              <div className="borderLeft" />
+              <div className="borderTop" />
+              <div className="borderRight" />
+              <div className="borderBottom" />
+              <br />
+              <br />
+              <ViewMore content={genZAcademy} modalType="white" />
             </p>
-            <br />
-            <ViewMore content={genZAcademy} modalType="white" />
           </div>
           <div className="carousel">
             <StoryCarousel />
@@ -99,7 +104,11 @@ const AcademyPage = async () => {
         <div className="sponsors">
           <div className="sponsorColumn">
             <h3>Powered by</h3>
-            <a href="https://www.a1.hr/boljionline" className="logo" target="_blank">
+            <a
+              href="https://www.a1.hr/boljionline"
+              className="logo"
+              target="_blank"
+            >
               <Image
                 src="/assets/academy/a1Logo.png"
                 alt="A1"
@@ -117,6 +126,10 @@ const AcademyPage = async () => {
               </p>
               <br />
               <ViewMore content={a1} modalType="white" />
+              <div className="borderLeft" />
+              <div className="borderTop" />
+              <div className="borderRight" />
+              <div className="borderBottom" />
             </div>
           </div>
           <div className="sponsorColumn">
@@ -140,6 +153,10 @@ const AcademyPage = async () => {
               </p>
               <br />
               <ViewMore content={csi} modalType="white" />
+              <div className="borderLeft" />
+              <div className="borderTop" />
+              <div className="borderRight" />
+              <div className="borderBottom" />
             </div>
           </div>
         </div>
