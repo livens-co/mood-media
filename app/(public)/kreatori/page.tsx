@@ -59,8 +59,8 @@ const CreatorsPage = async () => {
               <div className="image">
                 <Image
                   src={`${c?.avatar}`}
-                  width={250}
-                  height={250}
+                  width={450}
+                  height={450}
                   alt={c?.name}
                   className="frame"
                 />
