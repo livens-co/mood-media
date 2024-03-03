@@ -11,7 +11,7 @@ import getArticles from "@/sanity/actions/get-articles";
 export const revalidate = 1;
 
 interface ArticlePageProps {
-  params: { 
+  params: {
     slug: string;
   };
 }
@@ -23,29 +23,48 @@ const ArticlePage: React.FC<ArticlePageProps> = async ({
   const article: Article | null = await getArticle(slug);
 
   if (!article) {
-    return <div>Članak nije pronađen</div>
+    return <div>Članak nije pronađen</div>;
   }
-
-  
 
   return (
     <div className="articlePage">
       <div className="header">
-        <div className="title">{article?.title}</div>
-        <div className="category">{article?.categories?.[0]?.name}</div>
+        <div className="title">
+          {article?.title}
+
+          <div className="borderLeft" />
+          <div className="borderTop" />
+          <div className="borderRight" />
+          <div className="borderBottom" />
+        </div>
         <div className="details">
-          <div className="avatar">
-            <Image
-              src={article?.authors?.[0]?.avatar}
-              alt={article?.authors?.[0]?.name}
-              height={100}
-              width={100}
-            />
+       
+          <div className="authorColumn">
+            <div className="avatar">
+              <Image
+                src={article?.authors?.[0]?.avatar}
+                alt={article?.authors?.[0]?.name}
+                height={100}
+                width={100}
+              />
+            </div>
+            <div className="author">
+              <h2>{article?.authors?.[0]?.name}</h2>
+              <h3>
+                {/* {article?.date} */}
+                {article?.date &&
+                  new Date(article.date)
+                    .toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "numeric",
+                      year: "numeric",
+                    })
+                    .split("/")
+                    .join(".")}
+              </h3>
+            </div>
           </div>
-          <div className="author">
-            <h2>{article?.authors?.[0]?.name}</h2>
-            <h3>{article?.date}</h3>
-          </div>
+          <div className="category">{article?.categories?.[0]?.name}</div>
         </div>
         <div className="featuredImage">
           <Image

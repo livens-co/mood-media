@@ -35,6 +35,7 @@ const HomePage = async () => {
           loop={true}
           muted
           playsInline
+          src="/assets/moodMediaVideoMobile.mp4"
         >
           <source
             src="/assets/moodMediaVideoMobile.mp4"
