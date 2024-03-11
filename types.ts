@@ -20,6 +20,7 @@ export interface Creator {
   images: string[];
   videos: string[];
   articles: Article[];
+  academyStamp: boolean;
 }
 
 export interface Author {

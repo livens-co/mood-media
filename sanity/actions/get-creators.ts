@@ -11,7 +11,8 @@ export default function getCreators(): Promise<Creator[]> {
       'slug': slug.current,
       'avatar': avatar.asset->url,
       shortBio,
-      totalFollowers
+      totalFollowers,
+      academyStamp
     }
     `
   );

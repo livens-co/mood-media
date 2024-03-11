@@ -73,6 +73,23 @@ const CreatorPage: React.FC<CreatorPageProps> = async ({
                 </a>
               </li>
             )}
+
+            {creator?.academyStamp === true && (
+              <ul className="stampRow">
+                <div className="stamp">
+                  <Image
+                    src="/assets/stamp.png"
+                    width={100}
+                    height={100}
+                    alt="Influensaj odgovorno"
+                  />
+                </div>
+                <p>
+                  Kreator koji je certificiran od strane Centra za sigurniji
+                  internet
+                </p>
+              </ul>
+            )}
           </ul>
         </div>
         <div className="profileImage">

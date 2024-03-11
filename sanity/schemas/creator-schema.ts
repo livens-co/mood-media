@@ -120,6 +120,12 @@ const creator = {
       title: 'Video',
       type: 'array',
       of: [{ type: 'url' }],
+    },
+    {
+      title: 'Škola odgovornog influensanja',
+      name: 'academyStamp',
+      type: 'boolean',
+      initialValue: false,
     }
   ],
 };

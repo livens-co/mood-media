@@ -85,6 +85,30 @@
             }
           }
         }
+
+        .stampRow {
+          display: flex;
+          align-items: center;
+          margin-top: 1.5rem;
+
+          .stamp {
+            height: 4rem !important;
+            width: 4rem !important;
+            margin-right: 1.5rem;
+
+            img {
+              height: 4rem ;
+              width: 4rem ;
+            }
+          }
+
+          p {
+            width: 50%;
+            line-height: 1.4;
+            font-weight: 600;
+            font-size: 0.9rem;
+          }
+        }
       }
     }
 
@@ -289,6 +313,27 @@
 
           h1 {
             text-align: center;
+          }
+        }
+
+        .socials {
+          .stampRow {
+            margin-top: 1rem;
+
+            .stamp {
+              margin-right: 1rem;
+              height: 3.25rem;
+              width: 3.25rem;
+
+              img{
+                height: 3.25rem !important;
+                width: 3.25rem !important;
+              }
+            }
+
+            p {
+              width: calc(100% - 4.25rem);
+            }
           }
         }
       }

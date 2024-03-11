@@ -17,22 +17,6 @@ const CreatorsPage = async () => {
           <div className="getToKnowContainer">
             <h1>Video</h1>
             <h1>Kreatori</h1>
-
-            {/* <Image
-              priority
-              src="/assets/contactLines.svg"
-              width={300}
-              height={300}
-              alt="Lines"
-            /> */}
-
-            {/* <Image
-              priority
-              src="/assets/contactLines.svg"
-              width={300}
-              height={300}
-              alt="Lines"
-            /> */}
           </div>
 
           <div className="text">
@@ -66,7 +50,19 @@ const CreatorsPage = async () => {
                 />
               </div>
               <div className="content">
-                <h1>{c?.name}</h1>
+                <h1>{c?.name}
+                
+                {c?.academyStamp === true && (
+                  <div className="stamp">
+                    <Image
+                      src="/assets/stamp.png"
+                      width={100}
+                      height={100}
+                      alt="Influensaj odgovorno"
+                      />
+                  </div>
+                )}
+                </h1>
                 <h3>{c.totalFollowers}+ followers</h3>
                 <p>{c.shortBio}</p>
 

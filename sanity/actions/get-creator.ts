@@ -23,7 +23,8 @@ export default async function getCreator(slug: string): Promise<Creator> {
       followersFB,
       linkFB,
       'images': images[].asset->url,
-      videos
+      videos,
+      academyStamp
     }
     `,
     { slug }
