@@ -56,15 +56,15 @@ const Navbar = () => {
             />
           </Link>
           <div className="links">
-            {/* <Link href="/akademija" className="akademijaLink">
+            <Link href="/akademija" className="akademijaLink">
               <Image
                 priority
-                src="/assets/genZAkademijaLogo.png"
+                src="/assets/genZLogo.png"
                 width={125}
                 height={30}
                 alt="Gen Z Akademija"
               />
-            </Link> */}
+            </Link>
             {navLinks
               .map((l) => (
                 <Link href={l.path} key={l.path} 

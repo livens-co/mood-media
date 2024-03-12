@@ -56,8 +56,38 @@ const HomePage = async () => {
         </video>
       </div>
 
+      
+
+      {/* POVEZUJEMO */}
+      <section>
+        <div className="text">
+          <h1>
+            <div className="dot" />
+            Povezujemo
+          </h1>
+          <div className="title">
+            <h2>Kreator koji najbolje</h2>
+            <h2>odgovara vašim potrebama</h2>
+          </div>
+          <p>
+            Stručnim pristupom i modelom poslovanja nastojimo vezu između
+            klijenta i Kreatora pretvoriti u vezu klijenta i ambasadora te je
+            time činimo osobnijom, prirodnijom i iskrenijom!
+          </p>
+          <Link href="/usluge">Saznaj više</Link>
+        </div>
+        <div className="image">
+          <Image
+            src="/assets/povezujemoImg.jpeg"
+            width={600}
+            height={600}
+            alt="Kreatori"
+          />
+        </div>
+      </section>
+
       {/* GEN Z AKADEMIJA */}
-      {/* <section>
+      <section>
         <div className="image">
           <Image
             src="/assets/academy/academyBanner.jpeg"
@@ -87,34 +117,6 @@ const HomePage = async () => {
           </p>
           <ViewMore content={genZAcademy} modalType="default" />
           <Link href="/akademija">Saznaj više</Link>
-        </div>
-      </section> */}
-
-      {/* POVEZUJEMO */}
-      <section>
-        <div className="text">
-          <h1>
-            <div className="dot" />
-            Povezujemo
-          </h1>
-          <div className="title">
-            <h2>Kreator koji najbolje</h2>
-            <h2>odgovara vašim potrebama</h2>
-          </div>
-          <p>
-            Stručnim pristupom i modelom poslovanja nastojimo vezu između
-            klijenta i Kreatora pretvoriti u vezu klijenta i ambasadora te je
-            time činimo osobnijom, prirodnijom i iskrenijom!
-          </p>
-          <Link href="/usluge">Saznaj više</Link>
-        </div>
-        <div className="image">
-          <Image
-            src="/assets/povezujemoImg.jpeg"
-            width={600}
-            height={600}
-            alt="Kreatori"
-          />
         </div>
       </section>
 

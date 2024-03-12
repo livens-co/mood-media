@@ -15,14 +15,14 @@ const Footer = () => {
               height={150}
             />
           </Link>
-          {/* <Link href="/akademija" className="image">
+          <Link href="/akademija" className="image">
             <Image
-              src="/assets/genZAkademijaLogo.png"
+              src="/assets/genZLogo.png"
               alt="Gen Z Akademija"
-              width={250}
-              height={150}
+              width={350}
+              height={250}
             />
-          </Link> */}
+          </Link>
         </div>
         <div className="links">
           <div className="column">
