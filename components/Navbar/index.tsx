@@ -56,12 +56,12 @@ const Navbar = () => {
             />
           </Link>
           <div className="links">
-            <Link href="/akademija" className="akademijaLink">
+            <Link href="/akademija" className="academyLink">
               <Image
                 priority
                 src="/assets/GenZLogo.png"
-                width={125}
-                height={30}
+                width={250}
+                height={150}
                 alt="Gen Z Akademija"
               />
             </Link>

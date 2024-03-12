@@ -36,6 +36,16 @@
       font-weight: 500;
       font-size: 0.85rem;
 
+      .academyLink {
+        height: 1.75rem;
+        width: fit-content;
+
+        img {
+          height: 1.75rem;
+          width: auto;
+        }
+      }
+
       .navLink {
         width: fit-content;
         position: relative;
