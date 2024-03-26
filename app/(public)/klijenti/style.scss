@@ -1,0 +1,12 @@
+.clientsPage {
+  width: 100%;
+  min-height: 80vh;
+  
+  // z-index: 15 !important;
+  position: relative;
+  margin-top: 5rem;
+  overflow: hidden;
+  display: flex;
+  gap: 13rem;
+  flex-direction: column;
+}

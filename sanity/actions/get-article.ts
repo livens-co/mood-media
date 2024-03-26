@@ -26,6 +26,6 @@ export default async function getArticle(slug: string): Promise<Article> {
       },
     }
     `,
-    { slug }
+    { slug } 
   );
 }
