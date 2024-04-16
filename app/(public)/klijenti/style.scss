@@ -9,4 +9,10 @@
   display: flex;
   gap: 13rem;
   flex-direction: column;
+
+  .video {
+    aspect-ratio: 30/53;
+    width: 20rem;
+    // z-index: 1000000;
+  }
 }

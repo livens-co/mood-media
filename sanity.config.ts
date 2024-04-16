@@ -1,6 +1,7 @@
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
+import { muxInput } from "sanity-plugin-mux-input";
 import schemas from "./sanity/schemas";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT!;
@@ -13,10 +14,10 @@ const config = defineConfig({
 
   projectId,
   dataset,
-  apiVersion, 
+  apiVersion,
   useCdn: true,
 
-  plugins: [deskTool(), visionTool()],
+  plugins: [deskTool(), visionTool(), muxInput()],
 
   schema: { types: schemas },
 });

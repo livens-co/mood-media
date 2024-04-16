@@ -51,3 +51,11 @@ export interface Movie {
   banner: string;
   link: string;
 }
+
+export interface Campaign {
+  _id: string;
+  title: string;
+  image: string;
+  video: string;
+  playbackId: string;
+}
