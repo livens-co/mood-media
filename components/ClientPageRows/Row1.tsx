@@ -88,6 +88,8 @@ const Row1: React.FC<RowProps> = ({ data }) => {
         <VideoModal
           modalOpen={open}
           handleClose={closeVideoModal}
+          // handleClose={()=>{}}
+
           video={selectedCampaign.playbackId}
         />
       )}

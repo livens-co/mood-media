@@ -1,0 +1,16 @@
+.videoContainer{
+  position: absolute;
+  width: fit-content;
+  max-width: 95%;
+  height: fit-content;
+  // max-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+  background-color: #fff !important;
+  flex-direction: column;
+  z-index: 10001 !important;
+  color: var(--primary);
+  border-radius: var(--radius);
+  // overflow: hidden;
+}

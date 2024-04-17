@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import MuxPlayer from '@mux/mux-player-react';
-import Backdrop from '../Backdrop'
-import './style.scss'
+import MuxPlayer from "@mux/mux-player-react";
+import Backdrop from "../Backdrop";
+import "./style.scss";
 
 interface VideoModalProps {
   modalOpen: boolean;
@@ -10,21 +10,17 @@ interface VideoModalProps {
   video: string;
 }
 
-const VideoModal: React.FC<VideoModalProps> = ({handleClose, video}) => {
+const VideoModal: React.FC<VideoModalProps> = ({ handleClose, video }) => {
   return (
-    <Backdrop 
-    onClick={handleClose}
-    >
-      <div className='video'>
-        <MuxPlayer
-          // playbackId="1lQG7WAoT4ACNwa2wVY00EuOnnqDX48YKo6KaYJKljpI"
-          playbackId={video}
-       
-        />
-        {/* <h1>{video}</h1> */}
+    <Backdrop onClick={handleClose}>
+      <div className="videoContainer" onClick={(e) => e.stopPropagation()}>
+        <MuxPlayer playbackId={video} />
+        <div>
+          <button onClick={handleClose}>close</button>
+        </div>
       </div>
     </Backdrop>
-  )
-}
+  );
+};
 
-export default VideoModal
+export default VideoModal;

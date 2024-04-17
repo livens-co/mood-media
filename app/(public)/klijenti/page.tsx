@@ -11,7 +11,7 @@ import Row1 from "@/components/ClientPageRows/Row1";
 import { Campaign } from "@/types";
 import getCampaigns from "@/sanity/actions/get-campaigns";
 
-
+export const revalidate = 1;
 
 const ClientsPage = async () => {
  const campaigns: Campaign[] = await getCampaigns();
