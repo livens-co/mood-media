@@ -21,7 +21,15 @@ const ClientsPage = async () => {
     <div className="clientsPage">
 
       {/* 1st ROW */}
-      <Row1 data={campaigns}/>
+      <Row1 data={campaigns.slice(0,7)}/>
+    
+      <Row1 data={campaigns.slice(7,14)}/>
+   
+      <Row1 data={campaigns.slice(14,22)}/>
+
+      <Row1 data={campaigns.slice(22,28)}/>
+
+      <Row1 data={campaigns.slice(28,-1)}/>
       {/* <div>
         <motion.div
           className="absolute left-0 flex gap-4"

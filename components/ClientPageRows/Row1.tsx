@@ -1,7 +1,7 @@
 "use client";
 
 import ImageCard from "@/components/ImageCard";
-// import "./style.scss";
+import "./style.scss";
 import useMeasure from "react-use-measure";
 import { animate, useMotionValue, motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -63,9 +63,9 @@ const Row1: React.FC<RowProps> = ({ data }) => {
   };
 
   return (
-    <>
+    <div className="clientRow">
       <motion.div
-        className="absolute left-0 flex gap-4"
+        className="row"
         ref={ref}
         style={{ x: xTranslation }}
         onHoverStart={() => {
@@ -93,7 +93,7 @@ const Row1: React.FC<RowProps> = ({ data }) => {
           video={selectedCampaign.playbackId}
         />
       )}
-    </>
+    </div>
   );
 };
 
