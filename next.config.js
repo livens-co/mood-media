@@ -53,6 +53,10 @@ const nextConfig = {
         destination: "/kreatori/mia-negovetic",
       },
       {
+        source: "/laura",
+        destination: "/kreatori/laura-bakin",
+      },
+      {
         source: "/josip",
         destination: "/kreatori/josip-bacic",
       },
