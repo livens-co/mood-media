@@ -88,14 +88,6 @@ const StoryCarousel = () => {
         </SwiperSlide>
         <SwiperSlide className="storySwiperSlide">
           <Image
-            src="/assets/academy/story/tibor-story.jpeg"
-            alt="Story"
-            width={320}
-            height={569}
-          />
-        </SwiperSlide>
-        <SwiperSlide className="storySwiperSlide">
-          <Image
             src="/assets/academy/story/vedran-story.jpeg"
             alt="Story"
             width={320}
