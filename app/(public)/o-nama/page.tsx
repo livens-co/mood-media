@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./style.scss";
 
-import oNama from "../../../public/assets/oNamaBanner.jpeg";
+import oNama from "../../../public/assets/oNamaBanner.png";
 
 const AboutUs = () => {
   return (

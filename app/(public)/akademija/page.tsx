@@ -4,7 +4,7 @@ import StoryCarousel from "@/components/StoryCarousel";
 import ArticleCard from "@/components/ArticleCard";
 import { Article } from "@/types";
 import getArticlesByCategory from "@/sanity/actions/get-articles-by-category";
-import banner from "../../../public/assets/GenZBanner.jpeg";
+import banner from "../../../public/assets/GenZBanner.png";
 import ViewMore from "@/components/ViewMore";
 
 export const revalidate = 1;
