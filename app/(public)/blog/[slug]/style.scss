@@ -192,6 +192,13 @@
       padding-left: 1rem;
       border-left: 2px solid var(--secondary);
     }
+
+    .articleVideo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
   }
 
   .articleFooter {

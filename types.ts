@@ -41,6 +41,7 @@ export interface Article {
   date: string;
   thumbnail: string;
   body: PortableTextBlock[];
+  video: string;
   authors: Author[];
   categories: Category[];
   creators: Creator[];

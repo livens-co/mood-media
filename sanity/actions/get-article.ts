@@ -11,6 +11,7 @@ export default async function getArticle(slug: string): Promise<Article> {
       date,
       'thumbnail': thumbnail.asset->url,
       body,
+      video,
       'authors': authors[]->{
         name,
         'avatar': avatar.asset->url

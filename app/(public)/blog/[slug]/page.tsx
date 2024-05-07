@@ -7,6 +7,7 @@ import { Article } from "@/types";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "@/components/RichTextComponent/RichTextComponents";
 import getArticles from "@/sanity/actions/get-articles";
+import ArticleVideo from "@/components/ArticleVideo";
 
 export const revalidate = 1;
 
@@ -38,7 +39,6 @@ const ArticlePage: React.FC<ArticlePageProps> = async ({
           <div className="borderBottom" />
         </div>
         <div className="details">
-       
           <div className="authorColumn">
             <div className="avatar">
               <Image
@@ -78,6 +78,9 @@ const ArticlePage: React.FC<ArticlePageProps> = async ({
       </div>
       <article>
         <PortableText value={article?.body} components={RichTextComponents} />
+        <div className="articleVideo">
+          {article.video && <ArticleVideo video={article.video} />}
+        </div>
       </article>
       <div className="articleFooter">
         <Link href="/blog" className="articlesBtn">

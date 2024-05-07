@@ -54,13 +54,12 @@ const article = {
       of: [{ type: "block" }, { type: "image" }],
       required: true,
     },
-    // {
-    //   name: "author",
-    //   title: "Autor",
-    //   type: "reference",
-    //   to: [{ type: "author" }],
-    //   required: true,
-    // },
+    {
+      name: "video",
+      title: "Video",
+      type: "string",
+    },
+    
     {
       name: "authors",
       title: "Autori",
