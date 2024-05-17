@@ -15,7 +15,7 @@ export const revalidate = 1;
 
 const ClientsPage = async () => {
  const campaigns: Campaign[] = await getCampaigns();
- console.log(campaigns)
+//  console.log(campaigns)
 
   return (
     <div className="clientsPage">

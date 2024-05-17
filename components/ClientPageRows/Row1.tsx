@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import VideoModal from "@/components/VideoModal";
 import { Campaign } from "@/types";
 
+
 interface RowProps {
   data: Campaign[];
 }
@@ -80,6 +81,7 @@ const Row1: React.FC<RowProps> = ({ data }) => {
         {[...data, ...data].map((c) => (
           <div key={c._id} onClick={() => handleImageCardClick(c)}>
             <ImageCard image={c.image} />
+            
           </div>
         ))}
       </motion.div>
