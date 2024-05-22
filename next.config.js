@@ -88,6 +88,10 @@ const nextConfig = {
         source: "/tara",
         destination: "/kreatori/tara-thaller",
       },
+      {
+        source: "/leon",
+        destination: "/kreatori/leon-zilavi",
+      },
     ];
   },
 };
