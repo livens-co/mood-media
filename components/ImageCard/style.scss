@@ -1,24 +1,25 @@
 .imageCard {
   height: 300px;
   width: 300px;
-  background: rgb(12, 75, 245);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(12, 75, 245, 0.1) 25%,
-    rgba(141, 100, 191, 0.3) 65%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(12, 75, 245, 0.1) 25%,
-    rgba(141, 100, 191, 0.3) 65%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(12, 75, 245, 0.1) 25%,
-    rgba(141, 100, 191, 0.3) 65%
-  );
+  background-color: transparent;
+  // background: rgb(12, 75, 245);
+  // background: -moz-linear-gradient(
+  //   90deg,
+  //   rgba(12, 75, 245, 0.1) 25%,
+  //   rgba(141, 100, 191, 0.3) 65%
+  // );
+  // background: -webkit-linear-gradient(
+  //   90deg,
+  //   rgba(12, 75, 245, 0.1) 25%,
+  //   rgba(141, 100, 191, 0.3) 65%
+  // );
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(12, 75, 245, 0.1) 25%,
+  //   rgba(141, 100, 191, 0.3) 65%
+  // );
   // border: 0.01em solid var(--secondary);
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
   
 
 

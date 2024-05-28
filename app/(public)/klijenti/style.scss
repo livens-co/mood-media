@@ -4,11 +4,27 @@
   height: fit-content;
   // z-index: 15 !important;
   position: relative;
-  margin-top: 5rem;
+  padding: 5rem 0;
   overflow: hidden;
   display: flex;
   gap: 2rem;
   flex-direction: column;
+  background: rgb(12, 75, 245);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(12, 75, 245, 0.05) 25%,
+    rgba(141, 100, 191, 0.4) 65%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(12, 75, 245, 0.05) 25%,
+    rgba(141, 100, 191, 0.4) 65%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(12, 75, 245, 0.05) 25%,
+    rgba(141, 100, 191, 0.4) 65%
+  );
 
   .video {
     aspect-ratio: 30/53;
