@@ -1,20 +1,21 @@
-// .clientRow {
-//   width: 100%;
-//   height: fit-content;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 2rem;
-//   position: relative;
+.logoRowContainer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
-//   .row {
-//     // position: absolute;
-//     // left: 0;
-//     display: flex;
-//     gap: 2rem;
-//     width: 100%;
+  .logoRow {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
 
-//   }
-// }
+    img {
+      height: 3rem;
+      width: auto;
+    }
+  }
+}
 
 .clientRow {
   overflow: hidden;
@@ -26,13 +27,12 @@
     width: max-content;
     gap: 2rem;
   }
-  
-  .row1{
-    animation: scroll 90s linear infinite;
 
+  .row1 {
+    animation: scroll 90s linear infinite;
   }
 
-  .row2{
+  .row2 {
     animation: scroll 75s linear infinite;
   }
 
@@ -66,18 +66,17 @@
   }
 }
 
-@media screen and (max-width: 500px){
-.clientRow{
-  .row1{
-    animation: scroll 60s linear infinite;
+@media screen and (max-width: 500px) {
+  .clientRow {
+    .row1 {
+      animation: scroll 60s linear infinite;
+    }
 
+    .row2 {
+      animation: scroll 50s linear infinite;
+    }
+    &:hover .row {
+      animation-play-state: unset;
+    }
   }
-
-  .row2{
-    animation: scroll 50s linear infinite;
-  }
-  &:hover .row {
-    animation-play-state: unset;
-  }
-}
 }
