@@ -76,5 +76,8 @@
   .row2{
     animation: scroll 50s linear infinite;
   }
+  &:hover .row {
+    animation-play-state: unset;
+  }
 }
 }
