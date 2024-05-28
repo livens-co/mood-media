@@ -6,6 +6,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
 import blob from "../../app/(public)/lottie/blob.json";
+import BlobSVG from '../../public/assets/blob.svg'
 
 interface ImageCardProps {
   image: string;
@@ -39,6 +40,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ image }) => {
         width={400}
         style={{ objectFit: "cover" }}
       />
+      {/* <BlobSVG/> */}
       {/* <Lottie animationData={blob} loop={true} /> */}
     </motion.div>
   );
