@@ -1,17 +1,80 @@
+// .clientRow {
+//   width: 100%;
+//   height: fit-content;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
+//   position: relative;
+
+//   .row {
+//     // position: absolute;
+//     // left: 0;
+//     display: flex;
+//     gap: 2rem;
+//     width: 100%;
+
+//   }
+// }
+
 .clientRow {
+  overflow: hidden;
   width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   position: relative;
 
   .row {
-    // position: absolute;
-    // left: 0;
     display: flex;
+    width: max-content;
     gap: 2rem;
-    width: 100%;
+  }
+  
+  .row1{
+    animation: scroll 90s linear infinite;
 
   }
+
+  .row2{
+    animation: scroll 75s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  &:hover .row {
+    animation-play-state: paused;
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+.clientRow{
+  .row1{
+    animation: scroll 60s linear infinite;
+
+  }
+
+  .row2{
+    animation: scroll 50s linear infinite;
+  }
+}
 }
