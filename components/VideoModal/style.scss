@@ -1,4 +1,4 @@
-.videoContainer{
+.videoContainer {
   position: absolute;
   width: fit-content;
   max-width: 95%;
@@ -6,11 +6,25 @@
   // max-height: 80vh;
   display: flex;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 2rem 3rem;
   background-color: #fff !important;
   flex-direction: column;
   z-index: 10001 !important;
   color: var(--primary);
   border-radius: var(--radius);
   // overflow: hidden;
+  width: calc(6rem + 270px) !important;
+  height: calc(4rem + 480px) !important;
+
+  .videoPlayer {
+    width: 270px !important;
+    height: 480px !important;
+  }
+  .closeButton{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 2rem;
+
+  }
 }

@@ -8,14 +8,13 @@ import { useEffect, useState } from "react";
 import VideoModal from "@/components/VideoModal";
 import { Campaign } from "@/types";
 
-
 interface RowProps {
   data: Campaign[];
 }
 
-const Row1: React.FC<RowProps> = ({ data }) => {
-  const FAST_DURATION = 18;
-  const SLOW_DURATION = 65;
+const Row2: React.FC<RowProps> = ({ data }) => {
+  const FAST_DURATION = 20;
+  const SLOW_DURATION = 70;
 
   const [duration, setDuration] = useState(FAST_DURATION);
   const [mustFinish, setMustFinish] = useState(false);
@@ -81,7 +80,6 @@ const Row1: React.FC<RowProps> = ({ data }) => {
         {[...data, ...data, ...data].map((c) => (
           <div key={c._id} onClick={() => handleImageCardClick(c)}>
             <ImageCard image={c.image} />
-            
           </div>
         ))}
       </motion.div>
@@ -97,4 +95,4 @@ const Row1: React.FC<RowProps> = ({ data }) => {
   );
 };
 
-export default Row1;
+export default Row2;
