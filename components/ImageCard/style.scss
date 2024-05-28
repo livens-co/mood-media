@@ -1,4 +1,6 @@
 .imageCard {
+  height: 300px;
+  width: 300px;
   background: rgb(12, 75, 245);
   background: -moz-linear-gradient(
     90deg,
@@ -15,6 +17,8 @@
     rgba(12, 75, 245, 1) 25%,
     rgba(141, 100, 191, 1) 75%
   );
+
+
   svg {
     position: absolute;
     top: 0;
@@ -24,5 +28,12 @@
   }
   img {
     z-index: 2;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .imageCard{
+    height: 250px;
+    width: 250px;
   }
 }
