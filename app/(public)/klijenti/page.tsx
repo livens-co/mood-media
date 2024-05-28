@@ -11,7 +11,6 @@ const ClientsPage = async () => {
 
   return (
     <div className="clientsPage">
-      {/* 1st ROW */}
       <Row1 data={campaigns.slice(0, 7)} />
 
       <Row2 data={campaigns.slice(7, 14)} />
