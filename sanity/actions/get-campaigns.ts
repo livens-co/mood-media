@@ -7,7 +7,7 @@ export default function getCampaigns(): Promise<Campaign[]> {
     groq`*[_type == "campaign" ] | order(_createdAt desc) {
       _id,
       title,
-      'logo': image.asset->url,mood
+      'logo': image.asset->url,
       'image': image.asset->url,
       playbackId
     }

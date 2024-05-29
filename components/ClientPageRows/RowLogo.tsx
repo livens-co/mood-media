@@ -3,7 +3,6 @@
 import "./style.scss";
 import logos from "@/lib/logos";
 import Image from "next/image";
-import useMeasure from "react-use-measure";
 
 const RowLogo = () => {
   return (
