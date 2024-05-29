@@ -57,6 +57,7 @@ export interface Campaign {
   _id: string;
   title: string;
   image: string;
+  logo: string;
   video: string;
   playbackId: string;
 }

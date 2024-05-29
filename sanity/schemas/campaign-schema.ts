@@ -16,6 +16,11 @@ const campaign = {
       required: true,
     },
     {
+      name: "logo",
+      title: "Logo",
+      type: "image",
+    },
+    {
       title: 'Video',
       name: 'video',
       type: 'mux.video',
