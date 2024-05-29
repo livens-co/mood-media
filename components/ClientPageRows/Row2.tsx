@@ -14,7 +14,7 @@ interface RowProps {
 const Row2: React.FC<RowProps> = ({ data }) => {
   const [open, setOpen] = useState(false);
   const [selectedCampaign, setSelectedCampaign] = useState<Campaign | null>(null);
-  const [ref] = useMeasure();
+  // const [ref] = useMeasure();
 
   const handleImageCardClick = (campaign: Campaign) => {
     setSelectedCampaign(campaign);
@@ -26,7 +26,9 @@ const Row2: React.FC<RowProps> = ({ data }) => {
   };
 
   return (
-    <div className="clientRow" ref={ref}>
+    <div className="clientRow" 
+    // ref={ref}
+    >
       <div className="row row2">
         {[...data, ...data, ...data].map((c) => (
           <div key={c._id} className="imageContainer" onClick={() => handleImageCardClick(c)}>

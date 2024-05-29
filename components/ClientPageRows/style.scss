@@ -4,11 +4,26 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-top: 4rem;
 
   .logoRow {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     width: max-content;
+    animation: scroll 120s linear infinite;
+
+    &:nth-child(2){
+      padding-left: 5rem;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
 
     img {
       height: 3rem;

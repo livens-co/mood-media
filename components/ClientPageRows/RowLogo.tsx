@@ -3,12 +3,13 @@
 import "./style.scss";
 import logos from "@/lib/logos";
 import Image from "next/image";
+import useMeasure from "react-use-measure";
 
 const RowLogo = () => {
   return (
-    <div className="logoRowContainer">
+    <div className="logoRowContainer" >
       <div className="logoRow">
-        {logos.map((logo) => (
+        {[...logos].map((logo) => (
           <Image
             src={logo.imagePath}
             alt="Logo"
@@ -19,7 +20,7 @@ const RowLogo = () => {
         )).slice(0,30)}
       </div>
       <div className="logoRow">
-        {logos.map((logo) => (
+        {[...logos].map((logo) => (
           <Image
             src={logo.imagePath}
             alt="Logo"
