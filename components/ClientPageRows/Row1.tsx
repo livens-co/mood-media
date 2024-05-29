@@ -30,7 +30,7 @@ const Row1: React.FC<RowProps> = ({ data }) => {
       <div className="row row1">
         {[...data, ...data, ...data].map((c) => (
           <div key={c._id} className="imageContainer" onClick={() => handleImageCardClick(c)}>
-            <ImageCard image={c.image} />
+            <ImageCard image={c.image} logo={c.logo} />
           </div>
         ))}
       </div>
