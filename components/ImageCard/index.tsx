@@ -36,7 +36,15 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, logo }) => {
           <Image src={image} priority alt="Image" height={400} width={400} />
         </div>
         <div className="imageCardLogo">
-          <Image src={logo} priority alt="Logo" height={75} width={150} />
+          <Image
+            src={logo}
+            priority
+            alt="Logo"
+            height={50}
+            width={100}
+            // layout="fill"
+            // objectFit="contain"
+          />
         </div>
       </motion.div>
     </>
