@@ -18,7 +18,7 @@ const ClientsPage = async () => {
 
       <Row1 data={campaigns.slice(28, -1)} />
 
-      <RowLogo/>
+      <RowLogo />
     </div>
   );
 };

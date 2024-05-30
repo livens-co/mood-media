@@ -13,7 +13,6 @@ const campaign = {
       name: "position",
       title: "Position",
       type: "number",
-      // required: true,
     },
     {
       name: "image",

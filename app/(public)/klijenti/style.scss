@@ -1,8 +1,6 @@
 .clientsPage {
   width: 100%;
-  // min-height: 80vh;
   height: fit-content;
-  // z-index: 15 !important;
   position: relative;
   padding: 5rem 0;
   overflow: hidden;
@@ -30,6 +28,13 @@
     aspect-ratio: 30/53;
     width: 80%;
     max-width: 20rem;
-    // z-index: 1000000;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // transform: translate(-50%, -50%);
+    z-index: -1;
   }
 }
