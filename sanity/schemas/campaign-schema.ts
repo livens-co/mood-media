@@ -10,6 +10,12 @@ const campaign = {
       required: true
     },
     {
+      name: "position",
+      title: "Position",
+      type: "number",
+      // required: true,
+    },
+    {
       name: "image",
       title: "Slika",
       type: "image",

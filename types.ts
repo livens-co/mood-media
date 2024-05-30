@@ -56,6 +56,7 @@ export interface Movie {
 export interface Campaign {
   _id: string;
   title: string;
+  position: number;
   image: string;
   logo: string;
   video: string;
