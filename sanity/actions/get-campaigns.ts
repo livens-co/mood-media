@@ -4,7 +4,7 @@ import clientConfig from "../config/client-config";
 
 export default function getCampaigns(): Promise<Campaign[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "campaign" ] | order(_createdAt desc) {
+    groq`*[_type == "campaign" ] | order(position asc) {
       _id,
       title,
       position,
