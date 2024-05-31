@@ -4,7 +4,7 @@ import clientConfig from "../config/client-config";
 
 export default function getArticles(): Promise<Article[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "article" ] | order(_createdAt desc) {
+    groq`*[_type == "article" ] | order(_updatedAt desc) {
       _id,
       title,
       'slug': slug.current,
