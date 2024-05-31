@@ -12,6 +12,9 @@ const ClientsPage = async () => {
 
   return (
     <div className="clientsPage">
+      <div className="bg"></div>
+<div className="bg bg2"></div>
+<div className="bg bg3"></div>
       <Row1 data={campaigns.slice(0, 14)} />
 
       <Row2 data={campaigns.slice(14, 28)} />

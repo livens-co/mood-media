@@ -7,28 +7,76 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  background: rgb(12, 75, 245);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(12, 75, 245, 0.05) 25%,
-    rgba(141, 100, 191, 0.4) 65%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(12, 75, 245, 0.05) 25%,
-    rgba(141, 100, 191, 0.4) 65%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(12, 75, 245, 0.05) 25%,
-    rgba(141, 100, 191, 0.4) 65%
-  );
+  // background: #0c4bf5;
+   background: -moz-linear-gradient(
+   180deg,
+     rgba(12, 75, 245, 0.05) 25%,
+    #8d64bf 65%
+   );
+  // background: -webkit-linear-gradient(
+  //   180deg,
+  //   rgba(12, 75, 245, 0.05) 25%,
+  //   rgba(141, 100, 191, 0.4) 65%
+  // );
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(12, 75, 245, 0.05) 25%,
+  //   rgba(141, 100, 191, 0.4) 65%
+  // );
+  // background: rgb(221, 148, 216);
+  // background: -moz-linear-gradient(
+  //   180deg,
+  //   rgba(221, 148, 216, 0.6) 22%,
+  //   rgba(163, 150, 224, 0.6) 62%,
+  //   rgb(151, 159, 230, 0.6) 81%
+  // );
+  // background: -webkit-linear-gradient(
+  //   180deg,
+  //   rgba(221, 148, 216, 0.6) 22%,
+  //   rgba(163, 150, 224, 0.6) 62%,
+  //   rgb(151, 159, 230, 0.6) 81%
+  // );
+  // background: linear-gradient(
+  //   180deg,
+    // rgba(221, 148, 216, 0.6) 22%,
+  //   rgba(163, 150, 224, 0.6) 62%,
+  //   rgb(151, 159, 230, 0.6) 81%
+  // );
+  // background-size: 200% 200%;
+  // animation: gradient 15s ease infinite;
 
   .video {
     aspect-ratio: 30/53;
     width: 80%;
     max-width: 20rem;
   }
-  
- 
+
+  .bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #0c4bf5 50%, #8d64bf 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.1;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+  }
+
+  .bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+  }
+
+  .bg3 {
+    animation-duration: 5s;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
 }
