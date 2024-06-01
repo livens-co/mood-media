@@ -11,18 +11,19 @@ const ClientsPage = async () => {
   const campaigns: Campaign[] = await getCampaigns();
 
   return (
-    <div className="clientsPage">
-      <div className="bg"></div>
-<div className="bg bg2"></div>
-<div className="bg bg3"></div>
-      <Row1 data={campaigns.slice(0, 14)} />
+    <>
+      <div className="clientsPage">
+        <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
+        <Row1 data={campaigns.slice(0, 14)} />
 
-      <Row2 data={campaigns.slice(14, 28)} />
+        <Row2 data={campaigns.slice(14, 28)} />
 
-      <Row1 data={campaigns.slice(28, -1)} />
-
+        <Row1 data={campaigns.slice(28, -1)} />
+      </div>
       <RowLogo />
-    </div>
+    </>
   );
 };
 
