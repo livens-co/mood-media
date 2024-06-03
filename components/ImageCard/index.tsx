@@ -40,7 +40,8 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, logo }) => {
             src={logo}
             priority
             alt="Logo"
-            layout="intrinsic" height={64} width={64}
+            // layout="intrinsic" 
+            height={64} width={64}
             // height={50}
             // width={100}
             // layout="fill"
