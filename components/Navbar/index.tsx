@@ -25,6 +25,10 @@ const navLinks = [
     path: "/usluge",
   },
   {
+    name: "Kampanje",
+    path: "/kampanje",
+  },
+  {
     name: "O nama",
     path: "/o-nama",
   },
@@ -67,9 +71,10 @@ const Navbar = () => {
             </Link>
             {navLinks
               .map((l) => (
-                <Link href={l.path} key={l.path} 
-                // className="navLink" 
-                className={`navLink ${pathName === l.path ? 'active' : ''}`}
+                <Link
+                  href={l.path}
+                  key={l.path}
+                  className={`navLink ${pathName === l.path ? "active" : ""}`}
                 >
                   {l.name}
                 </Link>
