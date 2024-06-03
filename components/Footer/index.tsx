@@ -30,6 +30,7 @@ const Footer = () => {
             <Link href="/">Početna</Link>
             <Link href="/o-nama">O nama</Link>
             <Link href="/usluge">Usluge</Link>
+            <Link href="/kampanje">Kampanje</Link>
             <Link href="/kreatori">Kreatori</Link>
             <Link href="/kontakt">Kontakt</Link>
           </div>
