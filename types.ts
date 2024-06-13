@@ -62,3 +62,22 @@ export interface Campaign {
   video: string;
   playbackId: string;
 }
+
+export interface Question {
+  question: string;
+  option1: string;
+  option2: string;
+  option3: string;
+  option4: string;
+  ans: number;
+  image: string;
+}
+
+export interface Result {
+row1: string;
+row2: string;
+row3: string;
+res: number;
+bgColor: string;
+color: string;
+}
