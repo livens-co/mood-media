@@ -84,70 +84,36 @@ const Quiz = () => {
   };
 
   return (
-    <div className="quizContainer">
-      {!nameEntered ? (
-        <div className="nameInputContainer">
-          <div className="bgImage">
-            <Image
-              src={"/assets/quiz/quizBg.jpg"}
-              height={400}
-              width={400}
-              alt="Image"
-            />
-          </div>
-          <div className="nameInputRow">
-            {/* <h1>Unesi svoje ime:</h1> */}
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Ime"
-            />
-          </div>
-          <button onClick={startQuiz} className="startButton">
-            Započni kviz
-          </button>
+    <>
+      {!nameEntered && (
+        <div className="bgImage">
+          <Image
+            src={"/assets/quiz/quizBg.png"}
+            height={400}
+            width={400}
+            alt="Image"
+          />
         </div>
-      ) : resultState ? (
-        <>
-          <header>
-            <h1>Ime: {name}</h1>
-            <p>
-              <CgSandClock /> 5:00
-            </p>
-          </header>
-          <hr />
-          <div
-            style={{
-              backgroundColor: resultState.bgColor,
-              color: resultState.color,
-            }}
-            className="result"
-          >
-            <div className="resultColumn">
-              <h3>{resultState.row1}</h3>
-              <h3>{resultState.row2}</h3>
-              <h3>{resultState.row3}</h3>
+      )}
+
+      <div className="quizContainer">
+        {!nameEntered ? (
+          <div className="nameInputContainer">
+            <div className="nameInputRow">
+              <h1>Unesi svoje ime:</h1>
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Ime"
+              />
             </div>
-            <div className="resultColumn">
-              <p>
-                Kako bismo bili odgovorni korisnici interneta, a i kako bi
-                spriječili cyber nasilje i smanjiti negov negativan utjecaj,
-                klikni na link i saznaj
-              </p>
-              <Link href={"https://csi.hr/"}>
-                <FaLink /> www.csi.hr
-              </Link>
-            </div>
+            <button onClick={startQuiz} className="startButton">
+              Započni kviz
+            </button>
           </div>
-          <h2>
-            Tvoj rezultat {score} od {qts.length}
-          </h2>
-          <button onClick={reset}>Igraj ponovo</button>
-        </>
-      ) : (
-        <>
-          <div className="questionsContainer">
+        ) : resultState ? (
+          <>
             <header>
               <h1>Ime: {name}</h1>
               <p>
@@ -155,66 +121,105 @@ const Quiz = () => {
               </p>
             </header>
             <hr />
-
-            <div className="questionRow">
-              <div className="questionColumn">
-                <h2>{question.question}</h2>
-                <ul>
-                  <li
-                    ref={Option1}
-                    onClick={(e) => {
-                      checkAns(e, 1);
-                    }}
-                  >
-                    <div className="circle">1</div>
-                    <p>{question.option1}</p>
-                  </li>
-                  <li
-                    ref={Option2}
-                    onClick={(e) => {
-                      checkAns(e, 2);
-                    }}
-                  >
-                    <div className="circle">2</div>
-                    <p>{question.option2}</p>
-                  </li>
-                  <li
-                    ref={Option3}
-                    onClick={(e) => {
-                      checkAns(e, 3);
-                    }}
-                  >
-                    <div className="circle">3</div>
-                    <p>{question.option3}</p>
-                  </li>
-                  <li
-                    ref={Option4}
-                    onClick={(e) => {
-                      checkAns(e, 4);
-                    }}
-                  >
-                    <div className="circle">4</div>
-                    <p>{question.option4}</p>
-                  </li>
-                </ul>
-                <button onClick={next}>Dalje</button>
-                <div className="index">
-                  {index + 1} od {qts.length} pitanja
-                </div>
+            <div
+              style={{
+                backgroundColor: resultState.bgColor,
+                color: resultState.color,
+              }}
+              className="result"
+            >
+              <div className="resultColumn">
+                <h3>{resultState.row1}</h3>
+                <h3>{resultState.row2}</h3>
+                <h3>{resultState.row3}</h3>
               </div>
-              <div className="imageColumn">
-                <Image
-                  src={question.image}
-                  height={400}
-                  width={400}
-                  alt="Image"
-                />
+              <div className="resultColumn">
+                <p>
+                  Kako bismo bili odgovorni korisnici interneta, a i kako bi
+                  spriječili cyber nasilje i smanjiti negov negativan utjecaj,
+                  klikni na link i saznaj
+                </p>
+                <Link href={"https://csi.hr/"}>
+                  <FaLink /> www.csi.hr
+                </Link>
               </div>
             </div>
-          </div>
-        </>
-      )}
-    </div>
+            <h2>
+              Tvoj rezultat {score} od {qts.length}
+            </h2>
+            <button onClick={reset}>Igraj ponovo</button>
+          </>
+        ) : (
+          <>
+            <div className="questionsContainer">
+              <header>
+                <h1>Ime: {name}</h1>
+                <p>
+                  <CgSandClock /> 5:00
+                </p>
+              </header>
+              <hr />
+
+              <div className="questionRow">
+                <div className="questionColumn">
+                  <h2>{question.question}</h2>
+                  <ul>
+                    <li
+                      ref={Option1}
+                      onClick={(e) => {
+                        checkAns(e, 1);
+                      }}
+                    >
+                      <div className="circle">1</div>
+                      <p>{question.option1}</p>
+                    </li>
+                    <li
+                      ref={Option2}
+                      onClick={(e) => {
+                        checkAns(e, 2);
+                      }}
+                    >
+                      <div className="circle">2</div>
+                      <p>{question.option2}</p>
+                    </li>
+                    <li
+                      ref={Option3}
+                      onClick={(e) => {
+                        checkAns(e, 3);
+                      }}
+                    >
+                      <div className="circle">3</div>
+                      <p>{question.option3}</p>
+                    </li>
+                    <li
+                      ref={Option4}
+                      onClick={(e) => {
+                        checkAns(e, 4);
+                      }}
+                    >
+                      <div className="circle">4</div>
+                      <p>{question.option4}</p>
+                    </li>
+                  </ul>
+                  <button onClick={next}>Dalje</button>
+                  <div className="index">
+                    {index + 1} od {qts.length} pitanja
+                  </div>
+                </div>
+                <div className="imageColumn">
+                  <Image
+                    src={question.image}
+                    height={400}
+                    width={400}
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+    </>
   );
 };
 
