@@ -8,7 +8,6 @@ import { useRef, useState, MouseEvent } from "react";
 import { CgSandClock } from "react-icons/cg";
 import { FaLink } from "react-icons/fa6";
 
-
 const Quiz = () => {
   const [name, setName] = useState<string>("");
   const [nameEntered, setNameEntered] = useState<boolean>(false);
@@ -88,17 +87,26 @@ const Quiz = () => {
     <div className="quizContainer">
       {!nameEntered ? (
         <div className="nameInputContainer">
-          <div className="nameInputRow">
-
-          <h1>Unesi svoje ime:</h1>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Ime"
+          <div className="bgImage">
+            <Image
+              src={"/assets/quiz/quizBg.jpg"}
+              height={400}
+              width={400}
+              alt="Image"
             />
-            </div>
-          <button onClick={startQuiz} className="startButton">Započni kviz</button>
+          </div>
+          <div className="nameInputRow">
+            {/* <h1>Unesi svoje ime:</h1> */}
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Ime"
+            />
+          </div>
+          <button onClick={startQuiz} className="startButton">
+            Započni kviz
+          </button>
         </div>
       ) : resultState ? (
         <>
@@ -127,7 +135,9 @@ const Quiz = () => {
                 spriječili cyber nasilje i smanjiti negov negativan utjecaj,
                 klikni na link i saznaj
               </p>
-              <Link href={'https://csi.hr/'}><FaLink/> www.csi.hr</Link>
+              <Link href={"https://csi.hr/"}>
+                <FaLink /> www.csi.hr
+              </Link>
             </div>
           </div>
           <h2>
