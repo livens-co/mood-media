@@ -45,11 +45,11 @@
   width: auto;
   margin-bottom: 1rem;
   margin: 0 auto;
-  mix-blend-mode: multiply;
   // justify-content: center;
-
+  
   img {
     height: 100%;
+    mix-blend-mode: multiply;
     width: 100%;
   }
 }

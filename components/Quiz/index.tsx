@@ -88,7 +88,7 @@ const Quiz = () => {
       {!nameEntered && (
         <div className="bgImage">
           <Image
-            src={"/assets/quiz/quizBg.png"}
+            src={"/assets/quiz/quizBg.jpg"}
             height={400}
             width={400}
             alt="Image"
